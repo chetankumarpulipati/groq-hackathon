@@ -17,6 +17,7 @@ Pillow>=10.0.0
 opencv-python>=4.8.0
 numpy>=1.24.0
 pandas>=2.0.0
+pydicom>=2.3.0  # Medical imaging DICOM file processing
 
 # Audio processing
 pyaudio>=0.2.11

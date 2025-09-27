@@ -164,6 +164,15 @@ class HealthcareSystemConfig:
         self.security = SecurityConfig()
         self.logging = LoggingConfig()
 
+        # Add vision configuration for enhanced orchestrator
+        self.vision = {
+            "enabled": True,
+            "provider": "google",
+            "model": "openai/gpt-oss-20b",
+            "max_image_size_mb": 10,
+            "supported_formats": ["jpg", "jpeg", "png", "bmp"]
+        }
+
     def get_provider_config(self, provider_name: str) -> Dict:
         """Get configuration for a specific provider."""
         return self.models.get_provider_config(provider_name)

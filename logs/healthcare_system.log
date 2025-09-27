@@ -262,3 +262,329 @@
 2025-09-27 13:13:19 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent d326b742-9197-4904-bd39-ca4327fb020d initialized (minimal mode)
 2025-09-27 13:13:19 | INFO     | orchestrator_minimal:_initialize_agents:36 | Minimal agents initialized: ['voice']
 2025-09-27 13:13:19 | INFO     | orchestrator_minimal:__init__:27 | HealthcareOrchestrator initialized (minimal mode)
+2025-09-27 13:13:21 | INFO     | __main__:startup_event:83 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 13:13:21 | INFO     | __main__:startup_event:84 | ✅ System ready for healthcare processing
+2025-09-27 13:44:29 | INFO     | __main__:process_healthcare_request:389 | Processing healthcare request
+2025-09-27 13:44:29 | INFO     | orchestrator_minimal:process_healthcare_request:46 | Processing healthcare request: c8c58349-abd5-4938-96cd-a30046a6c721
+2025-09-27 13:44:29 | INFO     | agents.base_agent:execute_task:43 | Agent d326b742-9197-4904-bd39-ca4327fb020d starting task ae66dbfc-1af1-428a-bc0c-98523f8b2e5a of type voice_processing
+2025-09-27 13:44:34 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: AI response error: 'ModelProviderConfig' object has no attribute 'max_tokens' (Code: AI_RESPONSE_ERROR)
+2025-09-27 13:44:34 | ERROR    | agents.voice_agent_minimal:process:51 | Voice processing failed: AI response error: 'ModelProviderConfig' object has no attribute 'max_tokens'
+2025-09-27 13:44:34 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: Voice processing error: AI response error: 'ModelProviderConfig' object has no attribute 'max_tokens' (Code: None)
+2025-09-27 13:44:34 | ERROR    | agents.base_agent:execute_task:84 | Agent d326b742-9197-4904-bd39-ca4327fb020d failed task ae66dbfc-1af1-428a-bc0c-98523f8b2e5a: Voice processing error: AI response error: 'ModelProviderConfig' object has no attribute 'max_tokens'
+2025-09-27 13:44:34 | ERROR    | orchestrator_minimal:process_healthcare_request:79 | Healthcare request failed: Voice processing error: AI response error: 'ModelProviderConfig' object has no attribute 'max_tokens'
+2025-09-27 13:45:23 | INFO     | __main__:process_healthcare_request:389 | Processing healthcare request
+2025-09-27 13:45:23 | INFO     | orchestrator_minimal:process_healthcare_request:46 | Processing healthcare request: 48d4862d-2b55-44f8-924e-9ee03d7044b6
+2025-09-27 13:45:23 | INFO     | agents.base_agent:execute_task:43 | Agent d326b742-9197-4904-bd39-ca4327fb020d starting task 9e3ea71f-8b44-47f6-8948-4e78bd7484c1 of type voice_processing
+2025-09-27 13:45:24 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: AI response error: 'ModelProviderConfig' object has no attribute 'max_tokens' (Code: AI_RESPONSE_ERROR)
+2025-09-27 13:45:24 | ERROR    | agents.voice_agent_minimal:process:51 | Voice processing failed: AI response error: 'ModelProviderConfig' object has no attribute 'max_tokens'
+2025-09-27 13:45:24 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: Voice processing error: AI response error: 'ModelProviderConfig' object has no attribute 'max_tokens' (Code: None)
+2025-09-27 13:45:24 | ERROR    | agents.base_agent:execute_task:84 | Agent d326b742-9197-4904-bd39-ca4327fb020d failed task 9e3ea71f-8b44-47f6-8948-4e78bd7484c1: Voice processing error: AI response error: 'ModelProviderConfig' object has no attribute 'max_tokens'
+2025-09-27 13:45:24 | ERROR    | orchestrator_minimal:process_healthcare_request:79 | Healthcare request failed: Voice processing error: AI response error: 'ModelProviderConfig' object has no attribute 'max_tokens'
+2025-09-27 15:42:00 | INFO     | __main__:shutdown_event:93 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 15:42:00 | INFO     | orchestrator_minimal:shutdown:103 | System shutdown completed
+2025-09-27 15:50:03 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 15:50:04 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 15:50:04 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 15:50:05 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 15:50:05 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 15:50:06 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 15:50:06 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 15:50:06 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 15:50:06 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 15:50:07 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 15:50:07 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 15:50:09 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 15:50:10 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 15:50:12 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 15:50:13 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 15:50:13 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 15:50:14 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 15:50:15 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 15:50:16 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 15:50:17 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 15:50:18 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 15:50:19 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 36.36%
+2025-09-27 15:50:20 | INFO     | evaluation.model_accuracy:create_accuracy_visualizations:438 | Accuracy visualizations saved to evaluation\test_data\accuracy_dashboard.png
+2025-09-27 15:50:46 | INFO     | evaluation.model_accuracy:export_detailed_results:459 | Detailed results exported to evaluation\test_data\accuracy_evaluation_20250927_155046.json
+2025-09-27 16:52:14 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 16:52:15 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 16:52:15 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 16:52:16 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 16:52:16 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 16:52:17 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 16:52:17 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 16:52:18 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 16:52:18 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 16:52:18 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: c4bc9df9-9e80-4ab2-a80e-ae010d7a2a86 for voice_processing tasks
+2025-09-27 16:52:18 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent c4bc9df9-9e80-4ab2-a80e-ae010d7a2a86 initialized (minimal mode)
+2025-09-27 16:52:18 | INFO     | orchestrator_minimal:_initialize_agents:36 | Minimal agents initialized: ['voice']
+2025-09-27 16:52:18 | INFO     | orchestrator_minimal:__init__:27 | HealthcareOrchestrator initialized (minimal mode)
+2025-09-27 16:54:46 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 16:54:46 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 16:54:47 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 16:54:47 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 16:54:47 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 16:54:48 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 16:54:48 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 16:54:49 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 16:54:49 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 16:54:49 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: d17886eb-7782-465f-91ea-9d40917b2547 for voice_processing tasks
+2025-09-27 16:54:49 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent d17886eb-7782-465f-91ea-9d40917b2547 initialized (minimal mode)
+2025-09-27 16:54:49 | INFO     | orchestrator_minimal:_initialize_agents:36 | Minimal agents initialized: ['voice']
+2025-09-27 16:54:49 | INFO     | orchestrator_minimal:__init__:27 | HealthcareOrchestrator initialized (minimal mode)
+2025-09-27 16:56:38 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 16:56:39 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 16:56:40 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 16:56:40 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 16:56:41 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 16:56:41 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 16:56:41 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 16:56:42 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 16:56:42 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 16:56:42 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 3c41f3d0-f078-4841-83ae-d08c1e4acb05 for voice_processing tasks
+2025-09-27 16:56:42 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 3c41f3d0-f078-4841-83ae-d08c1e4acb05 initialized (minimal mode)
+2025-09-27 16:56:42 | INFO     | orchestrator_minimal:_initialize_agents:36 | Minimal agents initialized: ['voice']
+2025-09-27 16:56:42 | INFO     | orchestrator_minimal:__init__:27 | HealthcareOrchestrator initialized (minimal mode)
+2025-09-27 16:58:38 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 16:58:38 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 16:58:39 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 16:58:39 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 16:58:39 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 16:58:40 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 16:58:40 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 16:58:41 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 16:58:41 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 16:58:41 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 15b7d7e8-8f05-4129-a4c0-8f8ba0664eb2 for voice_processing tasks
+2025-09-27 16:58:41 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 15b7d7e8-8f05-4129-a4c0-8f8ba0664eb2 initialized (minimal mode)
+2025-09-27 16:58:41 | INFO     | orchestrator_minimal:_initialize_agents:36 | Minimal agents initialized: ['voice']
+2025-09-27 16:58:41 | INFO     | orchestrator_minimal:__init__:27 | HealthcareOrchestrator initialized (minimal mode)
+2025-09-27 16:58:42 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 16:58:42 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 16:58:42 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 16:58:42 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 3fd9fa62-6e1d-4b03-a990-a1bba396ce96 for voice_processing tasks
+2025-09-27 16:58:42 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 3fd9fa62-6e1d-4b03-a990-a1bba396ce96 initialized (minimal mode)
+2025-09-27 16:58:42 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: b20ec01a-d29a-4477-89bb-52253f96cedb for vision tasks
+2025-09-27 16:58:42 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'vision'
+2025-09-27 16:58:42 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 16:58:45 | INFO     | __main__:startup_event:85 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 16:58:45 | INFO     | __main__:startup_event:86 | ✅ System ready for healthcare processing
+2025-09-27 17:01:10 | INFO     | __main__:shutdown_event:95 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 17:01:10 | INFO     | orchestrator_minimal:shutdown:103 | System shutdown completed
+2025-09-27 17:01:37 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 17:01:38 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 17:01:38 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 17:01:39 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 17:01:39 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 17:01:40 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 17:01:40 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 17:01:40 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 17:01:40 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 17:01:40 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 27b1a79c-87c6-4d6a-a8cf-35309e774090 for voice_processing tasks
+2025-09-27 17:01:40 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 27b1a79c-87c6-4d6a-a8cf-35309e774090 initialized (minimal mode)
+2025-09-27 17:01:40 | INFO     | orchestrator_minimal:_initialize_agents:36 | Minimal agents initialized: ['voice']
+2025-09-27 17:01:40 | INFO     | orchestrator_minimal:__init__:27 | HealthcareOrchestrator initialized (minimal mode)
+2025-09-27 17:01:42 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 17:01:42 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 17:01:42 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 17:01:42 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: e8aebae3-3930-4b0f-b611-1bdfc3d72cde for voice_processing tasks
+2025-09-27 17:01:42 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent e8aebae3-3930-4b0f-b611-1bdfc3d72cde initialized (minimal mode)
+2025-09-27 17:01:42 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: b7469b16-c3a6-4710-a0ea-5d3d35cf4a50 for vision tasks
+2025-09-27 17:01:42 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'vision'
+2025-09-27 17:01:42 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 17:01:44 | INFO     | __main__:startup_event:85 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 17:01:44 | INFO     | __main__:startup_event:86 | ✅ System ready for healthcare processing
+2025-09-27 17:04:32 | INFO     | __main__:shutdown_event:95 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 17:04:32 | INFO     | orchestrator_minimal:shutdown:103 | System shutdown completed
+2025-09-27 17:04:40 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 17:04:40 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 17:04:41 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 17:04:41 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 17:04:42 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 17:04:42 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 17:04:42 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 17:04:43 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 17:04:43 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 17:04:43 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 1b643fec-6f2a-472f-8974-bd99439782d5 for voice_processing tasks
+2025-09-27 17:04:43 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 1b643fec-6f2a-472f-8974-bd99439782d5 initialized (minimal mode)
+2025-09-27 17:04:43 | INFO     | orchestrator_minimal:_initialize_agents:36 | Minimal agents initialized: ['voice']
+2025-09-27 17:04:43 | INFO     | orchestrator_minimal:__init__:27 | HealthcareOrchestrator initialized (minimal mode)
+2025-09-27 17:04:44 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 17:04:44 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 17:04:44 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 17:04:44 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 0787cf5e-2847-43ed-915d-f94d5989532b for voice_processing tasks
+2025-09-27 17:04:44 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 0787cf5e-2847-43ed-915d-f94d5989532b initialized (minimal mode)
+2025-09-27 17:04:44 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: bc8d484c-d8be-48a9-b657-75c0bd7e14c1 for vision tasks
+2025-09-27 17:04:44 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'vision'
+2025-09-27 17:04:44 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 17:04:45 | INFO     | __main__:startup_event:85 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 17:04:45 | INFO     | __main__:startup_event:86 | ✅ System ready for healthcare processing
+2025-09-27 17:05:43 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 17:05:43 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 17:05:44 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 17:05:44 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 17:05:45 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 17:05:45 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 17:05:46 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 17:05:46 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 17:05:46 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 17:05:46 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: ab3d9a36-d2fe-4f3b-bba8-d95939b50417 for voice_processing tasks
+2025-09-27 17:05:46 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent ab3d9a36-d2fe-4f3b-bba8-d95939b50417 initialized (minimal mode)
+2025-09-27 17:05:46 | INFO     | orchestrator_minimal:_initialize_agents:36 | Minimal agents initialized: ['voice']
+2025-09-27 17:05:46 | INFO     | orchestrator_minimal:__init__:27 | HealthcareOrchestrator initialized (minimal mode)
+2025-09-27 17:05:47 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 17:05:47 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 17:05:47 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 17:05:47 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: a46e0eda-02da-4e48-8f6e-ffc93d82ce95 for voice_processing tasks
+2025-09-27 17:05:47 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent a46e0eda-02da-4e48-8f6e-ffc93d82ce95 initialized (minimal mode)
+2025-09-27 17:05:47 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 589cb1bd-176b-4f22-bd19-9c9b8fe2ef97 for vision tasks
+2025-09-27 17:05:47 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'vision'
+2025-09-27 17:05:47 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 17:05:49 | INFO     | __main__:startup_event:85 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 17:05:49 | INFO     | __main__:startup_event:86 | ✅ System ready for healthcare processing
+2025-09-27 17:05:49 | INFO     | __main__:shutdown_event:95 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 17:05:49 | INFO     | orchestrator_minimal:shutdown:103 | System shutdown completed
+2025-09-27 17:06:22 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 17:06:23 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 17:06:23 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 17:06:23 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 17:06:24 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 17:06:24 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 17:06:25 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 17:06:25 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 17:06:25 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 17:06:25 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: c67918f5-6d16-4c9b-82cf-c16b4253aff8 for voice_processing tasks
+2025-09-27 17:06:25 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent c67918f5-6d16-4c9b-82cf-c16b4253aff8 initialized (minimal mode)
+2025-09-27 17:06:25 | INFO     | orchestrator_minimal:_initialize_agents:36 | Minimal agents initialized: ['voice']
+2025-09-27 17:06:25 | INFO     | orchestrator_minimal:__init__:27 | HealthcareOrchestrator initialized (minimal mode)
+2025-09-27 17:06:26 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 17:06:26 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 17:06:26 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 17:06:26 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 8ff670e9-38f9-44ae-90f2-eb2134750fbc for voice_processing tasks
+2025-09-27 17:06:26 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 8ff670e9-38f9-44ae-90f2-eb2134750fbc initialized (minimal mode)
+2025-09-27 17:06:26 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: cfdf4c74-c5b9-44df-942f-ebd22e6c8e52 for vision tasks
+2025-09-27 17:06:26 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'vision'
+2025-09-27 17:06:26 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 17:06:28 | INFO     | main:startup_event:85 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 17:06:28 | INFO     | main:startup_event:86 | ✅ System ready for healthcare processing
+2025-09-27 17:06:49 | INFO     | __main__:shutdown_event:95 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 17:06:49 | INFO     | orchestrator_minimal:shutdown:103 | System shutdown completed
+2025-09-27 17:06:54 | INFO     | main:shutdown_event:95 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 17:06:54 | INFO     | orchestrator_minimal:shutdown:103 | System shutdown completed
+2025-09-27 17:14:31 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 17:14:32 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 17:14:32 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 17:14:33 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 17:14:33 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 17:14:34 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 17:14:34 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 17:14:35 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 17:14:35 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 17:14:35 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 65144da3-9fb8-4116-b066-c429e60ce3b2 for voice_processing tasks
+2025-09-27 17:14:35 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 65144da3-9fb8-4116-b066-c429e60ce3b2 initialized (minimal mode)
+2025-09-27 17:14:35 | INFO     | orchestrator_minimal:_initialize_agents:36 | Minimal agents initialized: ['voice']
+2025-09-27 17:14:35 | INFO     | orchestrator_minimal:__init__:27 | HealthcareOrchestrator initialized (minimal mode)
+2025-09-27 17:14:37 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 17:14:37 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 17:14:37 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 17:14:37 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 2c71980f-48b1-4c1e-8735-e5f34c53ba1c for voice_processing tasks
+2025-09-27 17:14:37 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 2c71980f-48b1-4c1e-8735-e5f34c53ba1c initialized (minimal mode)
+2025-09-27 17:14:37 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 7624d3bc-3f97-4f22-a79d-411d1544e1e1 for vision tasks
+2025-09-27 17:14:37 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'vision'
+2025-09-27 17:14:37 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 17:14:37 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 17:14:37 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 17:14:38 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 17:14:38 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 17:14:38 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 17:14:39 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 17:14:39 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 17:14:39 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 17:14:39 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 17:14:39 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 17:14:39 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'lightning_orchestrator' initialized
+2025-09-27 17:14:39 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: f562b90e-f61f-47f5-b709-463ef29afb21 for voice_processing tasks
+2025-09-27 17:14:39 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent f562b90e-f61f-47f5-b709-463ef29afb21 initialized (minimal mode)
+2025-09-27 17:14:39 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 4969fb7a-5fe1-42c8-b56b-c796febe517f for vision tasks
+2025-09-27 17:14:39 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: b71b0b47-03f4-4802-a28e-03ae814049b2 for diagnosis tasks
+2025-09-27 17:14:39 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 684e0a3e-c97a-49ff-b268-7c391cb91099 for data_validation tasks
+2025-09-27 17:14:39 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 30cf98f9-3857-4f90-8855-027c90c3d91b for notification tasks
+2025-09-27 17:14:39 | INFO     | lightning_orchestrator:_initialize_lightning_agents:85 | ⚡ voice agent initialized in <1s
+2025-09-27 17:14:39 | INFO     | agents.diagnostic_agent:__init__:22 | DiagnosticAgent b71b0b47-03f4-4802-a28e-03ae814049b2 initialized
+2025-09-27 17:14:39 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 684e0a3e-c97a-49ff-b268-7c391cb91099 initialized with healthcare validation rules
+2025-09-27 17:14:39 | ERROR    | lightning_orchestrator:_initialize_lightning_agents:87 | Failed to initialize vision: 'HealthcareSystemConfig' object has no attribute 'vision'
+2025-09-27 17:14:39 | INFO     | lightning_orchestrator:_initialize_lightning_agents:85 | ⚡ diagnostic agent initialized in <1s
+2025-09-27 17:14:39 | INFO     | lightning_orchestrator:_initialize_lightning_agents:85 | ⚡ validation agent initialized in <1s
+2025-09-27 17:14:39 | ERROR    | lightning_orchestrator:_initialize_lightning_agents:87 | Failed to initialize notification: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 17:14:39 | INFO     | lightning_orchestrator:_initialize_lightning_agents:89 | ⚡ 3 agents ready for lightning coordination
+2025-09-27 17:14:39 | INFO     | lightning_orchestrator:__init__:67 | ⚡ Lightning-Fast Orchestrator initialized
+2025-09-27 17:15:43 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 17:15:43 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 17:15:44 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 17:15:44 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 17:15:45 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 17:15:45 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 17:15:45 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 17:15:46 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 17:15:46 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 17:15:46 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: e79fcb4b-4078-4402-8c68-4dd861f4ad4f for voice_processing tasks
+2025-09-27 17:15:46 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent e79fcb4b-4078-4402-8c68-4dd861f4ad4f initialized (minimal mode)
+2025-09-27 17:15:46 | INFO     | orchestrator_minimal:_initialize_agents:36 | Minimal agents initialized: ['voice']
+2025-09-27 17:15:46 | INFO     | orchestrator_minimal:__init__:27 | HealthcareOrchestrator initialized (minimal mode)
+2025-09-27 17:15:47 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 17:15:47 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 17:15:47 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 17:15:47 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: fe8bacab-7c95-480f-9c7d-5ed2c3afca92 for voice_processing tasks
+2025-09-27 17:15:47 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent fe8bacab-7c95-480f-9c7d-5ed2c3afca92 initialized (minimal mode)
+2025-09-27 17:15:47 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: ee036637-fd60-4c53-ba64-bd16a2c41126 for vision tasks
+2025-09-27 17:15:47 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'vision'
+2025-09-27 17:15:47 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 17:15:52 | INFO     | main:startup_event:85 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 17:15:52 | INFO     | main:startup_event:86 | ✅ System ready for healthcare processing
+2025-09-27 17:18:31 | INFO     | enhanced_orchestrator:process_multi_modal_healthcare_request:73 | 🔬 Processing multi-modal healthcare request: ea236460-b26f-4ec9-acf8-429ea911bc6a
+2025-09-27 17:18:31 | INFO     | enhanced_orchestrator:process_multi_modal_healthcare_request:89 | 🤖 Demonstrating Multi-Agent Architecture...
+2025-09-27 17:18:31 | ERROR    | enhanced_orchestrator:process_multi_modal_healthcare_request:121 | ❌ Agent 'voice' failed: 'voice'
+2025-09-27 17:18:31 | ERROR    | enhanced_orchestrator:process_multi_modal_healthcare_request:121 | ❌ Agent 'vision' failed: 'vision'
+2025-09-27 17:18:31 | ERROR    | enhanced_orchestrator:process_multi_modal_healthcare_request:121 | ❌ Agent 'diagnostic' failed: 'diagnostic'
+2025-09-27 17:18:31 | ERROR    | enhanced_orchestrator:process_multi_modal_healthcare_request:121 | ❌ Agent 'validation' failed: 'validation'
+2025-09-27 17:18:31 | INFO     | enhanced_orchestrator:process_multi_modal_healthcare_request:129 | ⚡ Demonstrating Real-Time Groq Performance...
+2025-09-27 17:18:31 | INFO     | enhanced_orchestrator:process_multi_modal_healthcare_request:149 | ⚡ Real-time analysis completed in 0.00ms
+2025-09-27 17:18:31 | INFO     | enhanced_orchestrator:process_multi_modal_healthcare_request:154 | 🔗 Demonstrating MCP Integration...
+2025-09-27 17:18:31 | INFO     | mcp_integration.healthcare_mcp:use_external_tool:182 | 🔗 orchestrator calling MCP tool: lab_systems/lab_results
+2025-09-27 17:18:31 | INFO     | mcp_integration.healthcare_mcp:use_external_tool:182 | 🔗 orchestrator calling MCP tool: pharmacy_systems/drug_interactions
+2025-09-27 17:18:31 | INFO     | mcp_integration.healthcare_mcp:use_external_tool:182 | 🔗 orchestrator calling MCP tool: imaging_systems/dicom_analysis
+2025-09-27 17:18:31 | INFO     | enhanced_orchestrator:process_multi_modal_healthcare_request:160 | ✅ MCP integration completed with external tools
+2025-09-27 17:18:31 | INFO     | enhanced_orchestrator:process_multi_modal_healthcare_request:165 | 🧠 Demonstrating Multi-Modal Intelligence...
+2025-09-27 17:18:31 | INFO     | enhanced_orchestrator:process_multi_modal_healthcare_request:173 | 🔄 Multi-modal fusion completed
+2025-09-27 17:18:31 | INFO     | enhanced_orchestrator:process_multi_modal_healthcare_request:178 | 🏥 Generating Clinical Recommendations...
+2025-09-27 17:18:31 | INFO     | enhanced_orchestrator:process_multi_modal_healthcare_request:194 | 🎉 Multi-modal healthcare processing completed in 10.75ms
+2025-09-27 17:19:17 | INFO     | main:process_healthcare_request:391 | Processing healthcare request
+2025-09-27 17:19:17 | INFO     | orchestrator_minimal:process_healthcare_request:46 | Processing healthcare request: 2e6d6aa0-d238-4566-856f-a26b9c3cc647
+2025-09-27 17:19:17 | INFO     | agents.base_agent:execute_task:43 | Agent e79fcb4b-4078-4402-8c68-4dd861f4ad4f starting task 3cbd96a4-3e85-4024-b59c-178ad7ed05c9 of type voice_processing
+2025-09-27 17:19:21 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: AI response error: 'ModelProviderConfig' object has no attribute 'max_tokens' (Code: AI_RESPONSE_ERROR)
+2025-09-27 17:19:21 | ERROR    | agents.voice_agent_minimal:process:51 | Voice processing failed: AI response error: 'ModelProviderConfig' object has no attribute 'max_tokens'
+2025-09-27 17:19:21 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: Voice processing error: AI response error: 'ModelProviderConfig' object has no attribute 'max_tokens' (Code: None)
+2025-09-27 17:19:21 | ERROR    | agents.base_agent:execute_task:84 | Agent e79fcb4b-4078-4402-8c68-4dd861f4ad4f failed task 3cbd96a4-3e85-4024-b59c-178ad7ed05c9: Voice processing error: AI response error: 'ModelProviderConfig' object has no attribute 'max_tokens'
+2025-09-27 17:19:21 | ERROR    | orchestrator_minimal:process_healthcare_request:79 | Healthcare request failed: Voice processing error: AI response error: 'ModelProviderConfig' object has no attribute 'max_tokens'
+2025-09-27 17:22:25 | INFO     | main:shutdown_event:95 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 17:22:25 | INFO     | orchestrator_minimal:shutdown:103 | System shutdown completed
+2025-09-27 17:27:20 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 17:27:21 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 17:27:21 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 17:27:21 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 17:27:22 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 17:27:23 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 17:27:23 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 17:27:24 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 17:27:24 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 17:27:24 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 164bf4ae-f450-4562-abd0-c9a0ba6ec0e5 for voice_processing tasks
+2025-09-27 17:27:24 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 164bf4ae-f450-4562-abd0-c9a0ba6ec0e5 initialized (minimal mode)
+2025-09-27 17:27:24 | INFO     | orchestrator_minimal:_initialize_agents:36 | Minimal agents initialized: ['voice']
+2025-09-27 17:27:24 | INFO     | orchestrator_minimal:__init__:27 | HealthcareOrchestrator initialized (minimal mode)
+2025-09-27 17:27:35 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 17:27:35 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 17:27:35 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 17:27:35 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 9019c6f3-ba55-47af-abec-1a494424559f for voice_processing tasks
+2025-09-27 17:27:35 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 9019c6f3-ba55-47af-abec-1a494424559f initialized (minimal mode)
+2025-09-27 17:27:35 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 59f2ded5-f7f0-4da3-95e1-d65e49e0c7ea for vision tasks
+2025-09-27 17:27:35 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'dict' object has no attribute 'supported_formats'
+2025-09-27 17:27:35 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized

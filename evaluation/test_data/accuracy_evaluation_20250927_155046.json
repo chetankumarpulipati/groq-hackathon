@@ -1,0 +1,293 @@
+{
+  "evaluation_summary": {
+    "overall_accuracy": 0.36363636363636365,
+    "total_cases": 11,
+    "correct_predictions": 4,
+    "category_accuracy": {
+      "symptom_analysis": 0.3333333333333333,
+      "drug_interaction": 1.0,
+      "treatment_recommendation": 0.0,
+      "emergency_triage": 0.0,
+      "complex_diagnosis": 0.5
+    },
+    "evaluation_timestamp": "2025-09-27T15:50:19.240188"
+  },
+  "detailed_results": [
+    {
+      "case_id": 1,
+      "category": "symptom_analysis",
+      "input": "Patient presents with severe chest pain, shortness of breath, and nausea",
+      "prediction": {
+        "diagnosis": "Acute myocardial infarction (ST-elevation or non-ST-elevation) / Acute coronary syndrome",
+        "confidence": 0.88,
+        "keywords": [
+          "severe chest pain",
+          "shortness of breath",
+          "nausea",
+          "acute coronary syndrome",
+          "myocardial infarction",
+          "cardiac ischemia"
+        ],
+        "action": "Activate emergency medical services immediately. Obtain a 12-lead ECG within 10 minutes, monitor vital signs, administer supplemental oxygen if SpO2 < 94%, give chewable aspirin 325\u202fmg, consider nitroglycerin if no contraindications, obtain cardiac biomarkers (troponin), start IV access, and prepare for possible reperfusion therapy (PCI or thrombolysis) per institutional protocol."
+      },
+      "ground_truth": "cardiac_emergency",
+      "is_correct": false,
+      "confidence": 0.88,
+      "timestamp": "2025-09-27T15:50:09.975495"
+    },
+    {
+      "case_id": 2,
+      "category": "symptom_analysis",
+      "input": "Persistent cough for 3 weeks, fever, and weight loss",
+      "prediction": {
+        "diagnosis": "Pulmonary tuberculosis (possible differential: bacterial pneumonia, lung malignancy)",
+        "confidence": 0.78,
+        "keywords": [
+          "persistent cough",
+          "3 weeks",
+          "fever",
+          "weight loss",
+          "night sweats",
+          "hemoptysis",
+          "TB",
+          "pulmonary infection",
+          "lung cancer"
+        ],
+        "action": "Obtain chest radiograph (CXR) and consider CT chest; collect sputum samples for acid\u2011fast bacilli smear, culture, and nucleic acid amplification test; perform complete blood count, ESR/CRP, HIV test; assess for risk factors (exposure, immunosuppression, travel); refer to pulmonology for further evaluation and possible bronchoscopy if imaging abnormal; initiate isolation precautions pending TB results."
+      },
+      "ground_truth": "respiratory_infection",
+      "is_correct": true,
+      "confidence": 0.78,
+      "timestamp": "2025-09-27T15:50:10.882335"
+    },
+    {
+      "case_id": 3,
+      "category": "symptom_analysis",
+      "input": "Sudden severe headache, vision changes, and confusion",
+      "prediction": {
+        "diagnosis": "Subarachnoid hemorrhage (SAH)",
+        "confidence": 0.86,
+        "keywords": [
+          "sudden severe headache",
+          "thunderclap headache",
+          "vision changes",
+          "confusion",
+          "subarachnoid hemorrhage",
+          "ruptured aneurysm",
+          "non-contrast CT head",
+          "lumbar puncture",
+          "neurosurgical emergency"
+        ],
+        "action": "Obtain emergent non-contrast head CT. If CT is negative and suspicion remains high, perform lumbar puncture for xanthochromia. Initiate blood pressure control, keep patient NPO, and arrange immediate neurosurgical consultation. Transfer to a facility with neurocritical care capabilities if not already present."
+      },
+      "ground_truth": "neurological_emergency",
+      "is_correct": false,
+      "confidence": 0.86,
+      "timestamp": "2025-09-27T15:50:12.001052"
+    },
+    {
+      "case_id": 4,
+      "category": "drug_interaction",
+      "input": "Patient taking warfarin and prescribed new antibiotic",
+      "prediction": {
+        "diagnosis": "Potential warfarin-antibiotic interaction leading to elevated INR and increased bleeding risk",
+        "confidence": 0.96,
+        "keywords": [
+          "warfarin",
+          "antibiotic",
+          "drug interaction",
+          "CYP450 inhibition",
+          "INR elevation",
+          "bleeding risk",
+          "dose adjustment",
+          "monitoring"
+        ],
+        "action": "1. Identify the specific antibiotic prescribed (e.g., macrolides, fluoroquinolones, TMP\u2011SMX, metronidazole, etc.) as many of these inhibit CYP2C9 and can raise warfarin levels. 2. Obtain a baseline INR before starting the antibiotic and repeat INR 2\u20133 days after initiation, then at least weekly while on therapy. 3. If INR rises above therapeutic range, reduce the warfarin dose (typically by 10\u201320%) and re\u2011check INR after 2\u20133 days. 4. Consider using an alternative antibiotic with minimal effect on warfarin metabolism if clinically feasible. 5. Counsel the patient to watch for signs of bleeding (e.g., bruising, hematuria, melena, epistaxis, gum bleeding) and to report any such symptoms promptly. 6. Document the interaction and monitoring plan in the medical record."
+      },
+      "ground_truth": "potential_interaction",
+      "is_correct": true,
+      "confidence": 0.96,
+      "timestamp": "2025-09-27T15:50:13.038480"
+    },
+    {
+      "case_id": 5,
+      "category": "drug_interaction",
+      "input": "Combining acetaminophen with alcohol consumption",
+      "prediction": {
+        "diagnosis": "Increased risk of acetaminophen-induced hepatotoxicity",
+        "confidence": 0.96,
+        "keywords": [
+          "acetaminophen",
+          "paracetamol",
+          "alcohol",
+          "hepatotoxicity",
+          "liver injury",
+          "CYP2E1 induction",
+          "dose-dependent toxicity",
+          "chronic alcohol use",
+          "acute overdose"
+        ],
+        "action": "Advise the patient to avoid concurrent use of acetaminophen and alcohol. If analgesia is needed, consider non\u2011acetaminophen alternatives (e.g., ibuprofen if not contraindicated). Counsel on limiting acetaminophen to \u22643\u202fg/day and abstaining from alcohol for at least 24\u201348\u202fhours before and after dosing. Monitor for signs of liver injury (e.g., nausea, abdominal pain, jaundice) and obtain baseline and follow\u2011up liver function tests if regular combined use cannot be avoided. Seek immediate medical attention if symptoms of hepatic toxicity develop."
+      },
+      "ground_truth": "liver_toxicity_risk",
+      "is_correct": true,
+      "confidence": 0.96,
+      "timestamp": "2025-09-27T15:50:13.959446"
+    },
+    {
+      "case_id": 6,
+      "category": "treatment_recommendation",
+      "input": "Type 2 diabetes with HbA1c of 8.5%",
+      "prediction": {
+        "diagnosis": "Uncontrolled type 2 diabetes mellitus",
+        "confidence": 0.97,
+        "keywords": [
+          "type 2 diabetes",
+          "HbA1c 8.5%",
+          "hyperglycemia",
+          "glycemic control",
+          "diabetes management",
+          "insulin resistance"
+        ],
+        "action": "Intensify diabetes management: reinforce diet and exercise, consider adding or optimizing oral agents (e.g., metformin plus a second agent such as an SGLT2 inhibitor, DPP\u20114 inhibitor, or GLP\u20111 receptor agonist) or initiating basal insulin if needed. Review for contraindications, assess renal function, and screen for diabetes complications. Recheck HbA1c in 3 months and adjust therapy based on target <7% (or individualized goal)."
+      },
+      "ground_truth": "intensify_therapy",
+      "is_correct": false,
+      "confidence": 0.97,
+      "timestamp": "2025-09-27T15:50:14.723947"
+    },
+    {
+      "case_id": 7,
+      "category": "treatment_recommendation",
+      "input": "Hypertension in elderly patient with kidney disease",
+      "prediction": {
+        "diagnosis": "Secondary hypertension due to chronic kidney disease in an elderly patient",
+        "confidence": 0.92,
+        "keywords": [
+          "hypertension",
+          "elderly",
+          "chronic kidney disease",
+          "renal insufficiency",
+          "secondary hypertension",
+          "target organ damage",
+          "ACE inhibitor",
+          "ARB",
+          "blood pressure control",
+          "nephrology referral"
+        ],
+        "action": "1. Initiate or intensify antihypertensive therapy with an ACE inhibitor or ARB, titrating to achieve a target BP <130/80 mmHg (or <140/90 mmHg if contraindicated). 2. Monitor renal function (serum creatinine, eGFR) and electrolytes (especially potassium) after each dose adjustment. 3. Add a thiazide-like diuretic or a calcium channel blocker if additional BP lowering is needed, considering volume status. 4. Implement lifestyle modifications: low\u2011sodium diet (<1500 mg/day), weight management, regular moderate exercise, limit alcohol, and smoking cessation. 5. Assess for proteinuria and treat with ACEi/ARB if present. 6. Schedule follow\u2011up visits every 1\u20132 months until BP is controlled, then every 3\u20136 months. 7. Refer to nephrology for comprehensive CKD management and evaluation of potential secondary causes of hypertension."
+      },
+      "ground_truth": "ace_inhibitor_contraindicated",
+      "is_correct": false,
+      "confidence": 0.92,
+      "timestamp": "2025-09-27T15:50:15.724103"
+    },
+    {
+      "case_id": 8,
+      "category": "emergency_triage",
+      "input": "Unconscious patient with suspected overdose",
+      "prediction": {
+        "diagnosis": "Suspected drug overdose (possible opioid toxicity)",
+        "confidence": 0.68,
+        "keywords": [
+          "unconscious",
+          "overdose",
+          "respiratory depression",
+          "pinpoint pupils",
+          "hypotension",
+          "altered mental status",
+          "naloxone",
+          "airway protection"
+        ],
+        "action": "1. Activate emergency medical services (EMS) immediately. 2. Assess airway, breathing, and circulation (ABCs); provide supplemental oxygen and assist ventilation if needed. 3. Position patient to protect airway; consider endotracheal intubation if airway compromise is imminent. 4. Administer naloxone IV/IM/IN promptly (0.4\u20112 mg) while monitoring response; repeat dosing as required. 5. Obtain IV access, draw blood for toxicology screen, electrolytes, glucose, and arterial blood gas. 6. Monitor vital signs continuously (pulse oximetry, ECG, blood pressure). 7. Treat hypotension with IV fluids; correct hypoglycemia if present. 8. Provide supportive care for seizures, arrhythmias, or other complications. 9. Transport to the nearest appropriate facility for definitive care and further evaluation."
+      },
+      "ground_truth": "critical_priority",
+      "is_correct": false,
+      "confidence": 0.68,
+      "timestamp": "2025-09-27T15:50:16.612042"
+    },
+    {
+      "case_id": 9,
+      "category": "emergency_triage",
+      "input": "Minor laceration on finger, patient stable",
+      "prediction": {
+        "diagnosis": "Superficial finger laceration",
+        "confidence": 0.98,
+        "keywords": [
+          "laceration",
+          "finger",
+          "superficial wound",
+          "hemostasis",
+          "wound irrigation",
+          "suture",
+          "tetanus prophylaxis",
+          "infection prevention"
+        ],
+        "action": "Clean the wound with sterile saline or water, achieve hemostasis, assess depth and length. If the laceration is >0.5\u202fcm, involves full-thickness skin, or is gaping, consider simple interrupted sutures or adhesive strips. Apply a sterile non\u2011adhesive dressing and secure with a bandage. Verify tetanus immunization status and administer tetanus booster if indicated. Provide patient education on wound care, signs of infection, and schedule a follow\u2011up in 2\u20133 days or sooner if symptoms worsen."
+      },
+      "ground_truth": "low_priority",
+      "is_correct": false,
+      "confidence": 0.98,
+      "timestamp": "2025-09-27T15:50:17.627793"
+    },
+    {
+      "case_id": 10,
+      "category": "complex_diagnosis",
+      "input": "45-year-old female with fatigue, joint pain, butterfly rash, and positive ANA",
+      "prediction": {
+        "diagnosis": "Systemic Lupus Erythematosus (SLE)",
+        "confidence": 0.96,
+        "keywords": [
+          "fatigue",
+          "joint pain",
+          "arthralgia",
+          "butterfly rash",
+          "malar rash",
+          "positive ANA",
+          "autoimmune disease",
+          "systemic lupus erythematosus"
+        ],
+        "action": "Refer to rheumatology for comprehensive evaluation. Obtain further serologic testing (anti\u2011dsDNA, anti\u2011Smith, complement C3/C4 levels, antiphospholipid antibodies). Baseline labs (CBC, CMP, urinalysis with microscopy) to assess organ involvement. Consider initiating hydroxychloroquine and low\u2011dose corticosteroids pending specialist assessment, and counsel on sun protection and smoking cessation."
+      },
+      "ground_truth": "systemic_lupus_erythematosus",
+      "is_correct": true,
+      "confidence": 0.96,
+      "timestamp": "2025-09-27T15:50:18.498348"
+    },
+    {
+      "case_id": 11,
+      "category": "complex_diagnosis",
+      "input": "Elderly male with memory loss, gait instability, and urinary incontinence",
+      "prediction": {
+        "diagnosis": "Normal pressure hydrocephalus (NPH)",
+        "confidence": 0.92,
+        "keywords": [
+          "elderly",
+          "memory loss",
+          "gait instability",
+          "urinary incontinence",
+          "wet wobbly wacky",
+          "ventriculomegaly",
+          "cerebrospinal fluid",
+          "shunt"
+        ],
+        "action": "Obtain brain imaging (MRI or CT) to assess ventricular size, refer to neurology/neurosurgery for evaluation of NPH, and consider a high-volume lumbar puncture or CSF tap test to predict shunt responsiveness. If imaging and tap test are supportive, discuss ventriculoperitoneal shunt placement."
+      },
+      "ground_truth": "normal_pressure_hydrocephalus",
+      "is_correct": false,
+      "confidence": 0.92,
+      "timestamp": "2025-09-27T15:50:19.240188"
+    }
+  ],
+  "model_info": {
+    "evaluation_framework_version": "1.0",
+    "test_categories": [
+      "treatment_recommendation",
+      "complex_diagnosis",
+      "drug_interaction",
+      "symptom_analysis",
+      "emergency_triage"
+    ],
+    "total_test_cases": 11
+  }
+}

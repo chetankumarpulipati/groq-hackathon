@@ -1,0 +1,5 @@
+Collecting pydicom
+  Using cached pydicom-3.0.1-py3-none-any.whl.metadata (9.4 kB)
+Using cached pydicom-3.0.1-py3-none-any.whl (2.4 MB)
+Installing collected packages: pydicom
+Successfully installed pydicom-3.0.1
