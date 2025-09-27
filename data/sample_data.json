@@ -1,0 +1,254 @@
+{
+  "sample_patients": [
+    {
+      "patient_id": "DEMO001",
+      "demographics": {
+        "first_name": "Alice",
+        "last_name": "Johnson",
+        "age": 45,
+        "gender": "female",
+        "date_of_birth": "1980-03-15",
+        "email": "alice.johnson@email.com",
+        "phone": "555-0101"
+      },
+      "symptoms": [
+        {
+          "name": "chest_pain",
+          "severity": "moderate",
+          "duration": "4_hours",
+          "description": "Intermittent chest discomfort, pressure-like sensation"
+        },
+        {
+          "name": "shortness_of_breath",
+          "severity": "mild",
+          "duration": "2_hours",
+          "description": "Mild difficulty breathing during exertion"
+        }
+      ],
+      "vital_signs": {
+        "systolic_bp": 145,
+        "diastolic_bp": 90,
+        "heart_rate": 88,
+        "temperature": 98.4,
+        "respiratory_rate": 18,
+        "oxygen_saturation": 97.5
+      },
+      "medical_history": {
+        "conditions": ["hypertension", "high_cholesterol"],
+        "medications": ["lisinopril_10mg", "atorvastatin_20mg"],
+        "allergies": ["penicillin"],
+        "family_history": ["cardiac_disease", "diabetes"]
+      }
+    },
+    {
+      "patient_id": "DEMO002",
+      "demographics": {
+        "first_name": "Robert",
+        "last_name": "Martinez",
+        "age": 32,
+        "gender": "male",
+        "date_of_birth": "1993-07-22",
+        "email": "robert.martinez@email.com",
+        "phone": "555-0102"
+      },
+      "symptoms": [
+        {
+          "name": "fever",
+          "severity": "moderate",
+          "duration": "2_days",
+          "description": "Temperature elevated, feeling unwell"
+        },
+        {
+          "name": "cough",
+          "severity": "mild",
+          "duration": "3_days",
+          "description": "Dry cough, non-productive"
+        },
+        {
+          "name": "fatigue",
+          "severity": "moderate",
+          "duration": "3_days",
+          "description": "Feeling tired and weak"
+        }
+      ],
+      "vital_signs": {
+        "systolic_bp": 118,
+        "diastolic_bp": 75,
+        "heart_rate": 95,
+        "temperature": 101.2,
+        "respiratory_rate": 20,
+        "oxygen_saturation": 96.8
+      },
+      "medical_history": {
+        "conditions": [],
+        "medications": [],
+        "allergies": ["shellfish"],
+        "family_history": ["asthma"]
+      }
+    },
+    {
+      "patient_id": "DEMO003",
+      "demographics": {
+        "first_name": "Maria",
+        "last_name": "Garcia",
+        "age": 68,
+        "gender": "female",
+        "date_of_birth": "1957-11-08",
+        "email": "maria.garcia@email.com",
+        "phone": "555-0103"
+      },
+      "symptoms": [
+        {
+          "name": "dizziness",
+          "severity": "moderate",
+          "duration": "1_week",
+          "description": "Episodes of lightheadedness when standing"
+        },
+        {
+          "name": "weakness",
+          "severity": "mild",
+          "duration": "2_weeks",
+          "description": "General weakness and reduced energy"
+        }
+      ],
+      "vital_signs": {
+        "systolic_bp": 95,
+        "diastolic_bp": 60,
+        "heart_rate": 55,
+        "temperature": 98.1,
+        "respiratory_rate": 16,
+        "oxygen_saturation": 98.2
+      },
+      "medical_history": {
+        "conditions": ["diabetes_type2", "osteoporosis"],
+        "medications": ["metformin_500mg", "alendronate_70mg"],
+        "allergies": ["sulfa_drugs"],
+        "family_history": ["diabetes", "heart_disease"]
+      }
+    }
+  ],
+  "sample_voice_commands": [
+    "I need to schedule an appointment with cardiology next week",
+    "I'm experiencing severe chest pain and difficulty breathing",
+    "Can you refill my blood pressure medication?",
+    "I want to report side effects from my new medication",
+    "Emergency - patient is unresponsive with no pulse",
+    "Schedule a follow-up appointment for diabetes management",
+    "I need to update my emergency contact information",
+    "Request lab results for lipid panel from last week"
+  ],
+  "sample_medical_images": [
+    {
+      "image_type": "chest_xray",
+      "filename": "chest_xray_normal.jpg",
+      "clinical_context": "45-year-old female with chest pain",
+      "expected_findings": "Normal cardiac and pulmonary structures"
+    },
+    {
+      "image_type": "ecg",
+      "filename": "ecg_normal_sinus.jpg",
+      "clinical_context": "Routine cardiac screening",
+      "expected_findings": "Normal sinus rhythm"
+    },
+    {
+      "image_type": "ct_scan",
+      "filename": "brain_ct_normal.jpg",
+      "clinical_context": "Headache evaluation",
+      "expected_findings": "No acute intracranial pathology"
+    }
+  ],
+  "sample_lab_results": [
+    {
+      "patient_id": "DEMO001",
+      "test_name": "Complete Blood Count",
+      "results": {
+        "white_blood_cells": {"value": 7.2, "unit": "K/uL", "reference": "4.0-11.0", "status": "normal"},
+        "red_blood_cells": {"value": 4.5, "unit": "M/uL", "reference": "4.2-5.4", "status": "normal"},
+        "hemoglobin": {"value": 13.8, "unit": "g/dL", "reference": "12.0-16.0", "status": "normal"},
+        "hematocrit": {"value": 41.2, "unit": "%", "reference": "36.0-46.0", "status": "normal"}
+      }
+    },
+    {
+      "patient_id": "DEMO001",
+      "test_name": "Basic Metabolic Panel",
+      "results": {
+        "glucose": {"value": 110, "unit": "mg/dL", "reference": "70-100", "status": "high"},
+        "sodium": {"value": 140, "unit": "mEq/L", "reference": "136-145", "status": "normal"},
+        "potassium": {"value": 4.0, "unit": "mEq/L", "reference": "3.5-5.1", "status": "normal"},
+        "creatinine": {"value": 0.9, "unit": "mg/dL", "reference": "0.6-1.2", "status": "normal"}
+      }
+    }
+  ],
+  "emergency_scenarios": [
+    {
+      "scenario": "Cardiac Emergency",
+      "patient_data": {
+        "patient_id": "EMRG001",
+        "symptoms": [
+          {"name": "severe_chest_pain", "severity": "critical", "duration": "30_minutes"},
+          {"name": "diaphoresis", "severity": "severe", "duration": "20_minutes"},
+          {"name": "nausea", "severity": "moderate", "duration": "15_minutes"}
+        ],
+        "vital_signs": {
+          "systolic_bp": 180,
+          "diastolic_bp": 110,
+          "heart_rate": 120,
+          "temperature": 99.2,
+          "oxygen_saturation": 92.0
+        }
+      },
+      "expected_triage": "emergency",
+      "expected_actions": ["call_911", "cardiac_monitoring", "oxygen_therapy"]
+    },
+    {
+      "scenario": "Respiratory Distress",
+      "patient_data": {
+        "patient_id": "EMRG002",
+        "symptoms": [
+          {"name": "severe_shortness_of_breath", "severity": "critical", "duration": "1_hour"},
+          {"name": "wheezing", "severity": "severe", "duration": "1_hour"},
+          {"name": "chest_tightness", "severity": "severe", "duration": "45_minutes"}
+        ],
+        "vital_signs": {
+          "systolic_bp": 140,
+          "diastolic_bp": 85,
+          "heart_rate": 110,
+          "respiratory_rate": 28,
+          "oxygen_saturation": 88.0
+        }
+      },
+      "expected_triage": "emergency",
+      "expected_actions": ["oxygen_therapy", "bronchodilator", "steroid_treatment"]
+    }
+  ],
+  "workflow_test_cases": [
+    {
+      "workflow_type": "comprehensive_diagnosis",
+      "test_case": "Complete diagnostic workflow",
+      "input_data": {
+        "patient_data": {
+          "patient_id": "TEST001",
+          "demographics": {"age": 55, "gender": "male"},
+          "symptoms": [{"name": "chest_pain", "severity": "moderate"}],
+          "vital_signs": {"systolic_bp": 150, "heart_rate": 90}
+        }
+      },
+      "expected_agents": ["validation", "diagnostic", "notification"],
+      "expected_duration_max": 30
+    },
+    {
+      "workflow_type": "emergency_triage",
+      "test_case": "Emergency triage workflow",
+      "input_data": {
+        "patient_data": {
+          "patient_id": "TEST002",
+          "symptoms": [{"name": "severe_chest_pain", "severity": "critical"}]
+        },
+        "priority": "emergency"
+      },
+      "expected_agents": ["voice", "diagnostic", "notification"],
+      "expected_duration_max": 10
+    }
+  ]
+}
+

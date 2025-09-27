@@ -1,0 +1,205 @@
+{
+  "metadata": {
+    "created_date": "2025-09-27T13:12:41.059049",
+    "version": "1.0",
+    "total_cases": 17
+  },
+  "symptom_diagnosis": [
+    {
+      "symptoms": [
+        "chest pain",
+        "shortness of breath",
+        "sweating",
+        "nausea"
+      ],
+      "patient_age": 55,
+      "patient_gender": "male",
+      "correct_diagnosis": "myocardial_infarction",
+      "urgency": "emergency",
+      "accuracy_target": 0.95
+    },
+    {
+      "symptoms": [
+        "chest pain",
+        "pain radiates to arm",
+        "jaw pain"
+      ],
+      "patient_age": 48,
+      "patient_gender": "female",
+      "correct_diagnosis": "angina_pectoris",
+      "urgency": "urgent",
+      "accuracy_target": 0.92
+    },
+    {
+      "symptoms": [
+        "sudden severe headache",
+        "vision changes",
+        "weakness on one side"
+      ],
+      "patient_age": 65,
+      "patient_gender": "male",
+      "correct_diagnosis": "stroke",
+      "urgency": "emergency",
+      "accuracy_target": 0.96
+    },
+    {
+      "symptoms": [
+        "memory loss",
+        "confusion",
+        "difficulty speaking"
+      ],
+      "patient_age": 72,
+      "patient_gender": "female",
+      "correct_diagnosis": "dementia",
+      "urgency": "routine",
+      "accuracy_target": 0.88
+    },
+    {
+      "symptoms": [
+        "persistent cough",
+        "fever",
+        "difficulty breathing",
+        "chest tightness"
+      ],
+      "patient_age": 42,
+      "patient_gender": "female",
+      "correct_diagnosis": "pneumonia",
+      "urgency": "urgent",
+      "accuracy_target": 0.91
+    },
+    {
+      "symptoms": [
+        "wheezing",
+        "shortness of breath",
+        "chest tightness"
+      ],
+      "patient_age": 28,
+      "patient_gender": "male",
+      "correct_diagnosis": "asthma_exacerbation",
+      "urgency": "urgent",
+      "accuracy_target": 0.89
+    },
+    {
+      "symptoms": [
+        "severe abdominal pain",
+        "nausea",
+        "vomiting",
+        "fever"
+      ],
+      "patient_age": 35,
+      "patient_gender": "female",
+      "correct_diagnosis": "appendicitis",
+      "urgency": "emergency",
+      "accuracy_target": 0.93
+    },
+    {
+      "symptoms": [
+        "stomach pain",
+        "bloating",
+        "changes in bowel movements"
+      ],
+      "patient_age": 45,
+      "patient_gender": "male",
+      "correct_diagnosis": "irritable_bowel_syndrome",
+      "urgency": "routine",
+      "accuracy_target": 0.85
+    },
+    {
+      "symptoms": [
+        "high fever",
+        "headache",
+        "neck stiffness",
+        "sensitivity to light"
+      ],
+      "patient_age": 22,
+      "patient_gender": "male",
+      "correct_diagnosis": "meningitis",
+      "urgency": "emergency",
+      "accuracy_target": 0.97
+    },
+    {
+      "symptoms": [
+        "fever",
+        "fatigue",
+        "muscle aches",
+        "cough"
+      ],
+      "patient_age": 30,
+      "patient_gender": "female",
+      "correct_diagnosis": "influenza",
+      "urgency": "routine",
+      "accuracy_target": 0.87
+    }
+  ],
+  "drug_interactions": [
+    {
+      "drug_1": "warfarin",
+      "drug_2": "aspirin",
+      "interaction_type": "bleeding_risk",
+      "severity": "high",
+      "recommendation": "monitor_closely",
+      "accuracy_target": 0.94
+    },
+    {
+      "drug_1": "simvastatin",
+      "drug_2": "grapefruit_juice",
+      "interaction_type": "increased_toxicity",
+      "severity": "moderate",
+      "recommendation": "avoid_combination",
+      "accuracy_target": 0.91
+    },
+    {
+      "drug_1": "metformin",
+      "drug_2": "contrast_dye",
+      "interaction_type": "kidney_damage",
+      "severity": "high",
+      "recommendation": "stop_before_procedure",
+      "accuracy_target": 0.96
+    },
+    {
+      "drug_1": "digoxin",
+      "drug_2": "furosemide",
+      "interaction_type": "electrolyte_imbalance",
+      "severity": "moderate",
+      "recommendation": "monitor_levels",
+      "accuracy_target": 0.89
+    }
+  ],
+  "treatment_recommendations": [
+    {
+      "condition": "type_2_diabetes",
+      "patient_factors": {
+        "age": 45,
+        "bmi": 32,
+        "hba1c": 8.5
+      },
+      "correct_treatment": "metformin_plus_lifestyle",
+      "contraindications": [],
+      "accuracy_target": 0.92
+    },
+    {
+      "condition": "hypertension",
+      "patient_factors": {
+        "age": 65,
+        "kidney_disease": true,
+        "race": "african_american"
+      },
+      "correct_treatment": "calcium_channel_blocker",
+      "contraindications": [
+        "ace_inhibitor"
+      ],
+      "accuracy_target": 0.9
+    },
+    {
+      "condition": "pneumonia",
+      "patient_factors": {
+        "age": 75,
+        "copd": true,
+        "hospitalized": true
+      },
+      "correct_treatment": "broad_spectrum_antibiotics",
+      "contraindications": [],
+      "accuracy_target": 0.94
+    }
+  ]
+}

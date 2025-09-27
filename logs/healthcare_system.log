@@ -1,0 +1,264 @@
+2025-09-27 08:21:31 | INFO     | utils.multi_model_client:_initialize_clients:76 | ✅ OpenAI client initialized
+2025-09-27 08:21:31 | INFO     | utils.multi_model_client:_initialize_clients:81 | ✅ Groq client initialized
+2025-09-27 08:21:31 | INFO     | utils.multi_model_client:_initialize_clients:87 | ✅ Google Gemini client initialized
+2025-09-27 08:21:31 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Deepseek client initialized
+2025-09-27 08:21:32 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Alibaba client initialized
+2025-09-27 08:21:32 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Meta client initialized
+2025-09-27 08:21:32 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Moonshot client initialized
+2025-09-27 08:21:33 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Playai client initialized
+2025-09-27 08:21:33 | INFO     | utils.multi_model_client:_initialize_clients:99 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 08:21:33 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 180ff986-1809-4794-9bcf-fad623acdd17 for voice_processing tasks
+2025-09-27 08:21:33 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 180ff986-1809-4794-9bcf-fad623acdd17 initialized (minimal mode)
+2025-09-27 08:21:33 | INFO     | orchestrator_minimal:_initialize_agents:36 | Minimal agents initialized: ['voice']
+2025-09-27 08:21:33 | INFO     | orchestrator_minimal:__init__:27 | HealthcareOrchestrator initialized (minimal mode)
+2025-09-27 08:21:33 | INFO     | __main__:startup_event:57 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 08:21:33 | INFO     | __main__:startup_event:58 | ✅ System ready for healthcare processing
+2025-09-27 11:57:48 | INFO     | utils.multi_model_client:_initialize_clients:76 | ✅ OpenAI client initialized
+2025-09-27 11:57:49 | INFO     | utils.multi_model_client:_initialize_clients:81 | ✅ Groq client initialized
+2025-09-27 11:57:49 | INFO     | utils.multi_model_client:_initialize_clients:87 | ✅ Google Gemini client initialized
+2025-09-27 11:57:49 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Deepseek client initialized
+2025-09-27 11:57:49 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Alibaba client initialized
+2025-09-27 11:57:49 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Meta client initialized
+2025-09-27 11:57:50 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Moonshot client initialized
+2025-09-27 11:57:50 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Playai client initialized
+2025-09-27 11:57:50 | INFO     | utils.multi_model_client:_initialize_clients:99 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 12:00:23 | INFO     | utils.multi_model_client:_initialize_clients:76 | ✅ OpenAI client initialized
+2025-09-27 12:00:23 | INFO     | utils.multi_model_client:_initialize_clients:81 | ✅ Groq client initialized
+2025-09-27 12:00:23 | INFO     | utils.multi_model_client:_initialize_clients:87 | ✅ Google Gemini client initialized
+2025-09-27 12:00:24 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Deepseek client initialized
+2025-09-27 12:00:24 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Alibaba client initialized
+2025-09-27 12:00:24 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Meta client initialized
+2025-09-27 12:00:24 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Moonshot client initialized
+2025-09-27 12:00:25 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Playai client initialized
+2025-09-27 12:00:25 | INFO     | utils.multi_model_client:_initialize_clients:99 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 12:00:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 12:00:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 12:00:25 | ERROR    | evaluation.model_accuracy:_get_model_prediction:231 | Model prediction failed: 'MultiModelClient' object has no attribute 'generate_response'
+2025-09-27 12:00:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 12:00:25 | ERROR    | evaluation.model_accuracy:_get_model_prediction:231 | Model prediction failed: 'MultiModelClient' object has no attribute 'generate_response'
+2025-09-27 12:00:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 12:00:25 | ERROR    | evaluation.model_accuracy:_get_model_prediction:231 | Model prediction failed: 'MultiModelClient' object has no attribute 'generate_response'
+2025-09-27 12:00:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 12:00:25 | ERROR    | evaluation.model_accuracy:_get_model_prediction:231 | Model prediction failed: 'MultiModelClient' object has no attribute 'generate_response'
+2025-09-27 12:00:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 12:00:25 | ERROR    | evaluation.model_accuracy:_get_model_prediction:231 | Model prediction failed: 'MultiModelClient' object has no attribute 'generate_response'
+2025-09-27 12:00:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 12:00:25 | ERROR    | evaluation.model_accuracy:_get_model_prediction:231 | Model prediction failed: 'MultiModelClient' object has no attribute 'generate_response'
+2025-09-27 12:00:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 12:00:25 | ERROR    | evaluation.model_accuracy:_get_model_prediction:231 | Model prediction failed: 'MultiModelClient' object has no attribute 'generate_response'
+2025-09-27 12:00:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 12:00:25 | ERROR    | evaluation.model_accuracy:_get_model_prediction:231 | Model prediction failed: 'MultiModelClient' object has no attribute 'generate_response'
+2025-09-27 12:00:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 12:00:25 | ERROR    | evaluation.model_accuracy:_get_model_prediction:231 | Model prediction failed: 'MultiModelClient' object has no attribute 'generate_response'
+2025-09-27 12:00:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 12:00:25 | ERROR    | evaluation.model_accuracy:_get_model_prediction:231 | Model prediction failed: 'MultiModelClient' object has no attribute 'generate_response'
+2025-09-27 12:00:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 12:00:25 | ERROR    | evaluation.model_accuracy:_get_model_prediction:231 | Model prediction failed: 'MultiModelClient' object has no attribute 'generate_response'
+2025-09-27 12:00:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 0.00%
+2025-09-27 12:00:26 | INFO     | evaluation.model_accuracy:create_accuracy_visualizations:354 | Accuracy visualizations saved to evaluation\test_data\accuracy_dashboard.png
+2025-09-27 12:00:42 | INFO     | evaluation.model_accuracy:export_detailed_results:375 | Detailed results exported to evaluation\test_data\accuracy_evaluation_20250927_120042.json
+2025-09-27 12:02:53 | INFO     | utils.multi_model_client:_initialize_clients:76 | ✅ OpenAI client initialized
+2025-09-27 12:02:53 | INFO     | utils.multi_model_client:_initialize_clients:81 | ✅ Groq client initialized
+2025-09-27 12:02:53 | INFO     | utils.multi_model_client:_initialize_clients:87 | ✅ Google Gemini client initialized
+2025-09-27 12:02:53 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Deepseek client initialized
+2025-09-27 12:02:54 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Alibaba client initialized
+2025-09-27 12:02:54 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Meta client initialized
+2025-09-27 12:02:54 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Moonshot client initialized
+2025-09-27 12:02:54 | INFO     | utils.multi_model_client:_initialize_clients:97 | ✅ Playai client initialized
+2025-09-27 12:02:54 | INFO     | utils.multi_model_client:_initialize_clients:99 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 12:02:54 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 12:02:54 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 12:02:59 | ERROR    | utils.multi_model_client:get_completion:180 | Error with openai: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0wcU********************************************dqG2. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-09-27 12:02:59 | INFO     | utils.multi_model_client:get_completion:183 | Trying fallback provider: groq
+2025-09-27 12:03:01 | ERROR    | utils.multi_model_client:get_completion:180 | Error with groq: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:01 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}} (Code: None)
+2025-09-27 12:03:01 | ERROR    | evaluation.model_accuracy:_get_model_prediction:261 | Model prediction failed: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:01 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 12:03:01 | ERROR    | utils.multi_model_client:get_completion:180 | Error with openai: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0wcU********************************************dqG2. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-09-27 12:03:01 | INFO     | utils.multi_model_client:get_completion:183 | Trying fallback provider: groq
+2025-09-27 12:03:02 | ERROR    | utils.multi_model_client:get_completion:180 | Error with groq: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:02 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}} (Code: None)
+2025-09-27 12:03:02 | ERROR    | evaluation.model_accuracy:_get_model_prediction:261 | Model prediction failed: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:02 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 12:03:02 | ERROR    | utils.multi_model_client:get_completion:180 | Error with openai: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0wcU********************************************dqG2. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-09-27 12:03:02 | INFO     | utils.multi_model_client:get_completion:183 | Trying fallback provider: groq
+2025-09-27 12:03:02 | ERROR    | utils.multi_model_client:get_completion:180 | Error with groq: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:02 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}} (Code: None)
+2025-09-27 12:03:02 | ERROR    | evaluation.model_accuracy:_get_model_prediction:261 | Model prediction failed: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:02 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 12:03:02 | ERROR    | utils.multi_model_client:get_completion:180 | Error with openai: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0wcU********************************************dqG2. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-09-27 12:03:02 | INFO     | utils.multi_model_client:get_completion:183 | Trying fallback provider: groq
+2025-09-27 12:03:02 | ERROR    | utils.multi_model_client:get_completion:180 | Error with groq: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:02 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}} (Code: None)
+2025-09-27 12:03:02 | ERROR    | evaluation.model_accuracy:_get_model_prediction:261 | Model prediction failed: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:02 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 12:03:03 | ERROR    | utils.multi_model_client:get_completion:180 | Error with openai: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0wcU********************************************dqG2. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-09-27 12:03:03 | INFO     | utils.multi_model_client:get_completion:183 | Trying fallback provider: groq
+2025-09-27 12:03:03 | ERROR    | utils.multi_model_client:get_completion:180 | Error with groq: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:03 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}} (Code: None)
+2025-09-27 12:03:03 | ERROR    | evaluation.model_accuracy:_get_model_prediction:261 | Model prediction failed: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:03 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 12:03:03 | ERROR    | utils.multi_model_client:get_completion:180 | Error with openai: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0wcU********************************************dqG2. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-09-27 12:03:03 | INFO     | utils.multi_model_client:get_completion:183 | Trying fallback provider: groq
+2025-09-27 12:03:04 | ERROR    | utils.multi_model_client:get_completion:180 | Error with groq: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:04 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}} (Code: None)
+2025-09-27 12:03:04 | ERROR    | evaluation.model_accuracy:_get_model_prediction:261 | Model prediction failed: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:04 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 12:03:04 | ERROR    | utils.multi_model_client:get_completion:180 | Error with openai: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0wcU********************************************dqG2. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-09-27 12:03:04 | INFO     | utils.multi_model_client:get_completion:183 | Trying fallback provider: groq
+2025-09-27 12:03:04 | ERROR    | utils.multi_model_client:get_completion:180 | Error with groq: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:04 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}} (Code: None)
+2025-09-27 12:03:04 | ERROR    | evaluation.model_accuracy:_get_model_prediction:261 | Model prediction failed: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:04 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 12:03:04 | ERROR    | utils.multi_model_client:get_completion:180 | Error with openai: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0wcU********************************************dqG2. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-09-27 12:03:04 | INFO     | utils.multi_model_client:get_completion:183 | Trying fallback provider: groq
+2025-09-27 12:03:04 | ERROR    | utils.multi_model_client:get_completion:180 | Error with groq: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:04 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}} (Code: None)
+2025-09-27 12:03:04 | ERROR    | evaluation.model_accuracy:_get_model_prediction:261 | Model prediction failed: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:04 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 12:03:05 | ERROR    | utils.multi_model_client:get_completion:180 | Error with openai: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0wcU********************************************dqG2. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-09-27 12:03:05 | INFO     | utils.multi_model_client:get_completion:183 | Trying fallback provider: groq
+2025-09-27 12:03:05 | ERROR    | utils.multi_model_client:get_completion:180 | Error with groq: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:05 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}} (Code: None)
+2025-09-27 12:03:05 | ERROR    | evaluation.model_accuracy:_get_model_prediction:261 | Model prediction failed: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:05 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 12:03:05 | ERROR    | utils.multi_model_client:get_completion:180 | Error with openai: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0wcU********************************************dqG2. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-09-27 12:03:05 | INFO     | utils.multi_model_client:get_completion:183 | Trying fallback provider: groq
+2025-09-27 12:03:05 | ERROR    | utils.multi_model_client:get_completion:180 | Error with groq: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:05 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}} (Code: None)
+2025-09-27 12:03:05 | ERROR    | evaluation.model_accuracy:_get_model_prediction:261 | Model prediction failed: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:05 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 12:03:06 | ERROR    | utils.multi_model_client:get_completion:180 | Error with openai: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0wcU********************************************dqG2. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-09-27 12:03:06 | INFO     | utils.multi_model_client:get_completion:183 | Trying fallback provider: groq
+2025-09-27 12:03:06 | ERROR    | utils.multi_model_client:get_completion:180 | Error with groq: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:06 | ERROR    | utils.error_handling:__init__:19 | HealthcareSystemError: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}} (Code: None)
+2025-09-27 12:03:06 | ERROR    | evaluation.model_accuracy:_get_model_prediction:261 | Model prediction failed: All model providers failed: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 12:03:06 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 9.09%
+2025-09-27 12:03:07 | INFO     | evaluation.model_accuracy:create_accuracy_visualizations:438 | Accuracy visualizations saved to evaluation\test_data\accuracy_dashboard.png
+2025-09-27 12:03:43 | INFO     | evaluation.model_accuracy:export_detailed_results:459 | Detailed results exported to evaluation\test_data\accuracy_evaluation_20250927_120343.json
+2025-09-27 13:01:14 | INFO     | __main__:shutdown_event:67 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 13:01:14 | INFO     | orchestrator_minimal:shutdown:103 | System shutdown completed
+2025-09-27 13:01:24 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 13:01:24 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 13:01:24 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 13:01:25 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 13:01:25 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 13:01:25 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 13:01:25 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 13:01:26 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 13:01:26 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 13:01:26 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 13:01:26 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 13:01:29 | ERROR    | utils.multi_model_client:get_completion:220 | Error with openai: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 13:01:29 | INFO     | utils.multi_model_client:get_completion:225 | Trying fallback provider: groq
+2025-09-27 13:01:30 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 13:01:30 | ERROR    | utils.multi_model_client:get_completion:220 | Error with openai: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 13:01:30 | INFO     | utils.multi_model_client:get_completion:225 | Trying fallback provider: groq
+2025-09-27 13:01:31 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 13:01:31 | ERROR    | utils.multi_model_client:get_completion:220 | Error with openai: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 13:01:31 | INFO     | utils.multi_model_client:get_completion:225 | Trying fallback provider: groq
+2025-09-27 13:01:32 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 13:01:32 | ERROR    | utils.multi_model_client:get_completion:220 | Error with openai: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 13:01:32 | INFO     | utils.multi_model_client:get_completion:225 | Trying fallback provider: groq
+2025-09-27 13:01:32 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 13:01:32 | ERROR    | utils.multi_model_client:get_completion:220 | Error with openai: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 13:01:32 | INFO     | utils.multi_model_client:get_completion:225 | Trying fallback provider: groq
+2025-09-27 13:01:34 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 13:01:34 | ERROR    | utils.multi_model_client:get_completion:220 | Error with openai: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 13:01:34 | INFO     | utils.multi_model_client:get_completion:225 | Trying fallback provider: groq
+2025-09-27 13:01:34 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 13:01:34 | ERROR    | utils.multi_model_client:get_completion:220 | Error with openai: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 13:01:34 | INFO     | utils.multi_model_client:get_completion:225 | Trying fallback provider: groq
+2025-09-27 13:01:35 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 13:01:36 | ERROR    | utils.multi_model_client:get_completion:220 | Error with openai: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 13:01:36 | INFO     | utils.multi_model_client:get_completion:225 | Trying fallback provider: groq
+2025-09-27 13:01:36 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 13:01:36 | ERROR    | utils.multi_model_client:get_completion:220 | Error with openai: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 13:01:36 | INFO     | utils.multi_model_client:get_completion:225 | Trying fallback provider: groq
+2025-09-27 13:01:37 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 13:01:37 | ERROR    | utils.multi_model_client:get_completion:220 | Error with openai: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 13:01:37 | INFO     | utils.multi_model_client:get_completion:225 | Trying fallback provider: groq
+2025-09-27 13:01:38 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 13:01:38 | ERROR    | utils.multi_model_client:get_completion:220 | Error with openai: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-09-27 13:01:38 | INFO     | utils.multi_model_client:get_completion:225 | Trying fallback provider: groq
+2025-09-27 13:01:38 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 9.09%
+2025-09-27 13:01:40 | INFO     | evaluation.model_accuracy:create_accuracy_visualizations:438 | Accuracy visualizations saved to evaluation\test_data\accuracy_dashboard.png
+2025-09-27 13:02:11 | INFO     | evaluation.model_accuracy:export_detailed_results:459 | Detailed results exported to evaluation\test_data\accuracy_evaluation_20250927_130211.json
+2025-09-27 13:04:51 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 13:04:51 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 13:04:52 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 13:04:52 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 13:04:52 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 13:04:52 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 13:04:53 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 13:04:53 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 13:04:53 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 13:04:53 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 13:04:53 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 13:04:54 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 13:04:55 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 13:04:56 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 13:04:56 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 13:04:57 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 13:04:58 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 13:04:58 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 13:04:59 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 13:05:00 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 13:05:00 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 13:05:01 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 18.18%
+2025-09-27 13:05:02 | INFO     | evaluation.model_accuracy:create_accuracy_visualizations:438 | Accuracy visualizations saved to evaluation\test_data\accuracy_dashboard.png
+2025-09-27 13:05:49 | INFO     | evaluation.model_accuracy:export_detailed_results:459 | Detailed results exported to evaluation\test_data\accuracy_evaluation_20250927_130549.json
+2025-09-27 13:07:24 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 13:07:24 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 13:07:24 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 13:07:25 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 13:07:25 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 13:07:25 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 13:07:25 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 13:07:26 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 13:07:26 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 13:07:26 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 62ab524f-3d1f-4a22-b1ec-134fbddc6016 for voice_processing tasks
+2025-09-27 13:07:26 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 62ab524f-3d1f-4a22-b1ec-134fbddc6016 initialized (minimal mode)
+2025-09-27 13:07:26 | INFO     | orchestrator_minimal:_initialize_agents:36 | Minimal agents initialized: ['voice']
+2025-09-27 13:07:26 | INFO     | orchestrator_minimal:__init__:27 | HealthcareOrchestrator initialized (minimal mode)
+2025-09-27 13:07:28 | INFO     | __main__:startup_event:83 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 13:07:28 | INFO     | __main__:startup_event:84 | ✅ System ready for healthcare processing
+2025-09-27 13:12:39 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 13:12:39 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 13:12:39 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 13:12:39 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 13:12:40 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 13:12:40 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 13:12:40 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 13:12:41 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 13:12:41 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 13:12:41 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 13:12:41 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 13:12:42 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 13:12:43 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 13:12:44 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 13:12:44 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 13:12:45 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 13:12:46 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 13:12:47 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 13:12:47 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 13:12:48 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 13:12:48 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 13:12:49 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 18.18%
+2025-09-27 13:12:50 | INFO     | evaluation.model_accuracy:create_accuracy_visualizations:438 | Accuracy visualizations saved to evaluation\test_data\accuracy_dashboard.png
+2025-09-27 13:12:59 | INFO     | evaluation.model_accuracy:export_detailed_results:459 | Detailed results exported to evaluation\test_data\accuracy_evaluation_20250927_131259.json
+2025-09-27 13:13:12 | INFO     | __main__:shutdown_event:93 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 13:13:12 | INFO     | orchestrator_minimal:shutdown:103 | System shutdown completed
+2025-09-27 13:13:17 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 13:13:17 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 13:13:18 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 13:13:18 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 13:13:18 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 13:13:18 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 13:13:19 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 13:13:19 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 13:13:19 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 13:13:19 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: d326b742-9197-4904-bd39-ca4327fb020d for voice_processing tasks
+2025-09-27 13:13:19 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent d326b742-9197-4904-bd39-ca4327fb020d initialized (minimal mode)
+2025-09-27 13:13:19 | INFO     | orchestrator_minimal:_initialize_agents:36 | Minimal agents initialized: ['voice']
+2025-09-27 13:13:19 | INFO     | orchestrator_minimal:__init__:27 | HealthcareOrchestrator initialized (minimal mode)

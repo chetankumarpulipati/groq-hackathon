@@ -1,0 +1,292 @@
+{
+  "evaluation_summary": {
+    "overall_accuracy": 0.18181818181818182,
+    "total_cases": 11,
+    "correct_predictions": 2,
+    "category_accuracy": {
+      "symptom_analysis": 0.0,
+      "drug_interaction": 0.5,
+      "treatment_recommendation": 0.0,
+      "emergency_triage": 0.0,
+      "complex_diagnosis": 0.5
+    },
+    "evaluation_timestamp": "2025-09-27T13:12:49.599452"
+  },
+  "detailed_results": [
+    {
+      "case_id": 1,
+      "category": "symptom_analysis",
+      "input": "Patient presents with severe chest pain, shortness of breath, and nausea",
+      "prediction": {
+        "diagnosis": "Acute Coronary Syndrome (possible ST\u2011elevation myocardial infarction)",
+        "confidence": 0.8,
+        "keywords": [
+          "severe chest pain",
+          "shortness of breath",
+          "nausea",
+          "acute coronary syndrome",
+          "myocardial infarction",
+          "ST\u2011elevation MI",
+          "unstable angina",
+          "cardiac ischemia"
+        ],
+        "action": "1. Call emergency services immediately.\n2. Place the patient on continuous cardiac monitoring and administer 100% oxygen.\n3. Perform an urgent 12\u2011lead ECG and obtain cardiac biomarkers (troponin I/T, CK\u2011MB).\n4. Give aspirin 325 mg chewable and consider sublingual nitroglycerin if no contraindications.\n5. If ECG shows ST\u2011elevation, activate the cath lab for primary percutaneous coronary intervention (PCI). If PCI not available, consider fibrinolytic therapy per local protocols.\n6. Monitor vital signs, provide IV access, and be prepared for advanced cardiac life support (ACLS) if needed.\n7. Simultaneously, obtain a D\u2011dimer and consider a CT pulmonary angiogram if pulmonary embolism is a strong differential, especially if risk factors or signs of DVT are present."
+      },
+      "ground_truth": "cardiac_emergency",
+      "is_correct": false,
+      "confidence": 0.8,
+      "timestamp": "2025-09-27T13:12:42.814475"
+    },
+    {
+      "case_id": 2,
+      "category": "symptom_analysis",
+      "input": "Persistent cough for 3 weeks, fever, and weight loss",
+      "prediction": {
+        "diagnosis": "Pulmonary tuberculosis (TB)",
+        "confidence": 0.82,
+        "keywords": [
+          "persistent cough",
+          "fever",
+          "weight loss",
+          "chronic infection",
+          "pulmonary",
+          "TB",
+          "sputum smear",
+          "chest X\u2011ray"
+        ],
+        "action": "1. Order a chest X\u2011ray to look for cavitary lesions or infiltrates.\n2. Collect at least three sputum samples for acid\u2011fast bacilli (AFB) smear, culture, and nucleic\u2011acid amplification test (NAAT).\n3. Perform a tuberculin skin test (TST) or interferon\u2011\u03b3 release assay (IGRA) if not already done.\n4. Refer to a pulmonologist or infectious disease specialist for evaluation and possible initiation of anti\u2011TB therapy pending results.\n5. Advise the patient to avoid close contacts and to use a mask until infectiousness is ruled out."
+      },
+      "ground_truth": "respiratory_infection",
+      "is_correct": false,
+      "confidence": 0.82,
+      "timestamp": "2025-09-27T13:12:43.532868"
+    },
+    {
+      "case_id": 3,
+      "category": "symptom_analysis",
+      "input": "Sudden severe headache, vision changes, and confusion",
+      "prediction": {
+        "diagnosis": "Subarachnoid hemorrhage (SAH)",
+        "confidence": 0.92,
+        "keywords": [
+          "sudden severe headache",
+          "worst headache",
+          "vision changes",
+          "confusion",
+          "altered mental status",
+          "acute neurological deficit",
+          "subarachnoid hemorrhage",
+          "aneurysm rupture",
+          "xanthochromia",
+          "CT head"
+        ],
+        "action": "1. Immediate non\u2011contrast head CT to detect acute bleed.\n2. If CT negative but clinical suspicion remains high, perform lumbar puncture for red blood cells and xanthochromia.\n3. Initiate blood pressure control (target MAP 80\u201390 mmHg) and analgesia.\n4. Call neurosurgery for possible aneurysm repair or endovascular coiling.\n5. Admit to ICU for close monitoring of neurological status, airway protection, and management of potential vasospasm.\n6. Consider prophylactic nimodipine if SAH confirmed.\n7. Arrange for MRI/MRA if needed for aneurysm source identification."
+      },
+      "ground_truth": "neurological_emergency",
+      "is_correct": false,
+      "confidence": 0.92,
+      "timestamp": "2025-09-27T13:12:44.243484"
+    },
+    {
+      "case_id": 4,
+      "category": "drug_interaction",
+      "input": "Patient taking warfarin and prescribed new antibiotic",
+      "prediction": {
+        "diagnosis": "Potential warfarin-antibiotic interaction causing elevated INR and increased bleeding risk",
+        "confidence": 0.92,
+        "keywords": [
+          "warfarin",
+          "antibiotic",
+          "drug interaction",
+          "INR",
+          "bleeding risk",
+          "anticoagulation",
+          "dose adjustment"
+        ],
+        "action": "1. Check the specific antibiotic prescribed and review its interaction profile with warfarin. 2. Order an INR test within 24\u201348 hours of starting the antibiotic and repeat every 48\u201372 hours until stable. 3. If INR rises >1.5\u00d7 baseline or >3.0, consider temporarily holding warfarin or reducing the dose. 4. Educate the patient on signs of bleeding (bruising, hematuria, melena, hematemesis) and advise immediate medical attention if they occur. 5. If possible, choose an alternative antibiotic with minimal interaction. 6. Document all changes and communicate with the prescribing clinician and pharmacy."
+      },
+      "ground_truth": "potential_interaction",
+      "is_correct": true,
+      "confidence": 0.92,
+      "timestamp": "2025-09-27T13:12:44.794093"
+    },
+    {
+      "case_id": 5,
+      "category": "drug_interaction",
+      "input": "Combining acetaminophen with alcohol consumption",
+      "prediction": {
+        "diagnosis": "Acute hepatotoxicity from combined acetaminophen and alcohol use",
+        "confidence": 0.95,
+        "keywords": [
+          "acetaminophen",
+          "alcohol",
+          "hepatotoxicity",
+          "acute liver injury",
+          "acute liver failure",
+          "N-acetylcysteine",
+          "liver function tests",
+          "serum acetaminophen level"
+        ],
+        "action": "1. Advise immediate cessation of both acetaminophen and alcohol.\n2. Obtain baseline liver function tests (AST, ALT, bilirubin, INR) and serum acetaminophen level.\n3. If acetaminophen dose > 150 mg/kg or serum level > 150 \u00b5g/mL, initiate N\u2011acetylcysteine (NAC) therapy per standard protocol.\n4. Monitor LFTs and clinical status closely; consider repeat testing every 12\u201324 hours.\n5. If LFTs rise > 5\u00d7 ULN, INR > 1.5, or patient develops jaundice, encephalopathy, or coagulopathy, refer urgently to hepatology/ICU.\n6. Counsel patient on avoiding alcohol and acetaminophen in the future; provide education on safe dosing and alternative pain management options."
+      },
+      "ground_truth": "liver_toxicity_risk",
+      "is_correct": false,
+      "confidence": 0.95,
+      "timestamp": "2025-09-27T13:12:45.408759"
+    },
+    {
+      "case_id": 6,
+      "category": "treatment_recommendation",
+      "input": "Type 2 diabetes with HbA1c of 8.5%",
+      "prediction": {
+        "diagnosis": "Uncontrolled Type 2 Diabetes Mellitus (HbA1c 8.5%)",
+        "confidence": 0.95,
+        "keywords": [
+          "Type 2 Diabetes",
+          "HbA1c 8.5%",
+          "Hyperglycemia",
+          "Glycemic Control",
+          "Medication Intensification",
+          "Lifestyle Modification"
+        ],
+        "action": "1. Reassess current antihyperglycemic regimen and consider adding or uptitrating a second oral agent (e.g., GLP\u20111 receptor agonist, SGLT2 inhibitor) or initiating basal insulin.\n2. Reinforce lifestyle interventions: individualized diet plan (carbohydrate counting, Mediterranean or low\u2011glycemic index diet), structured aerobic and resistance exercise (\u2265150\u202fmin/week), and weight\u2011loss goal of 5\u201310% if overweight.\n3. Schedule follow\u2011up HbA1c in 3 months to evaluate response; if HbA1c remains >7.0% after 3 months, further intensification or insulin initiation is warranted.\n4. Screen for diabetes complications (retinopathy, nephropathy, neuropathy, cardiovascular risk) and provide appropriate referrals.\n5. Educate patient on self\u2011monitoring of blood glucose, hypoglycemia recognition, and medication adherence."
+      },
+      "ground_truth": "intensify_therapy",
+      "is_correct": false,
+      "confidence": 0.95,
+      "timestamp": "2025-09-27T13:12:46.102647"
+    },
+    {
+      "case_id": 7,
+      "category": "treatment_recommendation",
+      "input": "Hypertension in elderly patient with kidney disease",
+      "prediction": {
+        "diagnosis": "medical condition requiring evaluation",
+        "confidence": 0.85,
+        "keywords": [],
+        "action": "clinical_evaluation"
+      },
+      "ground_truth": "ace_inhibitor_contraindicated",
+      "is_correct": false,
+      "confidence": 0.85,
+      "timestamp": "2025-09-27T13:12:47.056810"
+    },
+    {
+      "case_id": 8,
+      "category": "emergency_triage",
+      "input": "Unconscious patient with suspected overdose",
+      "prediction": {
+        "diagnosis": "Suspected drug overdose causing unconsciousness",
+        "confidence": 0.85,
+        "keywords": [
+          "unconsciousness",
+          "overdose",
+          "respiratory depression",
+          "airway management",
+          "naloxone",
+          "decontamination",
+          "activated charcoal",
+          "vital signs",
+          "emergency response"
+        ],
+        "action": [
+          "Activate emergency medical services immediately.",
+          "Secure the airway: perform advanced airway management (intubation) if necessary.",
+          "Ensure adequate ventilation and oxygenation; consider bag\u2011mask ventilation or mechanical ventilation.",
+          "Check pulse, blood pressure, and oxygen saturation; start continuous cardiac monitoring.",
+          "Administer naloxone 0.4\u20132 mg IV/IM if opioid overdose is suspected; repeat every 2\u20133 minutes until response.",
+          "If the patient is vomiting or has ingested a toxic substance within the last hour, consider gastric lavage or activated charcoal (if no contraindications).",
+          "Obtain a detailed history (if possible) and review any available medication or toxicology reports.",
+          "Draw blood for basic metabolic panel, complete blood count, liver function tests, and toxicology screen.",
+          "Prepare for potential complications: seizures, hypoglycemia, electrolyte disturbances, or cardiac arrhythmias.",
+          "Document all interventions, vital signs, and patient response.",
+          "Transfer to a higher level of care (ICU or specialized toxicology unit) for ongoing monitoring and treatment."
+        ]
+      },
+      "ground_truth": "critical_priority",
+      "is_correct": false,
+      "confidence": 0.85,
+      "timestamp": "2025-09-27T13:12:47.791643"
+    },
+    {
+      "case_id": 9,
+      "category": "emergency_triage",
+      "input": "Minor laceration on finger, patient stable",
+      "prediction": {
+        "diagnosis": "Minor superficial finger laceration",
+        "confidence": 0.95,
+        "keywords": [
+          "laceration",
+          "finger",
+          "superficial wound",
+          "cleaning",
+          "tetanus prophylaxis",
+          "suture",
+          "infection prevention"
+        ],
+        "action": "1. Clean the wound with mild soap and water or sterile saline. 2. Apply a sterile dressing and consider a simple interrupted or horizontal mattress suture if the wound edges are clean and the gap is <5\u202fmm. 3. Check the patient\u2019s tetanus immunization status; administer a booster if the last dose was >5\u202fyears ago or if status is unknown. 4. Provide analgesia (e.g., acetaminophen or ibuprofen) as needed. 5. Instruct the patient to keep the wound dry, change the dressing daily, and watch for signs of infection (redness, swelling, increased pain, purulent drainage). 6. Schedule a follow\u2011up in 7\u201310\u202fdays or sooner if symptoms worsen."
+      },
+      "ground_truth": "low_priority",
+      "is_correct": false,
+      "confidence": 0.95,
+      "timestamp": "2025-09-27T13:12:48.462146"
+    },
+    {
+      "case_id": 10,
+      "category": "complex_diagnosis",
+      "input": "45-year-old female with fatigue, joint pain, butterfly rash, and positive ANA",
+      "prediction": {
+        "diagnosis": "Systemic lupus erythematosus (SLE)",
+        "confidence": 0.92,
+        "keywords": [
+          "fatigue",
+          "arthralgia",
+          "malar (butterfly) rash",
+          "positive ANA",
+          "autoimmune",
+          "systemic lupus erythematosus"
+        ],
+        "action": "1. Refer to a rheumatologist for comprehensive evaluation.\n2. Order additional serologic tests: anti-dsDNA, anti-Smith, complement C3/C4, ESR/CRP.\n3. Initiate symptomatic treatment: NSAIDs for joint pain, consider low\u2011dose prednisone if active inflammation.\n4. Counsel on sun protection and lifestyle modifications.\n5. Schedule follow\u2011up in 4\u20136 weeks to assess disease activity and adjust therapy."
+      },
+      "ground_truth": "systemic_lupus_erythematosus",
+      "is_correct": true,
+      "confidence": 0.92,
+      "timestamp": "2025-09-27T13:12:48.945493"
+    },
+    {
+      "case_id": 11,
+      "category": "complex_diagnosis",
+      "input": "Elderly male with memory loss, gait instability, and urinary incontinence",
+      "prediction": {
+        "diagnosis": "Normal Pressure Hydrocephalus (NPH)",
+        "confidence": 0.92,
+        "keywords": [
+          "normal pressure hydrocephalus",
+          "gait apraxia",
+          "urinary incontinence",
+          "memory impairment",
+          "ventriculomegaly",
+          "triad",
+          "CSF tap test",
+          "shunt surgery"
+        ],
+        "action": "1. Order brain MRI (or CT) with CSF flow studies to assess ventricular size and obstruction.\n2. Perform a CSF tap test (large-volume lumbar puncture) to evaluate symptomatic improvement.\n3. Refer to a neurosurgeon for evaluation of possible ventriculoperitoneal or ventriculoatrial shunt placement.\n4. Arrange neuropsychological testing to quantify cognitive deficits and monitor progression.\n5. Initiate fall\u2011prevention measures and bladder training as supportive care."
+      },
+      "ground_truth": "normal_pressure_hydrocephalus",
+      "is_correct": false,
+      "confidence": 0.92,
+      "timestamp": "2025-09-27T13:12:49.599452"
+    }
+  ],
+  "model_info": {
+    "evaluation_framework_version": "1.0",
+    "test_categories": [
+      "symptom_analysis",
+      "emergency_triage",
+      "drug_interaction",
+      "complex_diagnosis",
+      "treatment_recommendation"
+    ],
+    "total_test_cases": 11
+  }
+}

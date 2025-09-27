@@ -1,0 +1,193 @@
+{
+  "evaluation_summary": {
+    "overall_accuracy": 0.0,
+    "total_cases": 11,
+    "correct_predictions": 0,
+    "category_accuracy": {
+      "symptom_analysis": 0.0,
+      "drug_interaction": 0.0,
+      "treatment_recommendation": 0.0,
+      "emergency_triage": 0.0,
+      "complex_diagnosis": 0.0
+    },
+    "evaluation_timestamp": "2025-09-27T12:00:25.210723"
+  },
+  "detailed_results": [
+    {
+      "case_id": 1,
+      "category": "symptom_analysis",
+      "input": "Patient presents with severe chest pain, shortness of breath, and nausea",
+      "prediction": {
+        "diagnosis": "error",
+        "confidence": 0.0,
+        "keywords": [],
+        "action": "system_error"
+      },
+      "ground_truth": "cardiac_emergency",
+      "is_correct": false,
+      "confidence": 0.0,
+      "timestamp": "2025-09-27T12:00:25.204593"
+    },
+    {
+      "case_id": 2,
+      "category": "symptom_analysis",
+      "input": "Persistent cough for 3 weeks, fever, and weight loss",
+      "prediction": {
+        "diagnosis": "error",
+        "confidence": 0.0,
+        "keywords": [],
+        "action": "system_error"
+      },
+      "ground_truth": "respiratory_infection",
+      "is_correct": false,
+      "confidence": 0.0,
+      "timestamp": "2025-09-27T12:00:25.204593"
+    },
+    {
+      "case_id": 3,
+      "category": "symptom_analysis",
+      "input": "Sudden severe headache, vision changes, and confusion",
+      "prediction": {
+        "diagnosis": "error",
+        "confidence": 0.0,
+        "keywords": [],
+        "action": "system_error"
+      },
+      "ground_truth": "neurological_emergency",
+      "is_correct": false,
+      "confidence": 0.0,
+      "timestamp": "2025-09-27T12:00:25.206852"
+    },
+    {
+      "case_id": 4,
+      "category": "drug_interaction",
+      "input": "Patient taking warfarin and prescribed new antibiotic",
+      "prediction": {
+        "diagnosis": "error",
+        "confidence": 0.0,
+        "keywords": [],
+        "action": "system_error"
+      },
+      "ground_truth": "potential_interaction",
+      "is_correct": false,
+      "confidence": 0.0,
+      "timestamp": "2025-09-27T12:00:25.206852"
+    },
+    {
+      "case_id": 5,
+      "category": "drug_interaction",
+      "input": "Combining acetaminophen with alcohol consumption",
+      "prediction": {
+        "diagnosis": "error",
+        "confidence": 0.0,
+        "keywords": [],
+        "action": "system_error"
+      },
+      "ground_truth": "liver_toxicity_risk",
+      "is_correct": false,
+      "confidence": 0.0,
+      "timestamp": "2025-09-27T12:00:25.206852"
+    },
+    {
+      "case_id": 6,
+      "category": "treatment_recommendation",
+      "input": "Type 2 diabetes with HbA1c of 8.5%",
+      "prediction": {
+        "diagnosis": "error",
+        "confidence": 0.0,
+        "keywords": [],
+        "action": "system_error"
+      },
+      "ground_truth": "intensify_therapy",
+      "is_correct": false,
+      "confidence": 0.0,
+      "timestamp": "2025-09-27T12:00:25.206852"
+    },
+    {
+      "case_id": 7,
+      "category": "treatment_recommendation",
+      "input": "Hypertension in elderly patient with kidney disease",
+      "prediction": {
+        "diagnosis": "error",
+        "confidence": 0.0,
+        "keywords": [],
+        "action": "system_error"
+      },
+      "ground_truth": "ace_inhibitor_contraindicated",
+      "is_correct": false,
+      "confidence": 0.0,
+      "timestamp": "2025-09-27T12:00:25.206852"
+    },
+    {
+      "case_id": 8,
+      "category": "emergency_triage",
+      "input": "Unconscious patient with suspected overdose",
+      "prediction": {
+        "diagnosis": "error",
+        "confidence": 0.0,
+        "keywords": [],
+        "action": "system_error"
+      },
+      "ground_truth": "critical_priority",
+      "is_correct": false,
+      "confidence": 0.0,
+      "timestamp": "2025-09-27T12:00:25.206852"
+    },
+    {
+      "case_id": 9,
+      "category": "emergency_triage",
+      "input": "Minor laceration on finger, patient stable",
+      "prediction": {
+        "diagnosis": "error",
+        "confidence": 0.0,
+        "keywords": [],
+        "action": "system_error"
+      },
+      "ground_truth": "low_priority",
+      "is_correct": false,
+      "confidence": 0.0,
+      "timestamp": "2025-09-27T12:00:25.206852"
+    },
+    {
+      "case_id": 10,
+      "category": "complex_diagnosis",
+      "input": "45-year-old female with fatigue, joint pain, butterfly rash, and positive ANA",
+      "prediction": {
+        "diagnosis": "error",
+        "confidence": 0.0,
+        "keywords": [],
+        "action": "system_error"
+      },
+      "ground_truth": "systemic_lupus_erythematosus",
+      "is_correct": false,
+      "confidence": 0.0,
+      "timestamp": "2025-09-27T12:00:25.210723"
+    },
+    {
+      "case_id": 11,
+      "category": "complex_diagnosis",
+      "input": "Elderly male with memory loss, gait instability, and urinary incontinence",
+      "prediction": {
+        "diagnosis": "error",
+        "confidence": 0.0,
+        "keywords": [],
+        "action": "system_error"
+      },
+      "ground_truth": "normal_pressure_hydrocephalus",
+      "is_correct": false,
+      "confidence": 0.0,
+      "timestamp": "2025-09-27T12:00:25.210723"
+    }
+  ],
+  "model_info": {
+    "evaluation_framework_version": "1.0",
+    "test_categories": [
+      "complex_diagnosis",
+      "drug_interaction",
+      "treatment_recommendation",
+      "symptom_analysis",
+      "emergency_triage"
+    ],
+    "total_test_cases": 11
+  }
+}
