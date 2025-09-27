@@ -1,5 +1,5 @@
 """
-Simplified orchestrator that can run immediately without heavy ML dependencies.
+Comprehensive orchestrator for the healthcare system with all agents integrated.
 """
 
 import asyncio
@@ -7,10 +7,318 @@ from typing import Dict, Any, Optional, List
 from datetime import datetime
 from uuid import uuid4
 from agents.voice_agent_minimal import VoiceAgent
+from agents.diagnostic_agent import DiagnosticAgent
+from agents.patient_analysis_agent import PatientAnalysisAgent
+from agents.medical_record_agent import MedicalRecordAgent
+from agents.patient_monitoring_agent import PatientMonitoringAgent
+from agents.validation_agent import DataValidationAgent
+from agents.vision_agent import VisionAgent
+from agents.notification_agent import NotificationAgent
 from config.settings import config
 from utils.logging import get_logger
 
-logger = get_logger("orchestrator_minimal")
+logger = get_logger("orchestrator_comprehensive")
+
+
+class ComprehensiveHealthcareOrchestrator:
+    """
+    Complete orchestration system for healthcare AI with all agents.
+    """
+
+    def __init__(self):
+        self.session_id = str(uuid4())
+        self.agents = {}
+        self.active_sessions = {}
+        self.system_status = "initializing"
+        self._initialize_agents()
+        logger.info(f"ComprehensiveHealthcareOrchestrator initialized")
+
+    def _initialize_agents(self):
+        """Initialize all healthcare agents."""
+        try:
+            self.agents = {
+                "voice": VoiceAgent(),
+                "diagnostic": DiagnosticAgent(),
+                "patient_analysis": PatientAnalysisAgent(),
+                "medical_record": MedicalRecordAgent(),
+                "patient_monitoring": PatientMonitoringAgent(),
+                "validation": DataValidationAgent(),
+                "vision": VisionAgent(),
+                "notification": NotificationAgent()
+            }
+            self.system_status = "ready"
+            logger.info(f"All healthcare agents initialized: {list(self.agents.keys())}")
+        except Exception as e:
+            self.system_status = "error"
+            logger.error(f"Agent initialization failed: {e}")
+
+    async def process_comprehensive_healthcare_request(self, request_data: Dict[str, Any], workflow_type: str = "comprehensive") -> Dict[str, Any]:
+        """Process a comprehensive healthcare request using all agents."""
+        session_id = str(uuid4())
+        start_time = datetime.utcnow()
+
+        logger.info(f"Processing comprehensive healthcare request: {session_id}")
+
+        try:
+            patient_data = request_data.get("patient_data", {})
+            request_type = request_data.get("request_type", "general_assessment")
+
+            workflow_results = {}
+
+            # Step 1: Data Validation
+            validation_result = await self.agents["validation"].process({
+                "data": patient_data,
+                "validation_type": "comprehensive"
+            })
+            workflow_results["validation"] = validation_result
+
+            # Step 2: Patient Data Analysis
+            analysis_result = await self.agents["patient_analysis"].process({
+                "patient_data": patient_data,
+                "analysis_type": "comprehensive"
+            })
+            workflow_results["patient_analysis"] = analysis_result
+
+            # Step 3: Medical Record Processing (if record data available)
+            if patient_data.get("medical_records"):
+                record_result = await self.agents["medical_record"].process({
+                    "record_data": patient_data["medical_records"],
+                    "processing_type": "comprehensive"
+                })
+                workflow_results["medical_record_processing"] = record_result
+
+            # Step 4: Diagnostic Analysis
+            diagnostic_result = await self.agents["diagnostic"].process({
+                "patient_data": patient_data,
+                "analysis_type": "comprehensive"
+            })
+            workflow_results["diagnostic_analysis"] = diagnostic_result
+
+            # Step 5: Patient Monitoring Setup
+            monitoring_result = await self.agents["patient_monitoring"].process({
+                "patient_data": patient_data,
+                "monitoring_type": "continuous"
+            })
+            workflow_results["patient_monitoring"] = monitoring_result
+
+            # Step 6: Generate Notifications if needed
+            notification_data = self._prepare_notification_data(workflow_results, patient_data)
+            if notification_data:
+                notification_result = await self.agents["notification"].process(notification_data)
+                workflow_results["notifications"] = notification_result
+
+            # Compile comprehensive response
+            response = {
+                "session_id": session_id,
+                "request_type": request_type,
+                "workflow_type": workflow_type,
+                "patient_id": patient_data.get("patient_id", "unknown"),
+                "processing_time": (datetime.utcnow() - start_time).total_seconds(),
+                "system_status": self.system_status,
+                "workflow_results": workflow_results,
+                "summary": self._generate_workflow_summary(workflow_results),
+                "recommendations": self._generate_comprehensive_recommendations(workflow_results),
+                "next_steps": self._determine_next_steps(workflow_results),
+                "timestamp": datetime.utcnow().isoformat(),
+                "status": "completed"
+            }
+
+            # Store session
+            self.active_sessions[session_id] = response
+
+            logger.info(f"Comprehensive healthcare request completed: {session_id}")
+            return response
+
+        except Exception as e:
+            logger.error(f"Comprehensive healthcare processing failed: {e}")
+            return {
+                "session_id": session_id,
+                "status": "error",
+                "error": str(e),
+                "timestamp": datetime.utcnow().isoformat()
+            }
+
+    async def process_patient_analysis_only(self, patient_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Process only patient data analysis."""
+        return await self.agents["patient_analysis"].process({
+            "patient_data": patient_data,
+            "analysis_type": "comprehensive"
+        })
+
+    async def process_diagnostic_assistance(self, patient_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Process diagnostic assistance request."""
+        return await self.agents["diagnostic"].process({
+            "patient_data": patient_data,
+            "analysis_type": "comprehensive"
+        })
+
+    async def process_medical_records(self, record_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Process medical record analysis."""
+        return await self.agents["medical_record"].process({
+            "record_data": record_data,
+            "processing_type": "comprehensive"
+        })
+
+    async def start_patient_monitoring(self, patient_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Start patient monitoring."""
+        return await self.agents["patient_monitoring"].process({
+            "patient_data": patient_data,
+            "monitoring_type": "continuous"
+        })
+
+    def _prepare_notification_data(self, workflow_results: Dict, patient_data: Dict) -> Optional[Dict]:
+        """Prepare notification data based on workflow results."""
+        notifications_needed = []
+
+        # Check diagnostic results for alerts
+        diagnostic_results = workflow_results.get("diagnostic_analysis", {})
+        if diagnostic_results.get("status") == "completed":
+            diagnosis = diagnostic_results.get("diagnosis", {})
+            red_flags = diagnosis.get("red_flag_assessment", {})
+
+            if red_flags.get("red_flags_present"):
+                notifications_needed.append({
+                    "type": "diagnostic_alert",
+                    "urgency": red_flags.get("overall_urgency", "routine"),
+                    "message": "Red flag symptoms detected requiring attention"
+                })
+
+        # Check monitoring results for alerts
+        monitoring_results = workflow_results.get("patient_monitoring", {})
+        if monitoring_results.get("status") == "completed":
+            monitoring_data = monitoring_results.get("monitoring_result", {})
+            active_alerts = monitoring_data.get("active_alerts", [])
+
+            for alert in active_alerts:
+                if alert.get("requires_immediate_attention"):
+                    notifications_needed.append({
+                        "type": "monitoring_alert",
+                        "urgency": "critical",
+                        "message": alert.get("message", "Critical monitoring alert")
+                    })
+
+        if notifications_needed:
+            return {
+                "notifications": notifications_needed,
+                "patient_id": patient_data.get("patient_id", "unknown"),
+                "timestamp": datetime.utcnow().isoformat()
+            }
+
+        return None
+
+    def _generate_workflow_summary(self, workflow_results: Dict) -> Dict:
+        """Generate summary of workflow results."""
+        summary = {
+            "agents_executed": len(workflow_results),
+            "successful_processes": len([r for r in workflow_results.values() if r.get("status") == "completed"]),
+            "alerts_generated": 0,
+            "recommendations_count": 0
+        }
+
+        # Count alerts and recommendations
+        for result in workflow_results.values():
+            if isinstance(result, dict) and result.get("status") == "completed":
+                # Count alerts from monitoring
+                monitoring_result = result.get("monitoring_result", {})
+                if "active_alerts" in monitoring_result:
+                    summary["alerts_generated"] += len(monitoring_result["active_alerts"])
+
+                # Count recommendations from various agents
+                if "recommendations" in result:
+                    if isinstance(result["recommendations"], list):
+                        summary["recommendations_count"] += len(result["recommendations"])
+
+        return summary
+
+    def _generate_comprehensive_recommendations(self, workflow_results: Dict) -> List[str]:
+        """Generate comprehensive recommendations from all workflow results."""
+        all_recommendations = []
+
+        # Collect recommendations from all agents
+        for agent_name, result in workflow_results.items():
+            if isinstance(result, dict) and result.get("status") == "completed":
+                # Extract recommendations based on agent type
+                if agent_name == "patient_analysis":
+                    analysis_result = result.get("analysis", {})
+                    recommendations = analysis_result.get("recommendations", [])
+                    all_recommendations.extend(recommendations)
+
+                elif agent_name == "diagnostic_analysis":
+                    diagnosis = result.get("diagnosis", {})
+                    treatment_recs = diagnosis.get("treatment_recommendations", {})
+                    if "immediate_interventions" in treatment_recs:
+                        all_recommendations.extend(treatment_recs["immediate_interventions"])
+                    if "follow_up_instructions" in treatment_recs:
+                        all_recommendations.extend(treatment_recs["follow_up_instructions"])
+
+                elif agent_name == "patient_monitoring":
+                    monitoring_result = result.get("monitoring_result", {})
+                    recommendations = monitoring_result.get("recommendations", [])
+                    all_recommendations.extend(recommendations)
+
+                elif agent_name == "medical_record_processing":
+                    processing_result = result.get("processing_result", {})
+                    recommendations = processing_result.get("recommendations", [])
+                    all_recommendations.extend(recommendations)
+
+        # Remove duplicates and return unique recommendations
+        return list(set(all_recommendations))
+
+    def _determine_next_steps(self, workflow_results: Dict) -> List[str]:
+        """Determine next steps based on workflow results."""
+        next_steps = []
+
+        # Analyze results to determine priority actions
+        diagnostic_results = workflow_results.get("diagnostic_analysis", {})
+        if diagnostic_results.get("status") == "completed":
+            diagnosis = diagnostic_results.get("diagnosis", {})
+            red_flags = diagnosis.get("red_flag_assessment", {})
+
+            if red_flags.get("overall_urgency") == "critical":
+                next_steps.append("Immediate medical evaluation required")
+            elif red_flags.get("overall_urgency") == "urgent":
+                next_steps.append("Urgent medical consultation needed")
+            else:
+                next_steps.append("Routine follow-up recommended")
+
+        # Check monitoring alerts
+        monitoring_results = workflow_results.get("patient_monitoring", {})
+        if monitoring_results.get("status") == "completed":
+            monitoring_data = monitoring_results.get("monitoring_result", {})
+            next_assessment = monitoring_data.get("next_assessment", {})
+
+            if next_assessment.get("priority") == "urgent":
+                next_steps.append("Schedule urgent follow-up assessment")
+            else:
+                next_steps.append("Continue routine monitoring")
+
+        # Default next steps if none specific
+        if not next_steps:
+            next_steps = [
+                "Continue current care plan",
+                "Monitor symptoms",
+                "Follow up as scheduled"
+            ]
+
+        return next_steps
+
+    def get_system_status(self) -> Dict[str, Any]:
+        """Get comprehensive system status."""
+        return {
+            "system_status": self.system_status,
+            "active_sessions": len(self.active_sessions),
+            "available_agents": list(self.agents.keys()),
+            "agent_status": {name: "ready" for name in self.agents.keys()},
+            "last_updated": datetime.utcnow().isoformat()
+        }
+
+    def get_session_info(self, session_id: str) -> Optional[Dict]:
+        """Get information about a specific session."""
+        return self.active_sessions.get(session_id)
+
+
+# Create global orchestrator instance
+comprehensive_orchestrator = ComprehensiveHealthcareOrchestrator()
 
 
 class HealthcareOrchestrator:
@@ -49,34 +357,25 @@ class HealthcareOrchestrator:
             # Simple processing for now
             voice_agent = self.agents["voice"]
 
-            # Extract patient symptoms or voice input
-            patient_data = request_data.get("patient_data", {})
-            symptoms = patient_data.get("symptoms", [])
-            voice_data = request_data.get("voice_data", "")
+            # Process voice input if available
+            voice_result = None
+            if "voice_input" in request_data:
+                voice_result = await voice_agent.process(request_data["voice_input"])
 
-            # Process the input
-            if voice_data:
-                result = await voice_agent.execute_task({"input": voice_data})
-            elif symptoms:
-                symptom_text = " ".join([s.get("name", "") for s in symptoms])
-                result = await voice_agent.execute_task({"input": f"Patient reports: {symptom_text}"})
-            else:
-                result = {"result": {"analysis": "No symptoms or voice data provided"}}
-
-            end_time = datetime.utcnow()
-            duration = (end_time - start_time).total_seconds()
-
-            return {
+            response = {
                 "session_id": session_id,
-                "status": "success",
-                "workflow_type": workflow_type,
-                "results": {"voice_analysis": result},
-                "duration": duration,
-                "timestamp": end_time.isoformat()
+                "processing_time": (datetime.utcnow() - start_time).total_seconds(),
+                "system_status": self.system_status,
+                "voice_result": voice_result,
+                "timestamp": datetime.utcnow().isoformat(),
+                "status": "completed"
             }
 
+            self.active_sessions[session_id] = response
+            return response
+
         except Exception as e:
-            logger.error(f"Healthcare request failed: {e}")
+            logger.error(f"Healthcare processing failed: {e}")
             return {
                 "session_id": session_id,
                 "status": "error",
@@ -84,24 +383,11 @@ class HealthcareOrchestrator:
                 "timestamp": datetime.utcnow().isoformat()
             }
 
-    async def get_system_status(self) -> Dict[str, Any]:
+    def get_system_status(self) -> Dict[str, Any]:
         """Get system status."""
         return {
             "system_status": self.system_status,
-            "orchestrator_session_id": self.session_id,
             "active_sessions": len(self.active_sessions),
-            "agents": {name: agent.get_status() for name, agent in self.agents.items()},
-            "database": {"overall": "disabled"},
-            "api_gateway": {"overall": "disabled"},
-            "mode": "minimal",
-            "timestamp": datetime.utcnow().isoformat()
+            "available_agents": list(self.agents.keys()),
+            "last_updated": datetime.utcnow().isoformat()
         }
-
-    async def shutdown(self):
-        """Shutdown orchestrator."""
-        self.system_status = "shutdown"
-        logger.info("System shutdown completed")
-
-
-# Global orchestrator instance
-orchestrator = HealthcareOrchestrator()

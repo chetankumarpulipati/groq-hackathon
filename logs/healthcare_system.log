@@ -588,3 +588,1157 @@
 2025-09-27 17:27:35 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 59f2ded5-f7f0-4da3-95e1-d65e49e0c7ea for vision tasks
 2025-09-27 17:27:35 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'dict' object has no attribute 'supported_formats'
 2025-09-27 17:27:35 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 17:27:55 | INFO     | __main__:startup_event:85 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 17:27:55 | INFO     | __main__:startup_event:86 | ✅ System ready for healthcare processing
+2025-09-27 17:56:10 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 17:56:10 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 17:56:11 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 17:56:11 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 17:56:11 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 17:56:12 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 17:56:12 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 17:56:12 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 17:56:12 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 17:56:14 | INFO     | __main__:shutdown_event:95 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 17:56:14 | INFO     | orchestrator_minimal:shutdown:103 | System shutdown completed
+2025-09-27 17:56:20 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: da513da7-8108-4b17-a539-3fc9cb88ee0b for voice_processing tasks
+2025-09-27 17:56:20 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent da513da7-8108-4b17-a539-3fc9cb88ee0b initialized (minimal mode)
+2025-09-27 17:56:20 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: a8b041c1-c6c0-4202-9c17-aa8d8a1e9190 for diagnosis tasks
+2025-09-27 17:56:20 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent a8b041c1-c6c0-4202-9c17-aa8d8a1e9190 initialized
+2025-09-27 17:56:20 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: 4e8c160d-f315-4fcc-abc2-af00b269b325 for patient_analysis tasks
+2025-09-27 17:56:20 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent 4e8c160d-f315-4fcc-abc2-af00b269b325 initialized
+2025-09-27 17:56:20 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: f87c0352-cfc3-415f-9cc5-2760f74cc553 for medical_record_processing tasks
+2025-09-27 17:56:20 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent f87c0352-cfc3-415f-9cc5-2760f74cc553 initialized
+2025-09-27 17:56:20 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 5ea9514f-4a2a-4bb9-88e6-6314d661ab6c for patient_monitoring tasks
+2025-09-27 17:56:20 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 5ea9514f-4a2a-4bb9-88e6-6314d661ab6c initialized
+2025-09-27 17:56:20 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 9203fd4e-bcb9-42ca-ad3c-7b37fcc4fa3d for data_validation tasks
+2025-09-27 17:56:20 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 9203fd4e-bcb9-42ca-ad3c-7b37fcc4fa3d initialized with healthcare validation rules
+2025-09-27 17:56:20 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: e11bcb51-80fe-4e26-8aa2-1390c10a4f1f for vision tasks
+2025-09-27 17:56:20 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'dict' object has no attribute 'supported_formats'
+2025-09-27 17:56:20 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 17:56:20 | INFO     | orchestrator_minimal:process_comprehensive_healthcare_request:60 | Processing comprehensive healthcare request: 9e77175a-93f7-4a8d-8160-4fec1ea2ee32
+2025-09-27 17:56:20 | ERROR    | orchestrator_minimal:process_comprehensive_healthcare_request:133 | Comprehensive healthcare processing failed: 'validation'
+2025-09-27 17:58:09 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 17:58:09 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 17:58:09 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 17:58:10 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 17:58:10 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 17:58:10 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 17:58:10 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 17:58:11 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 17:58:11 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 17:58:11 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: bce7ab0c-d2ea-4f14-bcd9-da0e7d1e87d5 for voice_processing tasks
+2025-09-27 17:58:11 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent bce7ab0c-d2ea-4f14-bcd9-da0e7d1e87d5 initialized (minimal mode)
+2025-09-27 17:58:11 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: ea35a69e-ad94-4074-a1c8-9e4ffdaf9a8d for diagnosis tasks
+2025-09-27 17:58:11 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent ea35a69e-ad94-4074-a1c8-9e4ffdaf9a8d initialized
+2025-09-27 17:58:11 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: 08f4bdc4-d785-4541-a554-c2799a3a5a77 for patient_analysis tasks
+2025-09-27 17:58:11 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent 08f4bdc4-d785-4541-a554-c2799a3a5a77 initialized
+2025-09-27 17:58:11 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: bbf0ff96-1e3f-4b3f-970a-621cc725a6bf for medical_record_processing tasks
+2025-09-27 17:58:11 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent bbf0ff96-1e3f-4b3f-970a-621cc725a6bf initialized
+2025-09-27 17:58:11 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 3c61f4a1-df77-4d45-a4ee-cc9092705640 for patient_monitoring tasks
+2025-09-27 17:58:11 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 3c61f4a1-df77-4d45-a4ee-cc9092705640 initialized
+2025-09-27 17:58:11 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 71047207-9189-4e20-a5dd-e839563f406d for data_validation tasks
+2025-09-27 17:58:11 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 71047207-9189-4e20-a5dd-e839563f406d initialized with healthcare validation rules
+2025-09-27 17:58:11 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 03e9ffc3-d2ba-438c-876c-22f7a21fe771 for vision tasks
+2025-09-27 17:58:11 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 03e9ffc3-d2ba-438c-876c-22f7a21fe771 initialized for medical image analysis
+2025-09-27 17:58:11 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: bbb38abe-ed58-4ddf-bdbd-f32855037d70 for notification tasks
+2025-09-27 17:58:11 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 17:58:11 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 17:58:41 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 17:58:41 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 17:58:41 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 17:58:41 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 17:58:42 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 17:58:42 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 17:58:42 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 17:58:42 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 17:58:42 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 17:58:42 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: fde1296f-0968-4839-817c-e6216d587011 for patient_analysis tasks
+2025-09-27 17:58:42 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent fde1296f-0968-4839-817c-e6216d587011 initialized
+2025-09-27 17:58:42 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 0beb52a9-66e5-4464-9875-1ad30a398def for diagnosis tasks
+2025-09-27 17:58:42 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 0beb52a9-66e5-4464-9875-1ad30a398def initialized
+2025-09-27 17:58:42 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: f46572b5-f7d9-48e9-ba7d-118339aac022 for medical_record_processing tasks
+2025-09-27 17:58:42 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent f46572b5-f7d9-48e9-ba7d-118339aac022 initialized
+2025-09-27 17:58:42 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: b5b3d7ea-3848-4482-8211-4f33aed7e5c7 for patient_monitoring tasks
+2025-09-27 17:58:42 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent b5b3d7ea-3848-4482-8211-4f33aed7e5c7 initialized
+2025-09-27 17:58:42 | INFO     | agents.patient_monitoring_agent:_initialize_monitoring_session:213 | Initialized monitoring session MONITOR_TEST_001_20250927_175842 for patient TEST_001
+2025-09-27 18:00:39 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 18:00:39 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 18:00:39 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 18:00:39 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 18:00:40 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 18:00:40 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 18:00:40 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 18:00:40 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 18:00:40 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 18:00:41 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 318bda04-cd86-4a08-9a71-d55b77d46a3f for voice_processing tasks
+2025-09-27 18:00:41 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 318bda04-cd86-4a08-9a71-d55b77d46a3f initialized (minimal mode)
+2025-09-27 18:00:41 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 1a7f4a94-def2-4868-a1e7-55e359cff6ef for diagnosis tasks
+2025-09-27 18:00:41 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 1a7f4a94-def2-4868-a1e7-55e359cff6ef initialized
+2025-09-27 18:00:41 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: c8279e78-6510-4e33-8ec0-091d8e90c980 for patient_analysis tasks
+2025-09-27 18:00:41 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent c8279e78-6510-4e33-8ec0-091d8e90c980 initialized
+2025-09-27 18:00:41 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: c214e7c6-8c53-4d4c-a2d2-eeaace81ac33 for medical_record_processing tasks
+2025-09-27 18:00:41 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent c214e7c6-8c53-4d4c-a2d2-eeaace81ac33 initialized
+2025-09-27 18:00:41 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 5ff2be85-7d80-45a8-88d2-745ec32c854d for patient_monitoring tasks
+2025-09-27 18:00:41 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 5ff2be85-7d80-45a8-88d2-745ec32c854d initialized
+2025-09-27 18:00:41 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 20e03a36-e055-47c5-9906-3d3911458444 for data_validation tasks
+2025-09-27 18:00:41 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 20e03a36-e055-47c5-9906-3d3911458444 initialized with healthcare validation rules
+2025-09-27 18:00:41 | INFO     | healthcare_orchestrator:_initialize_agents:47 | Healthcare agents initialized successfully: ['voice', 'diagnostic', 'patient_analysis', 'medical_record', 'patient_monitoring', 'validation']
+2025-09-27 18:00:41 | INFO     | healthcare_orchestrator:__init__:32 | HealthcareOrchestrator initialized
+2025-09-27 18:00:41 | INFO     | agents.patient_monitoring_agent:_initialize_monitoring_session:213 | Initialized monitoring session MONITOR_FINAL_TEST_001_20250927_180041 for patient FINAL_TEST_001
+2025-09-27 18:00:41 | INFO     | healthcare_orchestrator:process_comprehensive_healthcare_request:57 | Processing comprehensive healthcare request: b4e87b9b-0b85-4282-9a02-0e9fbeb4799d
+2025-09-27 18:00:41 | INFO     | agents.patient_monitoring_agent:_initialize_monitoring_session:213 | Initialized monitoring session MONITOR_FINAL_TEST_001_20250927_180041 for patient FINAL_TEST_001
+2025-09-27 18:00:41 | INFO     | healthcare_orchestrator:process_comprehensive_healthcare_request:124 | Comprehensive healthcare request completed: b4e87b9b-0b85-4282-9a02-0e9fbeb4799d
+2025-09-27 18:23:57 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 18:23:58 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 18:23:58 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 18:23:58 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 18:23:58 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 18:23:59 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 18:23:59 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 18:23:59 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 18:23:59 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 18:24:01 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 8fd0dde0-8bb5-4061-9c50-6439a454f6ed for voice_processing tasks
+2025-09-27 18:24:01 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 8fd0dde0-8bb5-4061-9c50-6439a454f6ed initialized (minimal mode)
+2025-09-27 18:24:01 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 690c9581-7b18-4c38-9ea9-60d7638ffe78 for diagnosis tasks
+2025-09-27 18:24:01 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 690c9581-7b18-4c38-9ea9-60d7638ffe78 initialized
+2025-09-27 18:24:01 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: 72905677-ef6b-4c87-a87f-7e45ad1a308f for patient_analysis tasks
+2025-09-27 18:24:01 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent 72905677-ef6b-4c87-a87f-7e45ad1a308f initialized
+2025-09-27 18:24:01 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: 50f70a6e-3292-4206-98e4-2238735c0f4c for medical_record_processing tasks
+2025-09-27 18:24:01 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent 50f70a6e-3292-4206-98e4-2238735c0f4c initialized
+2025-09-27 18:24:01 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: a603b315-08a7-441c-9a54-daeb05ba6a73 for patient_monitoring tasks
+2025-09-27 18:24:01 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent a603b315-08a7-441c-9a54-daeb05ba6a73 initialized
+2025-09-27 18:24:01 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 40067868-f4f0-494a-a33c-d7ba2fee0cd7 for data_validation tasks
+2025-09-27 18:24:01 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 40067868-f4f0-494a-a33c-d7ba2fee0cd7 initialized with healthcare validation rules
+2025-09-27 18:24:01 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 9e48102d-0de3-403c-b879-08260b850450 for vision tasks
+2025-09-27 18:24:01 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 9e48102d-0de3-403c-b879-08260b850450 initialized for medical image analysis
+2025-09-27 18:24:01 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: e2581c7b-cb79-4c69-9cf7-a5a4b5b02f2c for notification tasks
+2025-09-27 18:24:01 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 18:24:01 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 18:24:43 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 18:24:43 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 18:24:43 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 18:24:44 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 18:24:44 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 18:24:44 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 18:24:44 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 18:24:45 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 18:24:45 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 18:24:45 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 709dbb2e-f513-404a-8916-e1f8cc6cdd08 for voice_processing tasks
+2025-09-27 18:24:45 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 709dbb2e-f513-404a-8916-e1f8cc6cdd08 initialized (minimal mode)
+2025-09-27 18:24:45 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: b6ed13f4-6cb0-4f26-b273-727176f55d56 for diagnosis tasks
+2025-09-27 18:24:45 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent b6ed13f4-6cb0-4f26-b273-727176f55d56 initialized
+2025-09-27 18:24:45 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: 6b389a92-b86a-41e7-a3a7-d820f0dc841e for patient_analysis tasks
+2025-09-27 18:24:45 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent 6b389a92-b86a-41e7-a3a7-d820f0dc841e initialized
+2025-09-27 18:24:45 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: df534e78-5110-4af6-b57c-bce8cc85a491 for medical_record_processing tasks
+2025-09-27 18:24:45 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent df534e78-5110-4af6-b57c-bce8cc85a491 initialized
+2025-09-27 18:24:45 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 27fba08a-f624-48e8-a497-8b4f27727e2a for patient_monitoring tasks
+2025-09-27 18:24:45 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 27fba08a-f624-48e8-a497-8b4f27727e2a initialized
+2025-09-27 18:24:45 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: f5df01f4-73fc-4305-8671-1235a6591e1d for data_validation tasks
+2025-09-27 18:24:45 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent f5df01f4-73fc-4305-8671-1235a6591e1d initialized with healthcare validation rules
+2025-09-27 18:24:45 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 04cd3611-b5ac-489e-903b-49126c07e078 for vision tasks
+2025-09-27 18:24:45 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 04cd3611-b5ac-489e-903b-49126c07e078 initialized for medical image analysis
+2025-09-27 18:24:45 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: a32b3ba3-2236-4120-8912-a56780b169ab for notification tasks
+2025-09-27 18:24:45 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 18:24:45 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 18:27:47 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 18:27:47 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 18:27:47 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 18:27:48 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 18:27:48 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 18:27:48 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 18:27:49 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 18:27:49 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 18:27:49 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 18:27:50 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: f9792be4-c915-4043-b8e4-7e93a322bfa7 for voice_processing tasks
+2025-09-27 18:27:50 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent f9792be4-c915-4043-b8e4-7e93a322bfa7 initialized (minimal mode)
+2025-09-27 18:27:50 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 27bcd444-d05e-456a-bc7d-a67d9a198a02 for diagnosis tasks
+2025-09-27 18:27:50 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 27bcd444-d05e-456a-bc7d-a67d9a198a02 initialized
+2025-09-27 18:27:50 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: 2bfc08ec-5f7c-41b7-b920-e424e4542117 for patient_analysis tasks
+2025-09-27 18:27:50 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent 2bfc08ec-5f7c-41b7-b920-e424e4542117 initialized
+2025-09-27 18:27:50 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: ae2a62fd-54f0-41de-aada-1213e05bc170 for medical_record_processing tasks
+2025-09-27 18:27:50 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent ae2a62fd-54f0-41de-aada-1213e05bc170 initialized
+2025-09-27 18:27:50 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 374f778b-5dd8-4187-85cb-2a104edcdcae for patient_monitoring tasks
+2025-09-27 18:27:50 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 374f778b-5dd8-4187-85cb-2a104edcdcae initialized
+2025-09-27 18:27:50 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 1fe64f43-cfb1-4bc1-9587-fb9f059d2ff5 for data_validation tasks
+2025-09-27 18:27:50 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 1fe64f43-cfb1-4bc1-9587-fb9f059d2ff5 initialized with healthcare validation rules
+2025-09-27 18:27:50 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: a327217d-c655-40b0-8ff6-6f59e99ac548 for vision tasks
+2025-09-27 18:27:50 | INFO     | agents.vision_agent:__init__:37 | VisionAgent a327217d-c655-40b0-8ff6-6f59e99ac548 initialized for medical image analysis
+2025-09-27 18:27:50 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 4f56cdb6-ebd2-4049-8c63-cd87ada68ea9 for notification tasks
+2025-09-27 18:27:50 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 18:27:50 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 18:27:50 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 18:27:50 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 18:27:50 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 18:27:50 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: b691d157-18fa-4d0b-b0da-5bf2a74a477b for voice_processing tasks
+2025-09-27 18:27:50 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent b691d157-18fa-4d0b-b0da-5bf2a74a477b initialized (minimal mode)
+2025-09-27 18:27:50 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 64c01f03-c097-43de-8417-8a7ee989cd24 for vision tasks
+2025-09-27 18:27:50 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 64c01f03-c097-43de-8417-8a7ee989cd24 initialized for medical image analysis
+2025-09-27 18:27:50 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 14b81321-e127-4d9a-a95b-e069f8122944 for diagnosis tasks
+2025-09-27 18:27:50 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 14b81321-e127-4d9a-a95b-e069f8122944 initialized
+2025-09-27 18:27:50 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 8b96a150-a87e-4ee7-9d95-39dab8279283 for data_validation tasks
+2025-09-27 18:27:50 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 8b96a150-a87e-4ee7-9d95-39dab8279283 initialized with healthcare validation rules
+2025-09-27 18:27:50 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 779f1fb8-a634-4aa9-a509-9aa14115e621 for notification tasks
+2025-09-27 18:27:50 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 18:27:50 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 18:28:05 | INFO     | __main__:startup_event:85 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 18:28:05 | INFO     | __main__:startup_event:86 | ✅ System ready for healthcare processing
+2025-09-27 18:28:17 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 18:28:17 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 18:28:22 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 18:28:23 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 18:28:24 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 18:28:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 18:28:26 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 18:28:27 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 18:28:28 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 18:28:29 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 18:28:30 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 18:28:31 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 18:28:31 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 36.36%
+2025-09-27 18:31:47 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 18:31:47 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 18:31:47 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 18:31:48 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 18:31:48 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 18:31:48 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 18:31:48 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 18:31:49 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 18:31:49 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 18:31:49 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 18:31:49 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 18:31:50 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 18:31:51 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 18:31:52 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 18:31:53 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 18:31:54 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 18:31:55 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 18:31:56 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 18:31:57 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 18:31:58 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 18:31:58 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 18:31:59 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 45.45%
+2025-09-27 18:32:01 | INFO     | evaluation.model_accuracy:create_accuracy_visualizations:516 | Accuracy visualizations saved to evaluation\test_data\accuracy_dashboard.png
+2025-09-27 18:33:46 | INFO     | evaluation.model_accuracy:export_detailed_results:537 | Detailed results exported to evaluation\test_data\accuracy_evaluation_20250927_183346.json
+2025-09-27 18:35:57 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 18:35:57 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 18:35:58 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 18:35:58 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 18:35:58 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 18:35:58 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 18:35:59 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 18:35:59 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 18:35:59 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 18:35:59 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 18:35:59 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 18:36:01 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 18:36:01 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 18:36:02 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 18:36:03 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 18:36:03 | INFO     | __main__:shutdown_event:95 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 18:36:04 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 18:36:05 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 18:36:06 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 18:36:07 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 18:36:07 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 18:36:08 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 18:36:09 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 54.55%
+2025-09-27 18:36:10 | INFO     | evaluation.model_accuracy:create_accuracy_visualizations:579 | Accuracy visualizations saved to evaluation\test_data\accuracy_dashboard.png
+2025-09-27 18:39:01 | INFO     | evaluation.model_accuracy:export_detailed_results:600 | Detailed results exported to evaluation\test_data\accuracy_evaluation_20250927_183901.json
+2025-09-27 18:43:58 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 18:43:58 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 18:43:58 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 18:43:58 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 18:43:59 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 18:43:59 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 18:43:59 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 18:43:59 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 18:43:59 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 18:44:00 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 310a8776-2140-4b44-868a-dd255bcc3e7e for voice_processing tasks
+2025-09-27 18:44:00 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 310a8776-2140-4b44-868a-dd255bcc3e7e initialized (minimal mode)
+2025-09-27 18:44:00 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 0c642088-9d02-4f37-98ce-7bde54edc9de for diagnosis tasks
+2025-09-27 18:44:00 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 0c642088-9d02-4f37-98ce-7bde54edc9de initialized
+2025-09-27 18:44:00 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: 2f90ab45-f131-496b-ab91-b97d6fc966fd for patient_analysis tasks
+2025-09-27 18:44:00 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent 2f90ab45-f131-496b-ab91-b97d6fc966fd initialized
+2025-09-27 18:44:00 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: a682cd97-007c-4284-818c-6ba14cde0f52 for medical_record_processing tasks
+2025-09-27 18:44:00 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent a682cd97-007c-4284-818c-6ba14cde0f52 initialized
+2025-09-27 18:44:00 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 91238580-7277-49a9-9808-42c929e9551c for patient_monitoring tasks
+2025-09-27 18:44:00 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 91238580-7277-49a9-9808-42c929e9551c initialized
+2025-09-27 18:44:00 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: c2e881b7-7fd6-4a6e-8124-2c7954b4b329 for data_validation tasks
+2025-09-27 18:44:00 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent c2e881b7-7fd6-4a6e-8124-2c7954b4b329 initialized with healthcare validation rules
+2025-09-27 18:44:00 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 547b39b1-79c6-442c-b34a-a73c7439f067 for vision tasks
+2025-09-27 18:44:00 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 547b39b1-79c6-442c-b34a-a73c7439f067 initialized for medical image analysis
+2025-09-27 18:44:00 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 09ce465b-4ed2-4d99-893f-008212ab5393 for notification tasks
+2025-09-27 18:44:00 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 18:44:00 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 18:44:00 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 18:44:00 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 18:44:00 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 18:44:00 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 70d3cc48-1e28-4821-853a-d21b7944b029 for voice_processing tasks
+2025-09-27 18:44:00 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 70d3cc48-1e28-4821-853a-d21b7944b029 initialized (minimal mode)
+2025-09-27 18:44:00 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 01997780-e72c-4ea5-b7c2-ab98fea47dc4 for vision tasks
+2025-09-27 18:44:00 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 01997780-e72c-4ea5-b7c2-ab98fea47dc4 initialized for medical image analysis
+2025-09-27 18:44:00 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 153895a1-588f-4f5d-b3bc-28509b183c1d for diagnosis tasks
+2025-09-27 18:44:00 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 153895a1-588f-4f5d-b3bc-28509b183c1d initialized
+2025-09-27 18:44:00 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 084fe6d2-b761-47a1-9ad7-df6ed8556720 for data_validation tasks
+2025-09-27 18:44:00 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 084fe6d2-b761-47a1-9ad7-df6ed8556720 initialized with healthcare validation rules
+2025-09-27 18:44:00 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: dc3cf7fc-97b1-4764-bbd2-bfe494e2145e for notification tasks
+2025-09-27 18:44:00 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 18:44:00 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 18:44:02 | INFO     | __main__:startup_event:85 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 18:44:02 | INFO     | __main__:startup_event:86 | ✅ System ready for healthcare processing
+2025-09-27 18:44:10 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 18:44:10 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 18:44:11 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 18:44:12 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 18:44:13 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 18:44:14 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 18:44:15 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 18:44:16 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 18:44:17 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 18:44:18 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 18:44:19 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 18:44:19 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 18:44:20 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 63.64%
+2025-09-27 18:48:54 | INFO     | __main__:shutdown_event:95 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 18:50:13 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 18:50:13 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 18:50:13 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 18:50:13 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 18:50:14 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 18:50:14 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 18:50:14 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 18:50:14 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 18:50:14 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 18:50:15 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: bde95139-bb2b-4234-b2ee-a27fd23d0ff9 for voice_processing tasks
+2025-09-27 18:50:15 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent bde95139-bb2b-4234-b2ee-a27fd23d0ff9 initialized (minimal mode)
+2025-09-27 18:50:15 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: fe2f6df9-5cfc-4e9b-bfef-01069dfdc6b5 for diagnosis tasks
+2025-09-27 18:50:15 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent fe2f6df9-5cfc-4e9b-bfef-01069dfdc6b5 initialized
+2025-09-27 18:50:15 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: 83b2ca49-5f15-41f4-b459-1da31322467c for patient_analysis tasks
+2025-09-27 18:50:15 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent 83b2ca49-5f15-41f4-b459-1da31322467c initialized
+2025-09-27 18:50:15 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: a38dbd9e-ab1f-4b3b-b7f1-0751a02d9e6e for medical_record_processing tasks
+2025-09-27 18:50:15 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent a38dbd9e-ab1f-4b3b-b7f1-0751a02d9e6e initialized
+2025-09-27 18:50:15 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: fbc2e242-b3fa-4b04-a9cd-09bf8f0672f4 for patient_monitoring tasks
+2025-09-27 18:50:15 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent fbc2e242-b3fa-4b04-a9cd-09bf8f0672f4 initialized
+2025-09-27 18:50:15 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: b76bd63f-8aca-49ac-823c-835390781bde for data_validation tasks
+2025-09-27 18:50:15 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent b76bd63f-8aca-49ac-823c-835390781bde initialized with healthcare validation rules
+2025-09-27 18:50:15 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: afab04ad-728d-4f28-b159-cabe59191e16 for vision tasks
+2025-09-27 18:50:15 | INFO     | agents.vision_agent:__init__:37 | VisionAgent afab04ad-728d-4f28-b159-cabe59191e16 initialized for medical image analysis
+2025-09-27 18:50:15 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: f2fe420c-1dd6-4725-9530-9999ff6dd012 for notification tasks
+2025-09-27 18:50:15 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 18:50:15 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 18:50:15 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 18:50:15 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 18:50:15 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 18:50:15 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 9ef556a0-c920-4628-911f-cb3702c2ae6a for voice_processing tasks
+2025-09-27 18:50:15 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 9ef556a0-c920-4628-911f-cb3702c2ae6a initialized (minimal mode)
+2025-09-27 18:50:15 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: f6b24eaa-25e0-41da-8549-18c214cd6ba7 for vision tasks
+2025-09-27 18:50:15 | INFO     | agents.vision_agent:__init__:37 | VisionAgent f6b24eaa-25e0-41da-8549-18c214cd6ba7 initialized for medical image analysis
+2025-09-27 18:50:15 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 7d59ce8c-1ddd-4521-bc1f-920c6169d582 for diagnosis tasks
+2025-09-27 18:50:15 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 7d59ce8c-1ddd-4521-bc1f-920c6169d582 initialized
+2025-09-27 18:50:15 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 687a6f99-f57a-4f09-9b89-17262b2a1e54 for data_validation tasks
+2025-09-27 18:50:15 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 687a6f99-f57a-4f09-9b89-17262b2a1e54 initialized with healthcare validation rules
+2025-09-27 18:50:15 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 2c533583-ea22-43bd-804e-948bf4626c2c for notification tasks
+2025-09-27 18:50:15 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 18:50:15 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 18:50:17 | INFO     | __main__:startup_event:110 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 18:50:17 | INFO     | __main__:startup_event:111 | ✅ System ready for healthcare processing
+2025-09-27 18:50:17 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 18:50:17 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 18:50:19 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 18:50:19 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 18:50:20 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 18:50:21 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 18:50:22 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 18:50:23 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 18:50:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 18:50:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 18:50:26 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 18:50:27 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 18:50:28 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 54.55%
+2025-09-27 18:51:14 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 18:51:14 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 18:51:15 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 18:51:16 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 18:51:17 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 18:51:17 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 18:51:18 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 18:51:19 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 18:51:20 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 18:51:21 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 18:51:22 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 18:51:23 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 18:51:24 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 63.64%
+2025-09-27 18:51:33 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 18:51:33 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 18:51:34 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 18:51:35 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 18:51:36 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 18:51:37 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 18:51:38 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 18:51:39 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 18:51:40 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 18:51:41 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 18:51:42 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 18:51:42 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 18:51:43 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 63.64%
+2025-09-27 18:57:59 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 18:58:00 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 18:58:00 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 18:58:01 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 18:58:01 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 18:58:02 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 18:58:02 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 18:58:03 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 18:58:03 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 18:58:04 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 3098f2d0-c5f2-4d40-815c-bf4fa143a987 for voice_processing tasks
+2025-09-27 18:58:04 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 3098f2d0-c5f2-4d40-815c-bf4fa143a987 initialized (minimal mode)
+2025-09-27 18:58:04 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 627fd626-7012-415e-87cf-9404f60ab3f7 for diagnosis tasks
+2025-09-27 18:58:04 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 627fd626-7012-415e-87cf-9404f60ab3f7 initialized
+2025-09-27 18:58:04 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: b6d5125f-e2c8-47d7-ad85-b93e4f36d1a1 for patient_analysis tasks
+2025-09-27 18:58:04 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent b6d5125f-e2c8-47d7-ad85-b93e4f36d1a1 initialized
+2025-09-27 18:58:04 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: a0731515-f851-4765-9c5a-19c9402daf36 for medical_record_processing tasks
+2025-09-27 18:58:04 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent a0731515-f851-4765-9c5a-19c9402daf36 initialized
+2025-09-27 18:58:04 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 35a0802a-e5ee-4270-94ac-078c13a007fa for patient_monitoring tasks
+2025-09-27 18:58:04 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 35a0802a-e5ee-4270-94ac-078c13a007fa initialized
+2025-09-27 18:58:04 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: c6700b69-8347-470b-bf27-b9993b928028 for data_validation tasks
+2025-09-27 18:58:04 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent c6700b69-8347-470b-bf27-b9993b928028 initialized with healthcare validation rules
+2025-09-27 18:58:04 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: eaa25d21-2e6b-4022-a1f1-702e0aefe647 for vision tasks
+2025-09-27 18:58:04 | INFO     | agents.vision_agent:__init__:37 | VisionAgent eaa25d21-2e6b-4022-a1f1-702e0aefe647 initialized for medical image analysis
+2025-09-27 18:58:04 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 6432fdb5-5665-4460-950d-6c84717dd6be for notification tasks
+2025-09-27 18:58:04 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 18:58:04 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 18:58:04 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 18:58:04 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 18:58:04 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 18:58:04 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 66677a1c-41e5-4244-8fc3-4a4d308ea339 for voice_processing tasks
+2025-09-27 18:58:04 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 66677a1c-41e5-4244-8fc3-4a4d308ea339 initialized (minimal mode)
+2025-09-27 18:58:04 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: eb5023e9-b98f-4ef4-9fb2-e519ce110858 for vision tasks
+2025-09-27 18:58:04 | INFO     | agents.vision_agent:__init__:37 | VisionAgent eb5023e9-b98f-4ef4-9fb2-e519ce110858 initialized for medical image analysis
+2025-09-27 18:58:04 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: a1713d33-589d-46a1-bac0-590257a039cc for diagnosis tasks
+2025-09-27 18:58:04 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent a1713d33-589d-46a1-bac0-590257a039cc initialized
+2025-09-27 18:58:04 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 423faef5-9e29-4780-86ff-f19b99077f9c for data_validation tasks
+2025-09-27 18:58:04 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 423faef5-9e29-4780-86ff-f19b99077f9c initialized with healthcare validation rules
+2025-09-27 18:58:04 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: affdaeba-2963-4d39-895a-2d8450f47a79 for notification tasks
+2025-09-27 18:58:04 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 18:58:04 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 18:58:37 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 18:58:37 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 18:58:37 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 18:58:38 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 18:58:38 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 18:58:38 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 18:58:39 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 18:58:39 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 18:58:39 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 18:58:40 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 86c016ff-56b2-431a-96c8-bfd038286eef for voice_processing tasks
+2025-09-27 18:58:40 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 86c016ff-56b2-431a-96c8-bfd038286eef initialized (minimal mode)
+2025-09-27 18:58:40 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: e6dc9b27-ce78-4ecb-8f20-96e8dc382550 for diagnosis tasks
+2025-09-27 18:58:40 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent e6dc9b27-ce78-4ecb-8f20-96e8dc382550 initialized
+2025-09-27 18:58:40 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: d0cb1afe-cf9e-4d4c-ba73-68b4a81e986a for patient_analysis tasks
+2025-09-27 18:58:40 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent d0cb1afe-cf9e-4d4c-ba73-68b4a81e986a initialized
+2025-09-27 18:58:40 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: e2dd2a94-fe8c-4acb-8d3d-3ea7888afe9d for medical_record_processing tasks
+2025-09-27 18:58:40 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent e2dd2a94-fe8c-4acb-8d3d-3ea7888afe9d initialized
+2025-09-27 18:58:40 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 05e53c77-e022-4b73-a06b-58296e627ab0 for patient_monitoring tasks
+2025-09-27 18:58:40 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 05e53c77-e022-4b73-a06b-58296e627ab0 initialized
+2025-09-27 18:58:40 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 9bbab1d4-35f1-4c03-b897-342147524ac9 for data_validation tasks
+2025-09-27 18:58:40 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 9bbab1d4-35f1-4c03-b897-342147524ac9 initialized with healthcare validation rules
+2025-09-27 18:58:40 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 217bec1b-998e-44e2-b915-7d0c0ddc079e for vision tasks
+2025-09-27 18:58:40 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 217bec1b-998e-44e2-b915-7d0c0ddc079e initialized for medical image analysis
+2025-09-27 18:58:40 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 3d8166d0-8775-49f1-b362-2216b8bfd3a0 for notification tasks
+2025-09-27 18:58:40 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 18:58:40 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 18:58:40 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 18:58:40 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 18:58:40 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 18:58:40 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 8c3c8d44-a87d-4696-ae03-919432f8f86b for voice_processing tasks
+2025-09-27 18:58:40 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 8c3c8d44-a87d-4696-ae03-919432f8f86b initialized (minimal mode)
+2025-09-27 18:58:40 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 7cd059d0-260d-429b-a7b8-67716b6d45e2 for vision tasks
+2025-09-27 18:58:40 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 7cd059d0-260d-429b-a7b8-67716b6d45e2 initialized for medical image analysis
+2025-09-27 18:58:40 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: f9ffcf0e-e150-4d69-abbc-f43791ca5959 for diagnosis tasks
+2025-09-27 18:58:40 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent f9ffcf0e-e150-4d69-abbc-f43791ca5959 initialized
+2025-09-27 18:58:40 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 618bb44b-3e64-4a03-b4c2-623e40cd07ee for data_validation tasks
+2025-09-27 18:58:40 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 618bb44b-3e64-4a03-b4c2-623e40cd07ee initialized with healthcare validation rules
+2025-09-27 18:58:40 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 8df9cb75-90fd-48f0-91ba-ee6270b90c55 for notification tasks
+2025-09-27 18:58:40 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 18:58:40 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 18:58:42 | INFO     | __main__:startup_event:115 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 18:58:42 | INFO     | __main__:startup_event:116 | ✅ System ready for healthcare processing
+2025-09-27 18:58:48 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 18:58:48 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 18:58:50 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 18:58:50 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 18:58:51 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 18:58:52 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 18:58:53 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 18:58:54 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 18:58:55 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 18:58:56 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 18:58:57 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 18:58:58 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 18:58:59 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 63.64%
+2025-09-27 19:00:59 | INFO     | __main__:process_voice_audio:587 | Processing voice input for medical analysis
+2025-09-27 19:00:59 | INFO     | __main__:process_voice_audio:606 | Processing audio file: blob
+2025-09-27 19:00:59 | WARNING  | __main__:process_voice_audio:629 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:00:59 | ERROR    | __main__:process_voice_audio:655 | Voice processing failed: name 'analyze_medical_voice_content' is not defined
+2025-09-27 19:01:11 | INFO     | __main__:analyze_medical_image:666 | Processing medical image: gettyimages-482726023-612x612.jpg
+2025-09-27 19:01:11 | INFO     | __main__:analyze_medical_image:760 | Vision analysis stored in database with ID: 1
+2025-09-27 19:01:11 | INFO     | __main__:analyze_medical_image:764 | Medical image analysis completed successfully
+2025-09-27 19:02:00 | INFO     | __main__:process_voice_audio:587 | Processing voice input for medical analysis
+2025-09-27 19:02:00 | INFO     | __main__:process_voice_audio:606 | Processing audio file: blob
+2025-09-27 19:02:00 | WARNING  | __main__:process_voice_audio:629 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:02:00 | ERROR    | __main__:process_voice_audio:655 | Voice processing failed: name 'analyze_medical_voice_content' is not defined
+2025-09-27 19:04:43 | INFO     | __main__:analyze_medical_image:666 | Processing medical image: gettyimages-482726023-612x612.jpg
+2025-09-27 19:04:43 | INFO     | __main__:analyze_medical_image:760 | Vision analysis stored in database with ID: 2
+2025-09-27 19:04:43 | INFO     | __main__:analyze_medical_image:764 | Medical image analysis completed successfully
+2025-09-27 19:04:59 | INFO     | __main__:process_voice_audio:587 | Processing voice input for medical analysis
+2025-09-27 19:04:59 | INFO     | __main__:process_voice_audio:606 | Processing audio file: blob
+2025-09-27 19:04:59 | WARNING  | __main__:process_voice_audio:629 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:04:59 | ERROR    | __main__:process_voice_audio:655 | Voice processing failed: name 'analyze_medical_voice_content' is not defined
+2025-09-27 19:05:10 | INFO     | __main__:shutdown_event:125 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 19:05:19 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 19:05:19 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 19:05:20 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 19:05:20 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 19:05:21 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 19:05:21 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 19:05:22 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 19:05:22 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 19:05:22 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 19:05:23 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 75626b2b-2644-4787-b0c3-3a0dbb0e46b5 for voice_processing tasks
+2025-09-27 19:05:23 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 75626b2b-2644-4787-b0c3-3a0dbb0e46b5 initialized (minimal mode)
+2025-09-27 19:05:23 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 7e751939-8fba-4d5f-b966-c920026c73cd for diagnosis tasks
+2025-09-27 19:05:23 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 7e751939-8fba-4d5f-b966-c920026c73cd initialized
+2025-09-27 19:05:23 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: 6945734f-7f9d-4295-bf15-bc36b668e452 for patient_analysis tasks
+2025-09-27 19:05:23 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent 6945734f-7f9d-4295-bf15-bc36b668e452 initialized
+2025-09-27 19:05:23 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: 84e5fff6-c666-4fa3-9ccc-0fdd1a4d2dd2 for medical_record_processing tasks
+2025-09-27 19:05:23 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent 84e5fff6-c666-4fa3-9ccc-0fdd1a4d2dd2 initialized
+2025-09-27 19:05:23 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 4699f6cd-c803-47ba-9c36-6b8bd80643ae for patient_monitoring tasks
+2025-09-27 19:05:23 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 4699f6cd-c803-47ba-9c36-6b8bd80643ae initialized
+2025-09-27 19:05:23 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 5e3bb4ad-b5ef-48a6-851b-49e5b70ec086 for data_validation tasks
+2025-09-27 19:05:23 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 5e3bb4ad-b5ef-48a6-851b-49e5b70ec086 initialized with healthcare validation rules
+2025-09-27 19:05:23 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: e4ed020d-bc88-4e13-9d89-881b9cdd0656 for vision tasks
+2025-09-27 19:05:23 | INFO     | agents.vision_agent:__init__:37 | VisionAgent e4ed020d-bc88-4e13-9d89-881b9cdd0656 initialized for medical image analysis
+2025-09-27 19:05:23 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: c974aca3-1622-400d-a8be-49f3e566c3cb for notification tasks
+2025-09-27 19:05:23 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:05:23 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 19:05:23 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:05:23 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:05:23 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 19:05:23 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: f2b60582-82f2-4aff-96d0-75f350372d09 for voice_processing tasks
+2025-09-27 19:05:23 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent f2b60582-82f2-4aff-96d0-75f350372d09 initialized (minimal mode)
+2025-09-27 19:05:23 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 1820c55e-70db-4692-aef4-f76be83b182a for vision tasks
+2025-09-27 19:05:23 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 1820c55e-70db-4692-aef4-f76be83b182a initialized for medical image analysis
+2025-09-27 19:05:23 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 91d5551b-8c7c-4203-9cac-f5aa54bf14d6 for diagnosis tasks
+2025-09-27 19:05:23 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 91d5551b-8c7c-4203-9cac-f5aa54bf14d6 initialized
+2025-09-27 19:05:23 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 9d95b926-da82-43ef-b4f4-ff115a40d9f2 for data_validation tasks
+2025-09-27 19:05:23 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 9d95b926-da82-43ef-b4f4-ff115a40d9f2 initialized with healthcare validation rules
+2025-09-27 19:05:23 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 311c898c-bfa0-4e17-8c45-16e0cdfdc806 for notification tasks
+2025-09-27 19:05:23 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:05:23 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 19:05:26 | INFO     | __main__:startup_event:115 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 19:05:26 | INFO     | __main__:startup_event:116 | ✅ System ready for healthcare processing
+2025-09-27 19:05:30 | INFO     | __main__:analyze_medical_image:666 | Processing medical image: gettyimages-482726023-612x612.jpg
+2025-09-27 19:05:30 | INFO     | __main__:analyze_medical_image:760 | Vision analysis stored in database with ID: 3
+2025-09-27 19:05:30 | INFO     | __main__:analyze_medical_image:764 | Medical image analysis completed successfully
+2025-09-27 19:05:43 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 19:05:44 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 19:05:47 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 19:05:48 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 19:05:49 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 19:05:51 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 19:05:52 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 19:05:53 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 19:05:54 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 19:05:56 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 19:05:57 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 19:05:58 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 19:05:59 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 90.91%
+2025-09-27 19:05:59 | INFO     | __main__:process_voice_audio:587 | Processing voice input for medical analysis
+2025-09-27 19:05:59 | INFO     | __main__:process_voice_audio:606 | Processing audio file: blob
+2025-09-27 19:05:59 | WARNING  | __main__:process_voice_audio:629 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:05:59 | ERROR    | __main__:process_voice_audio:655 | Voice processing failed: name 'analyze_medical_voice_content' is not defined
+2025-09-27 19:09:35 | INFO     | __main__:process_voice_audio:587 | Processing voice input for medical analysis
+2025-09-27 19:09:35 | INFO     | __main__:process_voice_audio:606 | Processing audio file: blob
+2025-09-27 19:09:35 | WARNING  | __main__:process_voice_audio:629 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:09:35 | ERROR    | __main__:process_voice_audio:655 | Voice processing failed: name 'analyze_medical_voice_content' is not defined
+2025-09-27 19:15:25 | INFO     | __main__:process_voice_audio:587 | Processing voice input for medical analysis
+2025-09-27 19:15:25 | INFO     | __main__:process_voice_audio:606 | Processing audio file: blob
+2025-09-27 19:15:25 | WARNING  | __main__:process_voice_audio:629 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:15:25 | ERROR    | __main__:process_voice_audio:655 | Voice processing failed: name 'analyze_medical_voice_content' is not defined
+2025-09-27 19:17:21 | INFO     | __main__:process_voice_audio:587 | Processing voice input for medical analysis
+2025-09-27 19:17:21 | INFO     | __main__:process_voice_audio:606 | Processing audio file: blob
+2025-09-27 19:17:21 | WARNING  | __main__:process_voice_audio:629 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:17:21 | ERROR    | __main__:process_voice_audio:655 | Voice processing failed: name 'analyze_medical_voice_content' is not defined
+2025-09-27 19:17:27 | INFO     | __main__:shutdown_event:125 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 19:18:35 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 19:18:35 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 19:18:36 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 19:18:36 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 19:18:37 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 19:18:37 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 19:18:38 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 19:18:38 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 19:18:38 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 19:18:40 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: fe721a0b-4a6e-4792-952b-ba2172efaa9e for voice_processing tasks
+2025-09-27 19:18:40 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent fe721a0b-4a6e-4792-952b-ba2172efaa9e initialized (minimal mode)
+2025-09-27 19:18:40 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 4e9a1221-de5e-4e3e-ae7e-d4f2011dda4b for diagnosis tasks
+2025-09-27 19:18:40 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 4e9a1221-de5e-4e3e-ae7e-d4f2011dda4b initialized
+2025-09-27 19:18:40 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: 7569dfb2-e70b-4343-ab1d-c06a14ed0a56 for patient_analysis tasks
+2025-09-27 19:18:40 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent 7569dfb2-e70b-4343-ab1d-c06a14ed0a56 initialized
+2025-09-27 19:18:40 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: 773aaa9f-1c0b-4bf5-bb49-70b29216c9d4 for medical_record_processing tasks
+2025-09-27 19:18:40 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent 773aaa9f-1c0b-4bf5-bb49-70b29216c9d4 initialized
+2025-09-27 19:18:40 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 8a8e5540-febb-4910-b137-9e71d2f37ebc for patient_monitoring tasks
+2025-09-27 19:18:40 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 8a8e5540-febb-4910-b137-9e71d2f37ebc initialized
+2025-09-27 19:18:40 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 5b198fb7-a298-4039-b786-901b5833f737 for data_validation tasks
+2025-09-27 19:18:40 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 5b198fb7-a298-4039-b786-901b5833f737 initialized with healthcare validation rules
+2025-09-27 19:18:40 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: d0bdd2db-9fa3-485d-8120-4ab76535e97f for vision tasks
+2025-09-27 19:18:40 | INFO     | agents.vision_agent:__init__:37 | VisionAgent d0bdd2db-9fa3-485d-8120-4ab76535e97f initialized for medical image analysis
+2025-09-27 19:18:40 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 69ac4332-8e1b-491c-9110-9f3885486605 for notification tasks
+2025-09-27 19:18:40 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:18:40 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 19:18:40 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:18:40 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:18:40 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 19:18:40 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 9508a872-5c34-440d-9b6d-afbb08085e98 for voice_processing tasks
+2025-09-27 19:18:40 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 9508a872-5c34-440d-9b6d-afbb08085e98 initialized (minimal mode)
+2025-09-27 19:18:40 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 8d628b46-6ece-4e5f-9b4d-adfb5710d88a for vision tasks
+2025-09-27 19:18:40 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 8d628b46-6ece-4e5f-9b4d-adfb5710d88a initialized for medical image analysis
+2025-09-27 19:18:40 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 0119942a-fe12-4c2e-8c07-178d417b5596 for diagnosis tasks
+2025-09-27 19:18:40 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 0119942a-fe12-4c2e-8c07-178d417b5596 initialized
+2025-09-27 19:18:40 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 7112c398-e87b-41b6-82aa-43c129d0be9b for data_validation tasks
+2025-09-27 19:18:40 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 7112c398-e87b-41b6-82aa-43c129d0be9b initialized with healthcare validation rules
+2025-09-27 19:18:40 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: ea373d07-638c-4ad9-893f-774ad0713b81 for notification tasks
+2025-09-27 19:18:40 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:18:40 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 19:18:43 | INFO     | __main__:startup_event:123 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 19:18:43 | INFO     | __main__:startup_event:124 | ✅ System ready for healthcare processing
+2025-09-27 19:20:42 | INFO     | __main__:shutdown_event:133 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 19:20:45 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 19:20:45 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 19:20:46 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 19:20:46 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 19:20:46 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 19:20:47 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 19:20:47 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 19:20:48 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 19:20:48 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 19:20:49 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: b7ba2093-7fdb-42c7-9332-f9ac9174513e for voice_processing tasks
+2025-09-27 19:20:49 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent b7ba2093-7fdb-42c7-9332-f9ac9174513e initialized (minimal mode)
+2025-09-27 19:20:49 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: d8a4a880-aa11-4306-96da-58b3648f49b0 for diagnosis tasks
+2025-09-27 19:20:49 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent d8a4a880-aa11-4306-96da-58b3648f49b0 initialized
+2025-09-27 19:20:49 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: 32dcfb57-b48f-45af-be8c-20ee2a953a85 for patient_analysis tasks
+2025-09-27 19:20:49 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent 32dcfb57-b48f-45af-be8c-20ee2a953a85 initialized
+2025-09-27 19:20:49 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: c9682a2c-c915-473f-9cd2-a91705fe2109 for medical_record_processing tasks
+2025-09-27 19:20:49 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent c9682a2c-c915-473f-9cd2-a91705fe2109 initialized
+2025-09-27 19:20:49 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 145bf343-33d6-474c-ba0d-13310a0d7b48 for patient_monitoring tasks
+2025-09-27 19:20:49 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 145bf343-33d6-474c-ba0d-13310a0d7b48 initialized
+2025-09-27 19:20:49 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: facc457d-656c-43c5-85f1-b63c634c9ec8 for data_validation tasks
+2025-09-27 19:20:49 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent facc457d-656c-43c5-85f1-b63c634c9ec8 initialized with healthcare validation rules
+2025-09-27 19:20:49 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: cb80ec45-d13e-4ce8-9fc3-0e026e80fde6 for vision tasks
+2025-09-27 19:20:49 | INFO     | agents.vision_agent:__init__:37 | VisionAgent cb80ec45-d13e-4ce8-9fc3-0e026e80fde6 initialized for medical image analysis
+2025-09-27 19:20:49 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: c820f0a2-d00d-405c-be60-443839c2154b for notification tasks
+2025-09-27 19:20:49 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:20:49 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 19:20:49 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:20:49 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:20:49 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 19:20:49 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 0ab9598e-76b3-4779-8650-b601323e1cb1 for voice_processing tasks
+2025-09-27 19:20:49 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 0ab9598e-76b3-4779-8650-b601323e1cb1 initialized (minimal mode)
+2025-09-27 19:20:49 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: bbf418d7-1429-4527-b31a-0463f0530845 for vision tasks
+2025-09-27 19:20:49 | INFO     | agents.vision_agent:__init__:37 | VisionAgent bbf418d7-1429-4527-b31a-0463f0530845 initialized for medical image analysis
+2025-09-27 19:20:49 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: bc0d781b-7333-42ed-b53d-026bf417fb75 for diagnosis tasks
+2025-09-27 19:20:49 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent bc0d781b-7333-42ed-b53d-026bf417fb75 initialized
+2025-09-27 19:20:49 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: f407054c-474f-40bd-b762-c153702d4b62 for data_validation tasks
+2025-09-27 19:20:49 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent f407054c-474f-40bd-b762-c153702d4b62 initialized with healthcare validation rules
+2025-09-27 19:20:49 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: ae47d686-158e-4faa-a865-5f6bc6e54d70 for notification tasks
+2025-09-27 19:20:49 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:20:49 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 19:20:51 | INFO     | __main__:startup_event:123 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 19:20:51 | INFO     | __main__:startup_event:124 | ✅ System ready for healthcare processing
+2025-09-27 19:22:03 | INFO     | __main__:shutdown_event:133 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 19:22:55 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 19:22:56 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 19:22:56 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 19:22:57 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 19:22:57 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 19:22:58 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 19:22:58 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 19:22:59 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 19:22:59 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 19:23:00 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: b1899d3c-77c6-41b8-887d-6ce5e57f3956 for voice_processing tasks
+2025-09-27 19:23:00 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent b1899d3c-77c6-41b8-887d-6ce5e57f3956 initialized (minimal mode)
+2025-09-27 19:23:00 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: dff3d6e3-d3a3-473b-aaf0-d2e87503fede for diagnosis tasks
+2025-09-27 19:23:00 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent dff3d6e3-d3a3-473b-aaf0-d2e87503fede initialized
+2025-09-27 19:23:00 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: 3574d445-49c5-4bd3-b4e9-644c7d7365bf for patient_analysis tasks
+2025-09-27 19:23:00 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent 3574d445-49c5-4bd3-b4e9-644c7d7365bf initialized
+2025-09-27 19:23:00 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: c50b2c46-0650-4adf-9783-f56141393876 for medical_record_processing tasks
+2025-09-27 19:23:00 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent c50b2c46-0650-4adf-9783-f56141393876 initialized
+2025-09-27 19:23:00 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: e369b7ef-7b82-4cbf-a578-ddd1eeeafe68 for patient_monitoring tasks
+2025-09-27 19:23:00 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent e369b7ef-7b82-4cbf-a578-ddd1eeeafe68 initialized
+2025-09-27 19:23:00 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: a6ae7419-fe60-4932-b01e-fc900100af72 for data_validation tasks
+2025-09-27 19:23:00 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent a6ae7419-fe60-4932-b01e-fc900100af72 initialized with healthcare validation rules
+2025-09-27 19:23:00 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 3f6b183c-5fef-4f1b-8d84-c5080db95760 for vision tasks
+2025-09-27 19:23:00 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 3f6b183c-5fef-4f1b-8d84-c5080db95760 initialized for medical image analysis
+2025-09-27 19:23:00 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 1faf5aac-ea60-4c42-96b6-d8e3e9310250 for notification tasks
+2025-09-27 19:23:00 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:23:00 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 19:23:00 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:23:00 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:23:00 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 19:23:00 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 6cdd2009-7bf9-4e4d-8b5b-692b2cc880cd for voice_processing tasks
+2025-09-27 19:23:00 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 6cdd2009-7bf9-4e4d-8b5b-692b2cc880cd initialized (minimal mode)
+2025-09-27 19:23:00 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 72035753-9c02-48cf-a298-06a0af686c67 for vision tasks
+2025-09-27 19:23:00 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 72035753-9c02-48cf-a298-06a0af686c67 initialized for medical image analysis
+2025-09-27 19:23:00 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: cb92443c-edba-40ed-baa6-4c7a26daa92d for diagnosis tasks
+2025-09-27 19:23:00 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent cb92443c-edba-40ed-baa6-4c7a26daa92d initialized
+2025-09-27 19:23:00 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: ab7b18f1-d809-492f-a1aa-4f73c8799730 for data_validation tasks
+2025-09-27 19:23:00 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent ab7b18f1-d809-492f-a1aa-4f73c8799730 initialized with healthcare validation rules
+2025-09-27 19:23:00 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 01adbf36-c404-404c-bb06-c36d0ae26189 for notification tasks
+2025-09-27 19:23:00 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:23:00 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 19:23:01 | INFO     | __main__:startup_event:123 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 19:23:01 | INFO     | __main__:startup_event:124 | ✅ System ready for healthcare processing
+2025-09-27 19:23:07 | INFO     | __main__:process_voice_audio:595 | Processing voice input for medical analysis
+2025-09-27 19:23:07 | INFO     | __main__:process_voice_audio:621 | Processing text input for voice analysis
+2025-09-27 19:23:07 | WARNING  | __main__:process_voice_audio:637 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:23:07 | ERROR    | __main__:process_voice_audio:663 | Voice processing failed: name 'analyze_medical_voice_content' is not defined
+2025-09-27 19:23:09 | INFO     | __main__:process_voice_audio:595 | Processing voice input for medical analysis
+2025-09-27 19:23:09 | INFO     | __main__:process_voice_audio:614 | Processing audio file: test_audio.wav
+2025-09-27 19:23:09 | WARNING  | __main__:process_voice_audio:637 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:23:09 | ERROR    | __main__:process_voice_audio:663 | Voice processing failed: name 'analyze_medical_voice_content' is not defined
+2025-09-27 19:24:12 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 19:24:13 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 19:24:13 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 19:24:14 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 19:24:14 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 19:24:15 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 19:24:15 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 19:24:16 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 19:24:16 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 19:24:17 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: a97fdac1-4ca8-40b5-8e57-9a45bff8b07b for voice_processing tasks
+2025-09-27 19:24:17 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent a97fdac1-4ca8-40b5-8e57-9a45bff8b07b initialized (minimal mode)
+2025-09-27 19:24:17 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: e3ea6f1c-d440-4a22-a0cc-537be5e7665e for diagnosis tasks
+2025-09-27 19:24:17 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent e3ea6f1c-d440-4a22-a0cc-537be5e7665e initialized
+2025-09-27 19:24:17 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: 44cc023c-03dd-4b07-89a3-9a5fc9059784 for patient_analysis tasks
+2025-09-27 19:24:17 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent 44cc023c-03dd-4b07-89a3-9a5fc9059784 initialized
+2025-09-27 19:24:17 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: e3fa1f98-0a55-441a-b031-13ed58580718 for medical_record_processing tasks
+2025-09-27 19:24:17 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent e3fa1f98-0a55-441a-b031-13ed58580718 initialized
+2025-09-27 19:24:17 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: f354b9fd-94e8-4863-a4e0-1a3302a1ee4b for patient_monitoring tasks
+2025-09-27 19:24:17 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent f354b9fd-94e8-4863-a4e0-1a3302a1ee4b initialized
+2025-09-27 19:24:17 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 54ea58f8-f1f4-43b1-ba1e-5783ca0f9b2d for data_validation tasks
+2025-09-27 19:24:17 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 54ea58f8-f1f4-43b1-ba1e-5783ca0f9b2d initialized with healthcare validation rules
+2025-09-27 19:24:17 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 52bf7b87-a150-49ff-a3ab-c466a6a0a408 for vision tasks
+2025-09-27 19:24:17 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 52bf7b87-a150-49ff-a3ab-c466a6a0a408 initialized for medical image analysis
+2025-09-27 19:24:17 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: b68ca501-16bf-4148-9515-c14957f073d6 for notification tasks
+2025-09-27 19:24:17 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:24:17 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 19:24:17 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:24:17 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:24:17 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 19:24:17 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: c46f62b8-7cbe-4855-9e78-3dc6cae157eb for voice_processing tasks
+2025-09-27 19:24:17 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent c46f62b8-7cbe-4855-9e78-3dc6cae157eb initialized (minimal mode)
+2025-09-27 19:24:17 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 88eff0eb-7401-4d89-ab58-0fafbdcfc7c0 for vision tasks
+2025-09-27 19:24:17 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 88eff0eb-7401-4d89-ab58-0fafbdcfc7c0 initialized for medical image analysis
+2025-09-27 19:24:17 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: c3ff628c-b144-4752-ab8d-e0a3ce83ccdc for diagnosis tasks
+2025-09-27 19:24:17 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent c3ff628c-b144-4752-ab8d-e0a3ce83ccdc initialized
+2025-09-27 19:24:17 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 1fdb576a-b7ee-4a0d-8eeb-c0da67f40418 for data_validation tasks
+2025-09-27 19:24:17 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 1fdb576a-b7ee-4a0d-8eeb-c0da67f40418 initialized with healthcare validation rules
+2025-09-27 19:24:17 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: cba398d9-72a9-401b-bf67-aad863471cc8 for notification tasks
+2025-09-27 19:24:17 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:24:17 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 19:24:18 | INFO     | __main__:startup_event:123 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 19:24:18 | INFO     | __main__:startup_event:124 | ✅ System ready for healthcare processing
+2025-09-27 19:25:37 | INFO     | __main__:process_voice_audio:595 | Processing voice input for medical analysis
+2025-09-27 19:25:37 | INFO     | __main__:process_voice_audio:621 | Processing text input for voice analysis
+2025-09-27 19:25:37 | WARNING  | __main__:process_voice_audio:637 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:25:37 | ERROR    | __main__:process_voice_audio:663 | Voice processing failed: name 'analyze_medical_voice_content' is not defined
+2025-09-27 19:25:39 | INFO     | __main__:process_voice_audio:595 | Processing voice input for medical analysis
+2025-09-27 19:25:39 | INFO     | __main__:process_voice_audio:614 | Processing audio file: test_audio.wav
+2025-09-27 19:25:39 | WARNING  | __main__:process_voice_audio:637 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:25:39 | ERROR    | __main__:process_voice_audio:663 | Voice processing failed: name 'analyze_medical_voice_content' is not defined
+2025-09-27 19:30:20 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 19:30:20 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 19:30:21 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 19:30:21 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 19:30:22 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 19:30:22 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 19:30:23 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 19:30:23 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 19:30:23 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 19:30:24 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: ccaaf5ef-452d-4c33-b70b-53963163df92 for voice_processing tasks
+2025-09-27 19:30:24 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent ccaaf5ef-452d-4c33-b70b-53963163df92 initialized (minimal mode)
+2025-09-27 19:30:24 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 9c65eb46-f247-4b22-8f28-d925a7005939 for diagnosis tasks
+2025-09-27 19:30:24 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 9c65eb46-f247-4b22-8f28-d925a7005939 initialized
+2025-09-27 19:30:24 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: bca15595-fa88-4e8c-8678-b85efc2ee1d7 for patient_analysis tasks
+2025-09-27 19:30:24 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent bca15595-fa88-4e8c-8678-b85efc2ee1d7 initialized
+2025-09-27 19:30:24 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: e82393a2-877c-4e7d-bafa-2926cd4adc53 for medical_record_processing tasks
+2025-09-27 19:30:24 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent e82393a2-877c-4e7d-bafa-2926cd4adc53 initialized
+2025-09-27 19:30:24 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 6d24f248-454e-4c98-b21e-6ee7ad1f1e33 for patient_monitoring tasks
+2025-09-27 19:30:24 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 6d24f248-454e-4c98-b21e-6ee7ad1f1e33 initialized
+2025-09-27 19:30:24 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 5de52d6f-caec-4c53-8acf-bc81fff63db3 for data_validation tasks
+2025-09-27 19:30:24 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 5de52d6f-caec-4c53-8acf-bc81fff63db3 initialized with healthcare validation rules
+2025-09-27 19:30:24 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: ba4eb67c-c024-466f-a4c9-4d651ad9e11c for vision tasks
+2025-09-27 19:30:24 | INFO     | agents.vision_agent:__init__:37 | VisionAgent ba4eb67c-c024-466f-a4c9-4d651ad9e11c initialized for medical image analysis
+2025-09-27 19:30:24 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 665f12a8-0898-47fa-ba38-df846517107b for notification tasks
+2025-09-27 19:30:24 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:30:24 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 19:30:24 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:30:24 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:30:24 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 19:30:24 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 31749099-ef44-4b28-bbf7-87d65f8b2765 for voice_processing tasks
+2025-09-27 19:30:24 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 31749099-ef44-4b28-bbf7-87d65f8b2765 initialized (minimal mode)
+2025-09-27 19:30:24 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: ea090863-8744-4d71-b2d8-7d6401f069b3 for vision tasks
+2025-09-27 19:30:24 | INFO     | agents.vision_agent:__init__:37 | VisionAgent ea090863-8744-4d71-b2d8-7d6401f069b3 initialized for medical image analysis
+2025-09-27 19:30:24 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: f0bf3e4b-7443-425a-a9f0-10eb7405aee5 for diagnosis tasks
+2025-09-27 19:30:24 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent f0bf3e4b-7443-425a-a9f0-10eb7405aee5 initialized
+2025-09-27 19:30:24 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 68241376-8f69-4365-80a0-cef9b856f764 for data_validation tasks
+2025-09-27 19:30:24 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 68241376-8f69-4365-80a0-cef9b856f764 initialized with healthcare validation rules
+2025-09-27 19:30:24 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: af22dc77-957b-442f-9735-1dc1b23dfd5e for notification tasks
+2025-09-27 19:30:24 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:30:24 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 19:30:26 | INFO     | __main__:startup_event:170 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 19:30:26 | INFO     | __main__:startup_event:171 | ✅ System ready for healthcare processing
+2025-09-27 19:30:53 | INFO     | __main__:process_voice_audio:642 | Processing voice input for medical analysis
+2025-09-27 19:30:53 | INFO     | __main__:process_voice_audio:668 | Processing text input for voice analysis
+2025-09-27 19:30:53 | WARNING  | __main__:process_voice_audio:684 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:30:53 | INFO     | __main__:process_voice_audio:702 | Voice analysis stored in database with ID: 1
+2025-09-27 19:30:53 | INFO     | __main__:process_voice_audio:706 | Voice analysis completed successfully
+2025-09-27 19:30:55 | INFO     | __main__:process_voice_audio:642 | Processing voice input for medical analysis
+2025-09-27 19:30:55 | INFO     | __main__:process_voice_audio:661 | Processing audio file: test_audio.wav
+2025-09-27 19:30:55 | WARNING  | __main__:process_voice_audio:684 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:30:55 | INFO     | __main__:process_voice_audio:702 | Voice analysis stored in database with ID: 2
+2025-09-27 19:30:55 | INFO     | __main__:process_voice_audio:706 | Voice analysis completed successfully
+2025-09-27 19:32:20 | INFO     | __main__:shutdown_event:180 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 19:32:35 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 19:32:35 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 19:32:35 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 19:32:36 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 19:32:36 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 19:32:37 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 19:32:37 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 19:32:37 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 19:32:37 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 19:32:39 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: a1f6a2b9-0ca5-47fe-ad10-88b4e9fc3e9e for voice_processing tasks
+2025-09-27 19:32:39 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent a1f6a2b9-0ca5-47fe-ad10-88b4e9fc3e9e initialized (minimal mode)
+2025-09-27 19:32:39 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 693451fe-f37e-40ce-bce9-dc40f496983c for diagnosis tasks
+2025-09-27 19:32:39 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 693451fe-f37e-40ce-bce9-dc40f496983c initialized
+2025-09-27 19:32:39 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: f83de879-96ec-4609-8e81-b09d5c3d0f32 for patient_analysis tasks
+2025-09-27 19:32:39 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent f83de879-96ec-4609-8e81-b09d5c3d0f32 initialized
+2025-09-27 19:32:39 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: 414ed9da-d7b2-409e-9e3e-ef198a966f80 for medical_record_processing tasks
+2025-09-27 19:32:39 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent 414ed9da-d7b2-409e-9e3e-ef198a966f80 initialized
+2025-09-27 19:32:39 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 6ce1defe-1015-44d8-ab0c-cdaf02079659 for patient_monitoring tasks
+2025-09-27 19:32:39 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 6ce1defe-1015-44d8-ab0c-cdaf02079659 initialized
+2025-09-27 19:32:39 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 80f5d37a-ae90-4a86-8f82-5664e2fd244c for data_validation tasks
+2025-09-27 19:32:39 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 80f5d37a-ae90-4a86-8f82-5664e2fd244c initialized with healthcare validation rules
+2025-09-27 19:32:39 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 8df1d8bc-8311-408f-8e1e-4267491bd491 for vision tasks
+2025-09-27 19:32:39 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 8df1d8bc-8311-408f-8e1e-4267491bd491 initialized for medical image analysis
+2025-09-27 19:32:39 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: b3b3a101-d182-40e0-95df-e0d2d7c3b586 for notification tasks
+2025-09-27 19:32:39 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:32:39 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 19:32:39 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:32:39 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:32:39 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 19:32:39 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 44561186-78d1-40e5-ba41-6097d05f1df0 for voice_processing tasks
+2025-09-27 19:32:39 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 44561186-78d1-40e5-ba41-6097d05f1df0 initialized (minimal mode)
+2025-09-27 19:32:39 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 60762c28-f4ab-402b-8295-179d31c43a3c for vision tasks
+2025-09-27 19:32:39 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 60762c28-f4ab-402b-8295-179d31c43a3c initialized for medical image analysis
+2025-09-27 19:32:39 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 7d3d737e-7dcb-4078-9d9c-efb315875ab8 for diagnosis tasks
+2025-09-27 19:32:39 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 7d3d737e-7dcb-4078-9d9c-efb315875ab8 initialized
+2025-09-27 19:32:39 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 0f15791a-db29-41ae-a0a0-05b485afc924 for data_validation tasks
+2025-09-27 19:32:39 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 0f15791a-db29-41ae-a0a0-05b485afc924 initialized with healthcare validation rules
+2025-09-27 19:32:39 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 74bb3244-15bb-4ce5-91aa-651d093dd342 for notification tasks
+2025-09-27 19:32:39 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:32:39 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 19:32:41 | INFO     | __main__:startup_event:170 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 19:32:41 | INFO     | __main__:startup_event:171 | ✅ System ready for healthcare processing
+2025-09-27 19:32:45 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 19:32:45 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 19:32:47 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 19:32:48 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 19:32:49 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 19:32:50 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 19:32:51 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 19:32:52 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 19:32:53 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 19:32:54 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 19:32:55 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 19:32:55 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 19:32:56 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 54.55%
+2025-09-27 19:33:13 | INFO     | __main__:process_voice_audio:642 | Processing voice input for medical analysis
+2025-09-27 19:33:13 | INFO     | __main__:process_voice_audio:661 | Processing audio file: blob
+2025-09-27 19:33:13 | WARNING  | __main__:process_voice_audio:684 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:33:13 | INFO     | __main__:process_voice_audio:702 | Voice analysis stored in database with ID: 3
+2025-09-27 19:33:13 | INFO     | __main__:process_voice_audio:706 | Voice analysis completed successfully
+2025-09-27 19:33:23 | INFO     | __main__:process_voice_audio:642 | Processing voice input for medical analysis
+2025-09-27 19:33:23 | INFO     | __main__:process_voice_audio:661 | Processing audio file: blob
+2025-09-27 19:33:23 | WARNING  | __main__:process_voice_audio:684 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:33:23 | INFO     | __main__:process_voice_audio:702 | Voice analysis stored in database with ID: 4
+2025-09-27 19:33:23 | INFO     | __main__:process_voice_audio:706 | Voice analysis completed successfully
+2025-09-27 19:33:25 | INFO     | __main__:process_voice_audio:642 | Processing voice input for medical analysis
+2025-09-27 19:33:25 | INFO     | __main__:process_voice_audio:661 | Processing audio file: blob
+2025-09-27 19:33:25 | WARNING  | __main__:process_voice_audio:684 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:33:25 | INFO     | __main__:process_voice_audio:702 | Voice analysis stored in database with ID: 5
+2025-09-27 19:33:25 | INFO     | __main__:process_voice_audio:706 | Voice analysis completed successfully
+2025-09-27 19:33:26 | INFO     | __main__:process_voice_audio:642 | Processing voice input for medical analysis
+2025-09-27 19:33:26 | INFO     | __main__:process_voice_audio:661 | Processing audio file: blob
+2025-09-27 19:33:26 | WARNING  | __main__:process_voice_audio:684 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:33:26 | INFO     | __main__:process_voice_audio:702 | Voice analysis stored in database with ID: 6
+2025-09-27 19:33:26 | INFO     | __main__:process_voice_audio:706 | Voice analysis completed successfully
+2025-09-27 19:33:40 | INFO     | __main__:process_voice_audio:642 | Processing voice input for medical analysis
+2025-09-27 19:33:40 | INFO     | __main__:process_voice_audio:661 | Processing audio file: blob
+2025-09-27 19:33:40 | WARNING  | __main__:process_voice_audio:684 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:33:40 | INFO     | __main__:process_voice_audio:702 | Voice analysis stored in database with ID: 7
+2025-09-27 19:33:40 | INFO     | __main__:process_voice_audio:706 | Voice analysis completed successfully
+2025-09-27 19:33:48 | INFO     | __main__:process_voice_audio:642 | Processing voice input for medical analysis
+2025-09-27 19:33:48 | INFO     | __main__:process_voice_audio:661 | Processing audio file: blob
+2025-09-27 19:33:48 | WARNING  | __main__:process_voice_audio:684 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:33:48 | INFO     | __main__:process_voice_audio:702 | Voice analysis stored in database with ID: 8
+2025-09-27 19:33:48 | INFO     | __main__:process_voice_audio:706 | Voice analysis completed successfully
+2025-09-27 19:34:15 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: gettyimages-482726023-612x612.jpg
+2025-09-27 19:34:15 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 4
+2025-09-27 19:34:15 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:39:15 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: gettyimages-482726023-612x612.jpg
+2025-09-27 19:39:15 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 5
+2025-09-27 19:39:15 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:41:02 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: gettyimages-482726023-612x612.jpg
+2025-09-27 19:41:02 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 6
+2025-09-27 19:41:02 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:41:03 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: gettyimages-482726023-612x612.jpg
+2025-09-27 19:41:03 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 7
+2025-09-27 19:41:03 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:41:06 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: gettyimages-482726023-612x612.jpg
+2025-09-27 19:41:06 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 8
+2025-09-27 19:41:06 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:41:06 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: gettyimages-482726023-612x612.jpg
+2025-09-27 19:41:06 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 9
+2025-09-27 19:41:06 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:41:07 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: gettyimages-482726023-612x612.jpg
+2025-09-27 19:41:07 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 10
+2025-09-27 19:41:07 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:41:09 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: gettyimages-482726023-612x612.jpg
+2025-09-27 19:41:09 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 11
+2025-09-27 19:41:09 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:43:53 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: chest_pneumonia.jpg
+2025-09-27 19:43:53 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 12
+2025-09-27 19:43:53 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:43:55 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: chest_covid19.jpg
+2025-09-27 19:43:55 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 13
+2025-09-27 19:43:55 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:43:57 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: chest_tuberculosis.jpg
+2025-09-27 19:43:57 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 14
+2025-09-27 19:43:57 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:43:59 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: chest_cancer.jpg
+2025-09-27 19:44:00 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 15
+2025-09-27 19:44:00 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:44:02 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: chest_effusion.jpg
+2025-09-27 19:44:02 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 16
+2025-09-27 19:44:02 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:44:04 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: chest_pneumothorax.jpg
+2025-09-27 19:44:04 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 17
+2025-09-27 19:44:04 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:44:06 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: gettyimages-482726023-612x612.jpg
+2025-09-27 19:44:06 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 18
+2025-09-27 19:44:06 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:44:06 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: chest_normal.jpg
+2025-09-27 19:44:06 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 19
+2025-09-27 19:44:06 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:44:23 | INFO     | __main__:analyze_medical_image:721 | Processing medical image: gettyimages-482726023-612x612.jpg
+2025-09-27 19:44:23 | INFO     | __main__:analyze_medical_image:815 | Vision analysis stored in database with ID: 20
+2025-09-27 19:44:23 | INFO     | __main__:analyze_medical_image:819 | Medical image analysis completed successfully
+2025-09-27 19:44:59 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 19:45:00 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 19:45:00 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 19:45:01 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 19:45:01 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 19:45:02 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 19:45:02 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 19:45:02 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 19:45:02 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 19:45:04 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 09f7d297-42a1-4966-8350-07b429f0f0ed for voice_processing tasks
+2025-09-27 19:45:04 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 09f7d297-42a1-4966-8350-07b429f0f0ed initialized (minimal mode)
+2025-09-27 19:45:04 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 4b093cb6-ffb8-4896-96c6-371eef91cbc3 for diagnosis tasks
+2025-09-27 19:45:04 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 4b093cb6-ffb8-4896-96c6-371eef91cbc3 initialized
+2025-09-27 19:45:04 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: 9bd8f2d1-a09e-4c40-93b2-57048e3b1783 for patient_analysis tasks
+2025-09-27 19:45:04 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent 9bd8f2d1-a09e-4c40-93b2-57048e3b1783 initialized
+2025-09-27 19:45:04 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: afc56c66-bf21-4f9f-aa8a-2537286296b9 for medical_record_processing tasks
+2025-09-27 19:45:04 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent afc56c66-bf21-4f9f-aa8a-2537286296b9 initialized
+2025-09-27 19:45:04 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 8174c22f-2c2d-4d4e-8ddc-4c46d73fdc18 for patient_monitoring tasks
+2025-09-27 19:45:04 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 8174c22f-2c2d-4d4e-8ddc-4c46d73fdc18 initialized
+2025-09-27 19:45:04 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 8ef6cdaa-9c3b-4202-a17f-fdc31a05d33e for data_validation tasks
+2025-09-27 19:45:04 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 8ef6cdaa-9c3b-4202-a17f-fdc31a05d33e initialized with healthcare validation rules
+2025-09-27 19:45:04 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: baba2991-c02e-49ab-9ca7-3fe6812129dd for vision tasks
+2025-09-27 19:45:04 | INFO     | agents.vision_agent:__init__:37 | VisionAgent baba2991-c02e-49ab-9ca7-3fe6812129dd initialized for medical image analysis
+2025-09-27 19:45:04 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: a7631b0f-5c71-4b55-a6a2-02ace2ed2894 for notification tasks
+2025-09-27 19:45:04 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:45:04 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 19:45:04 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:45:04 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:45:04 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 19:45:04 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 44f2a27f-0d6c-4d57-8103-87a11160d190 for voice_processing tasks
+2025-09-27 19:45:04 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 44f2a27f-0d6c-4d57-8103-87a11160d190 initialized (minimal mode)
+2025-09-27 19:45:04 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 65aac6ee-eb3b-4c48-9566-6fc947ddd6e8 for vision tasks
+2025-09-27 19:45:04 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 65aac6ee-eb3b-4c48-9566-6fc947ddd6e8 initialized for medical image analysis
+2025-09-27 19:45:04 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 1d4b94d8-324d-4095-967f-87504033d905 for diagnosis tasks
+2025-09-27 19:45:04 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 1d4b94d8-324d-4095-967f-87504033d905 initialized
+2025-09-27 19:45:04 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 55f8424c-8c75-48d4-b529-4a43715c62e3 for data_validation tasks
+2025-09-27 19:45:04 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 55f8424c-8c75-48d4-b529-4a43715c62e3 initialized with healthcare validation rules
+2025-09-27 19:45:04 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 2cfd38c6-be97-4c03-95be-86667c62b90e for notification tasks
+2025-09-27 19:45:04 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:45:04 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 19:45:07 | INFO     | __main__:startup_event:396 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 19:45:07 | INFO     | __main__:startup_event:397 | ✅ System ready for healthcare processing
+2025-09-27 19:46:15 | INFO     | __main__:shutdown_event:406 | 🛑 Multi-Agent Healthcare System shutting down...
+2025-09-27 19:46:19 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 19:46:19 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 19:46:20 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 19:46:20 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 19:46:21 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 19:46:21 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 19:46:22 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 19:46:22 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 19:46:22 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 19:46:23 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 85f22bb1-54b3-4175-9a2e-ca21d67575b1 for voice_processing tasks
+2025-09-27 19:46:23 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 85f22bb1-54b3-4175-9a2e-ca21d67575b1 initialized (minimal mode)
+2025-09-27 19:46:23 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 30b3b77f-63ac-4b85-89cc-ab3611bc7f3a for diagnosis tasks
+2025-09-27 19:46:23 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 30b3b77f-63ac-4b85-89cc-ab3611bc7f3a initialized
+2025-09-27 19:46:23 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: 4defafab-30e2-457d-8d60-fb4c906f1c5a for patient_analysis tasks
+2025-09-27 19:46:23 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent 4defafab-30e2-457d-8d60-fb4c906f1c5a initialized
+2025-09-27 19:46:23 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: efe90998-a25e-49e0-b2ed-5a8fdfa6ab99 for medical_record_processing tasks
+2025-09-27 19:46:23 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent efe90998-a25e-49e0-b2ed-5a8fdfa6ab99 initialized
+2025-09-27 19:46:23 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 8380e34e-bb47-4464-8d1a-0e1a701b388e for patient_monitoring tasks
+2025-09-27 19:46:23 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 8380e34e-bb47-4464-8d1a-0e1a701b388e initialized
+2025-09-27 19:46:23 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: f9a7c392-918d-4d65-b360-b7c57e764948 for data_validation tasks
+2025-09-27 19:46:23 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent f9a7c392-918d-4d65-b360-b7c57e764948 initialized with healthcare validation rules
+2025-09-27 19:46:23 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: db16882a-553a-447c-90bd-ba930a795b5f for vision tasks
+2025-09-27 19:46:23 | INFO     | agents.vision_agent:__init__:37 | VisionAgent db16882a-553a-447c-90bd-ba930a795b5f initialized for medical image analysis
+2025-09-27 19:46:23 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: ed23ba03-0eae-4ee6-98b1-faba09369e3d for notification tasks
+2025-09-27 19:46:23 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:46:23 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 19:46:23 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:46:23 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:46:23 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 19:46:23 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 43810e63-e79b-4fbb-aced-11536e377e74 for voice_processing tasks
+2025-09-27 19:46:23 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 43810e63-e79b-4fbb-aced-11536e377e74 initialized (minimal mode)
+2025-09-27 19:46:23 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 676a4fee-70ef-4885-b6ab-6666efdcacca for vision tasks
+2025-09-27 19:46:23 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 676a4fee-70ef-4885-b6ab-6666efdcacca initialized for medical image analysis
+2025-09-27 19:46:23 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 98fcd00b-308a-4679-9cbf-d7dbffe4a77e for diagnosis tasks
+2025-09-27 19:46:23 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 98fcd00b-308a-4679-9cbf-d7dbffe4a77e initialized
+2025-09-27 19:46:23 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 485faac6-56a7-4c14-b76e-b32c2c8bf959 for data_validation tasks
+2025-09-27 19:46:23 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 485faac6-56a7-4c14-b76e-b32c2c8bf959 initialized with healthcare validation rules
+2025-09-27 19:46:23 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 9a82e2b6-8394-44fe-8bc7-2b93947bb746 for notification tasks
+2025-09-27 19:46:23 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:46:23 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 19:46:25 | INFO     | __main__:startup_event:396 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 19:46:25 | INFO     | __main__:startup_event:397 | ✅ System ready for healthcare processing
+2025-09-27 19:47:54 | INFO     | __main__:process_voice_audio:868 | Processing voice input for medical analysis
+2025-09-27 19:47:54 | INFO     | __main__:process_voice_audio:887 | Processing audio file: blob
+2025-09-27 19:47:54 | WARNING  | __main__:process_voice_audio:910 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:47:54 | INFO     | __main__:process_voice_audio:928 | Voice analysis stored in database with ID: 9
+2025-09-27 19:47:54 | INFO     | __main__:process_voice_audio:932 | Voice analysis completed successfully
+2025-09-27 19:48:02 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 19:48:02 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 19:48:04 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 19:48:05 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 19:48:06 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 19:48:07 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 19:48:08 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 19:48:09 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 19:48:10 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 19:48:11 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 19:48:12 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 19:48:13 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 19:48:14 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 54.55%
+2025-09-27 19:48:16 | INFO     | __main__:analyze_medical_image:947 | Processing medical image: gettyimages-482726023-612x612.jpg
+2025-09-27 19:48:16 | INFO     | __main__:analyze_medical_image:1060 | Vision analysis with advanced disease detection stored in database with ID: 21
+2025-09-27 19:48:16 | INFO     | __main__:analyze_medical_image:1064 | Medical image analysis completed successfully - Medical imaging analysis completed
+2025-09-27 19:51:14 | INFO     | utils.multi_model_client:_initialize_clients:80 | ✅ OpenAI client initialized (Groq Llama 70B)
+2025-09-27 19:51:14 | INFO     | utils.multi_model_client:_initialize_clients:85 | ✅ Groq client initialized
+2025-09-27 19:51:14 | INFO     | utils.multi_model_client:_initialize_clients:93 | ✅ Google client initialized (Groq Mixtral)
+2025-09-27 19:51:15 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Deepseek (Groq Gemma) client initialized
+2025-09-27 19:51:15 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Alibaba (Groq Llama 8B) client initialized
+2025-09-27 19:51:16 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Meta (Groq Llama 3.2 11B) client initialized
+2025-09-27 19:51:16 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ Moonshot (Groq Llama 3.2 3B) client initialized
+2025-09-27 19:51:16 | INFO     | utils.multi_model_client:_initialize_clients:110 | ✅ PlayAI (Groq Llama 3.2 1B) client initialized
+2025-09-27 19:51:16 | INFO     | utils.multi_model_client:_initialize_clients:112 | 🚀 MultiModelClient initialized with 8 providers
+2025-09-27 19:51:19 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: 50534d6a-870e-470e-94d7-fd54fcd80c14 for voice_processing tasks
+2025-09-27 19:51:19 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent 50534d6a-870e-470e-94d7-fd54fcd80c14 initialized (minimal mode)
+2025-09-27 19:51:19 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: e53e58a2-41ad-4381-9841-db83ab98f804 for diagnosis tasks
+2025-09-27 19:51:19 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent e53e58a2-41ad-4381-9841-db83ab98f804 initialized
+2025-09-27 19:51:19 | INFO     | agents.base_agent:__init__:30 | Initialized PatientAnalysisAgent with ID: 1ac4b16c-9bc5-4fbd-8f25-8e3ec2e4a491 for patient_analysis tasks
+2025-09-27 19:51:19 | INFO     | agents.patient_analysis_agent:__init__:27 | PatientAnalysisAgent 1ac4b16c-9bc5-4fbd-8f25-8e3ec2e4a491 initialized
+2025-09-27 19:51:19 | INFO     | agents.base_agent:__init__:30 | Initialized MedicalRecordAgent with ID: 67c3c71f-f67d-45d8-aa90-13f354a1d8dd for medical_record_processing tasks
+2025-09-27 19:51:19 | INFO     | agents.medical_record_agent:__init__:27 | MedicalRecordAgent 67c3c71f-f67d-45d8-aa90-13f354a1d8dd initialized
+2025-09-27 19:51:19 | INFO     | agents.base_agent:__init__:30 | Initialized PatientMonitoringAgent with ID: 7b2c7b78-9a99-4a71-a682-8b434c5c2f6a for patient_monitoring tasks
+2025-09-27 19:51:19 | INFO     | agents.patient_monitoring_agent:__init__:27 | PatientMonitoringAgent 7b2c7b78-9a99-4a71-a682-8b434c5c2f6a initialized
+2025-09-27 19:51:19 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: f9c22e54-81ac-4b1a-b17e-4a973b4915ae for data_validation tasks
+2025-09-27 19:51:19 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent f9c22e54-81ac-4b1a-b17e-4a973b4915ae initialized with healthcare validation rules
+2025-09-27 19:51:19 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: 61ca34ce-75bd-4bba-8526-2c93ab7591ec for vision tasks
+2025-09-27 19:51:19 | INFO     | agents.vision_agent:__init__:37 | VisionAgent 61ca34ce-75bd-4bba-8526-2c93ab7591ec initialized for medical image analysis
+2025-09-27 19:51:19 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: c5e4498c-61a0-4b94-a9c9-6f7ecaa56e0b for notification tasks
+2025-09-27 19:51:19 | ERROR    | orchestrator_minimal:_initialize_agents:53 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:51:19 | INFO     | orchestrator_minimal:__init__:34 | ComprehensiveHealthcareOrchestrator initialized
+2025-09-27 19:51:19 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:51:19 | INFO     | mcp_integration.healthcare_mcp:initialize_mcp_connections:55 | ✅ MCP servers initialized: ['medical_database', 'lab_systems', 'imaging_systems', 'pharmacy_systems']
+2025-09-27 19:51:19 | INFO     | mcp_integration.healthcare_mcp:__init__:178 | ✅ MCP-integrated agent 'orchestrator' initialized
+2025-09-27 19:51:19 | INFO     | agents.base_agent:__init__:30 | Initialized VoiceAgent with ID: dbebd9b1-24cd-498d-8afb-24370540d6a0 for voice_processing tasks
+2025-09-27 19:51:19 | INFO     | agents.voice_agent_minimal:__init__:26 | VoiceAgent dbebd9b1-24cd-498d-8afb-24370540d6a0 initialized (minimal mode)
+2025-09-27 19:51:19 | INFO     | agents.base_agent:__init__:30 | Initialized VisionAgent with ID: bf2ff7b3-42db-4f1e-9eb7-099d2f1d896e for vision tasks
+2025-09-27 19:51:19 | INFO     | agents.vision_agent:__init__:37 | VisionAgent bf2ff7b3-42db-4f1e-9eb7-099d2f1d896e initialized for medical image analysis
+2025-09-27 19:51:19 | INFO     | agents.base_agent:__init__:30 | Initialized DiagnosticAgent with ID: 75020b00-f613-4e78-b5c7-47c64cfd854e for diagnosis tasks
+2025-09-27 19:51:19 | INFO     | agents.diagnostic_agent:__init__:25 | Enhanced DiagnosticAgent 75020b00-f613-4e78-b5c7-47c64cfd854e initialized
+2025-09-27 19:51:19 | INFO     | agents.base_agent:__init__:30 | Initialized DataValidationAgent with ID: 57d63121-04d0-494c-a29a-fc6bc05b20ce for data_validation tasks
+2025-09-27 19:51:19 | INFO     | agents.validation_agent:__init__:33 | DataValidationAgent 57d63121-04d0-494c-a29a-fc6bc05b20ce initialized with healthcare validation rules
+2025-09-27 19:51:19 | INFO     | agents.base_agent:__init__:30 | Initialized NotificationAgent with ID: 19473b1a-d4f9-4dd3-80ac-a9e79095401c for notification tasks
+2025-09-27 19:51:19 | ERROR    | enhanced_orchestrator:_initialize_all_agents:58 | Agent initialization failed: 'HealthcareSystemConfig' object has no attribute 'notification'
+2025-09-27 19:51:19 | INFO     | enhanced_orchestrator:__init__:41 | 🚀 Enhanced Multi-Modal Healthcare Orchestrator initialized
+2025-09-27 19:51:22 | INFO     | __main__:startup_event:396 | 🚀 Multi-Agent Healthcare System starting up (minimal mode)...
+2025-09-27 19:51:22 | INFO     | __main__:startup_event:397 | ✅ System ready for healthcare processing
+2025-09-27 19:51:22 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 19:51:22 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 19:51:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 19:51:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 19:51:26 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 19:51:27 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 19:51:28 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 19:51:29 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 19:51:30 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 19:51:32 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 19:51:34 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 19:51:35 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 19:51:36 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 72.73%
+2025-09-27 19:53:20 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 19:53:20 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 19:53:23 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 19:53:24 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 19:53:25 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 19:53:27 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 19:53:28 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 19:53:29 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 19:53:31 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 19:53:32 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 19:53:33 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 19:53:34 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 19:53:34 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 54.55%
+2025-09-27 19:53:40 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:130 | 🧪 Starting comprehensive model accuracy evaluation...
+2025-09-27 19:53:40 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 1/11: symptom_analysis
+2025-09-27 19:53:41 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 2/11: symptom_analysis
+2025-09-27 19:53:41 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 3/11: symptom_analysis
+2025-09-27 19:53:43 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 4/11: drug_interaction
+2025-09-27 19:53:44 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 5/11: drug_interaction
+2025-09-27 19:53:44 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 6/11: treatment_recommendation
+2025-09-27 19:53:46 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 7/11: treatment_recommendation
+2025-09-27 19:53:47 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 8/11: emergency_triage
+2025-09-27 19:53:48 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 9/11: emergency_triage
+2025-09-27 19:53:50 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 10/11: complex_diagnosis
+2025-09-27 19:53:51 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:138 | Evaluating case 11/11: complex_diagnosis
+2025-09-27 19:53:52 | INFO     | evaluation.model_accuracy:evaluate_model_accuracy:189 | ✅ Model accuracy evaluation complete: 72.73%
+2025-09-27 19:54:13 | INFO     | __main__:process_voice_audio:868 | Processing voice input for medical analysis
+2025-09-27 19:54:13 | INFO     | __main__:process_voice_audio:887 | Processing audio file: blob
+2025-09-27 19:54:13 | WARNING  | __main__:process_voice_audio:910 | Voice agent processing failed, using fallback: 'voice'
+2025-09-27 19:54:13 | INFO     | __main__:process_voice_audio:928 | Voice analysis stored in database with ID: 10
+2025-09-27 19:54:13 | INFO     | __main__:process_voice_audio:932 | Voice analysis completed successfully
+2025-09-27 19:55:10 | INFO     | __main__:analyze_medical_image:947 | Processing medical image: gettyimages-482726023-612x612.jpg
+2025-09-27 19:55:10 | INFO     | __main__:analyze_medical_image:1084 | Vision analysis with advanced disease detection stored in database with ID: 22
+2025-09-27 19:55:10 | INFO     | __main__:analyze_medical_image:1088 | Medical image analysis completed successfully - Normal chest X-ray
+2025-09-27 19:56:04 | INFO     | __main__:shutdown_event:406 | 🛑 Multi-Agent Healthcare System shutting down...

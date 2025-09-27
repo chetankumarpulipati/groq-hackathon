@@ -1,0 +1,1788 @@
+{
+  "evaluation_metadata": {
+    "timestamp": "2025-09-27T18:43:11.036700",
+    "total_models": 12,
+    "total_test_cases": 10,
+    "specialties_tested": [
+      "emergency",
+      "pharmacology",
+      "diagnosis",
+      "infectious_disease",
+      "pediatrics"
+    ]
+  },
+  "model_results": {
+    "gemma2-9b-it": {
+      "model_info": {
+        "category": "Google",
+        "size": "9B",
+        "type": "Instruction"
+      },
+      "total_cases": 10,
+      "correct": 10,
+      "accuracy": 1.0,
+      "category_performance": {
+        "emergency": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "pharmacology": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "diagnosis": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "infectious_disease": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "pediatrics": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        }
+      },
+      "difficulty_performance": {
+        "medium": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 1.0
+        },
+        "easy": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "hard": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      },
+      "case_results": [
+        {
+          "model": "gemma2-9b-it",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Acute Coronary Syndrome (likely myocardial infarction)\nConfidence: 90%\nReasoning: The patient presents with classic symptoms of acute coronary syndrome, including crushing chest pain radiating to the left arm, diaphoresis, and nausea.  His elevated blood pressure and heart rate are also consistent with this diagnosis.  \n\n\n**Important Note:** This is a preliminary assessment based on limited information. A definitive diagnosis can only be made after a thorough medical evaluation, including ECG, blood tests (e.g., cardiac enzymes), and potentially other diagnostic procedures.  Immediate medical attention is crucial for this patient. \n",
+          "is_correct": true,
+          "ground_truth": "myocardial_infarction",
+          "success": true
+        },
+        {
+          "model": "gemma2-9b-it",
+          "case_category": "emergency",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Opioid Overdose\nConfidence: 95%\nReasoning: The combination of unconsciousness, pinpoint pupils, and slow shallow breathing is highly suggestive of an opioid overdose. The presence of track marks further supports this diagnosis, indicating a history of intravenous drug use.  \n\n",
+          "is_correct": true,
+          "ground_truth": "opioid_overdose",
+          "success": true
+        },
+        {
+          "model": "gemma2-9b-it",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Meningitis \nConfidence: 85%\nReasoning: The patient presents with classic symptoms of meningitis: sudden severe headache, neck stiffness (nuchal rigidity), photophobia, and fever.  The combination of these symptoms strongly suggests an infection of the meninges.  \n\n\n**Important Note:** I am an AI and cannot provide medical advice. This information is for educational purposes only and should not be substituted for the evaluation of a qualified healthcare professional.  The patient needs immediate medical attention. \n",
+          "is_correct": true,
+          "ground_truth": "meningitis",
+          "success": true
+        },
+        {
+          "model": "gemma2-9b-it",
+          "case_category": "pharmacology",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis:  Increased risk of bleeding\nConfidence: 95%\nReasoning: Ciprofloxacin can increase the risk of bleeding in patients taking warfarin by interfering with vitamin K metabolism, which is essential for blood clotting. This can lead to a higher INR (international normalized ratio) and an increased risk of hemorrhagic complications. \n\n\n\n",
+          "is_correct": true,
+          "ground_truth": "drug_interaction",
+          "success": true
+        },
+        {
+          "model": "gemma2-9b-it",
+          "case_category": "pharmacology",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Risk of Digoxin Toxicity\nConfidence: 95%\nReasoning: Furosemide is a loop diuretic that can increase digoxin levels by reducing renal excretion. Elderly patients are more susceptible to digoxin toxicity due to age-related changes in renal function and increased sensitivity to the drug.  Therefore, close monitoring of digoxin levels and cardiac function is essential. \n\n\n\n",
+          "is_correct": true,
+          "ground_truth": "electrolyte_monitoring",
+          "success": true
+        },
+        {
+          "model": "gemma2-9b-it",
+          "case_category": "diagnosis",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Systemic Lupus Erythematosus (SLE)\nConfidence: 90%\nReasoning: The patient presents with classic symptoms of SLE including fatigue, joint pain, and a malar rash.  The presence of a positive antinuclear antibody (ANA) and anti-dsDNA antibodies further strengthens the diagnosis.  \n\n\n**Important Note:** This is a preliminary assessment based on limited information. A definitive diagnosis requires a comprehensive medical evaluation, including a detailed history, physical examination, and additional laboratory tests. \n",
+          "is_correct": true,
+          "ground_truth": "systemic_lupus_erythematosus",
+          "success": true
+        },
+        {
+          "model": "gemma2-9b-it",
+          "case_category": "diagnosis",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Diabetic Ketoacidosis (DKA)\nConfidence: 95%\nReasoning: The patient presents with classic symptoms of DKA: blurred vision (hyperglycemia), excessive thirst (polydipsia), fruity breath (acetone production), and a significantly elevated glucose level (450 mg/dL).  These findings strongly suggest a diabetic crisis requiring immediate medical attention. \n\n\n\n",
+          "is_correct": true,
+          "ground_truth": "diabetic_ketoacidosis",
+          "success": true
+        },
+        {
+          "model": "gemma2-9b-it",
+          "case_category": "infectious_disease",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Malaria\nConfidence: 80%\nReasoning:  The combination of recent travel to sub-Saharan Africa, fever, chills, headache, and low platelets strongly suggests malaria.  These are classic symptoms of the disease, and the geographic location is a major risk factor. \n\n\n**Important Note:** This is a preliminary assessment based on limited information. A definitive diagnosis requires laboratory testing (e.g., blood smear) and a thorough medical evaluation. \n",
+          "is_correct": true,
+          "ground_truth": "malaria",
+          "success": true
+        },
+        {
+          "model": "gemma2-9b-it",
+          "case_category": "infectious_disease",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Clostridioides difficile infection (CDI)\nConfidence: 95%\nReasoning:  The patient presents with prolonged diarrhea following antibiotic use and a positive C. diff toxin test, which are classic hallmarks of CDI.  \n\n\nLet me know if you'd like me to elaborate on any aspect of this assessment or explore potential management options. \n\n",
+          "is_correct": true,
+          "ground_truth": "c_diff_colitis",
+          "success": true
+        },
+        {
+          "model": "gemma2-9b-it",
+          "case_category": "pediatrics",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Croup\nConfidence: 90%\nReasoning: The classic triad of a barking cough, inspiratory stridor, and fever in a 2-year-old following a recent upper respiratory infection (URI) is highly suggestive of croup.  \n",
+          "is_correct": true,
+          "ground_truth": "croup",
+          "success": true
+        }
+      ]
+    },
+    "groq/compound": {
+      "model_info": {
+        "category": "Groq",
+        "size": "Unknown",
+        "type": "Compound"
+      },
+      "total_cases": 10,
+      "correct": 10,
+      "accuracy": 1.0,
+      "category_performance": {
+        "emergency": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "pharmacology": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "diagnosis": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "infectious_disease": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "pediatrics": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        }
+      },
+      "difficulty_performance": {
+        "medium": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 1.0
+        },
+        "easy": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "hard": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      },
+      "case_results": [
+        {
+          "model": "groq/compound",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: **Acute Myocardial Infarction (STEMI or NSTEMI)**\nConfidence: **90%**\nReasoning: The patient's symptoms of crushing chest pain radiating to the left arm, accompanied by diaphoresis and nausea, are highly suggestive of an acute myocardial infarction. The elevated blood pressure (150/95 mmHg) and heart rate (110 beats per minute) further support the diagnosis by indicating stress and potential cardiac strain. While the exact classification (STEMI vs. NSTEMI) would require an electrocardiogram (ECG) and cardiac biomarkers (e.g., troponin levels) for confirmation, the clinical presentation strongly points towards an acute coronary syndrome, with myocardial infarction being the most likely diagnosis.",
+          "is_correct": true,
+          "ground_truth": "myocardial_infarction",
+          "success": true
+        },
+        {
+          "model": "groq/compound",
+          "case_category": "emergency",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Opioid Overdose\nConfidence: 90%\nReasoning: The patient's presentation of unconsciousness, pinpoint pupils (miosis), slow shallow breathing indicating respiratory depression, and visible track marks, is highly suggestive of opioid overdose. This combination of symptoms is classic for opioid-induced respiratory depression, a medical emergency requiring immediate intervention, typically with naloxone administration to reverse opioid effects and support of vital functions.",
+          "is_correct": true,
+          "ground_truth": "opioid_overdose",
+          "success": true
+        },
+        {
+          "model": "groq/compound",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Meningitis (likely bacterial)\nConfidence: 80%\nReasoning: The combination of sudden severe headache, neck stiffness, photophobia, and fever (102\u00b0F) is highly suggestive of meningitis. The presence of fever, in particular, leans towards a bacterial cause, which is a medical emergency requiring immediate attention. While viral meningitis is also possible, the severity of symptoms and the presence of fever make bacterial meningitis a more likely diagnosis, necessitating prompt diagnostic workup, including lumbar puncture, and initiation of empirical antibiotic therapy.",
+          "is_correct": true,
+          "ground_truth": "meningitis",
+          "success": true
+        },
+        {
+          "model": "groq/compound",
+          "case_category": "pharmacology",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Increased risk of bleeding due to potential elevation of INR levels\nConfidence: 100%\nReasoning: The patient is on warfarin, a blood thinner, and is prescribed ciprofloxacin for a UTI. Ciprofloxacin can reduce gut flora responsible for vitamin K production, thereby enhancing the effect of warfarin and increasing the risk of bleeding, as warfarin's efficacy is monitored by INR levels and alterations in vitamin K availability can significantly impact these levels.",
+          "is_correct": true,
+          "ground_truth": "drug_interaction",
+          "success": true
+        },
+        {
+          "model": "groq/compound",
+          "case_category": "pharmacology",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Increased risk of digoxin toxicity due to potential furosemide-induced electrolyte imbalances, particularly hypokalemia and hypomagnesemia.\nConfidence: 100%\nReasoning: The initiation of furosemide in an elderly patient already taking digoxin requires vigilant monitoring due to the potential for furosemide to cause hypokalemia and hypomagnesemia, both of which can significantly increase the risk of digoxin toxicity. Essential monitoring should include regular checks of serum potassium, magnesium, and creatinine levels, as well as close observation for clinical signs of digoxin toxicity, such as nausea, vomiting, confusion, and arrhythmias, to promptly identify and manage any adverse effects.",
+          "is_correct": true,
+          "ground_truth": "electrolyte_monitoring",
+          "success": true
+        },
+        {
+          "model": "groq/compound",
+          "case_category": "diagnosis",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Systemic Lupus Erythematosus (SLE)\nConfidence: 95%\nReasoning: The patient's symptoms of fatigue, joint pain, and malar rash, combined with laboratory findings of a positive ANA and anti-dsDNA, are highly suggestive of SLE, as these antibodies are specific for this autoimmune disease and the symptoms align with common manifestations of SLE, including joint involvement, characteristic skin rash, and systemic symptoms like fatigue.",
+          "is_correct": true,
+          "ground_truth": "systemic_lupus_erythematosus",
+          "success": true
+        },
+        {
+          "model": "groq/compound",
+          "case_category": "diagnosis",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: **Diabetic Ketoacidosis (DKA)**\nConfidence: **90%**\nReasoning: The patient's symptoms of blurred vision, excessive thirst, and particularly fruity breath, in the context of a known history of diabetes and a significantly elevated glucose level of 450 mg/dL, are highly suggestive of DKA. The fruity breath is a classic indicator of ketosis, a hallmark of DKA. While other conditions could potentially cause these symptoms, the combination of severe hyperglycemia, polydipsia, and ketosis (as suggested by the fruity breath) makes DKA the most likely diagnosis. Confirmation with laboratory tests such as arterial blood gas, serum ketones, and electrolytes would be necessary to definitively diagnose DKA and guide appropriate treatment, including fluid replacement, insulin therapy, and electrolyte management.",
+          "is_correct": true,
+          "ground_truth": "diabetic_ketoacidosis",
+          "success": true
+        },
+        {
+          "model": "groq/compound",
+          "case_category": "infectious_disease",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Malaria\nConfidence: 70%\nReasoning: The patient's recent travel to sub-Saharan Africa, combined with symptoms of fever, chills, headache, and notably, low platelets (thrombocytopenia), points towards an infectious etiology endemic to that region. Malaria, caused by Plasmodium spp., is a leading consideration given its high prevalence in sub-Saharan Africa and the matching clinical presentation. The symptoms and lab findings, particularly thrombocytopenia, are consistent with malaria. While other diagnoses such as dengue fever and tick-borne illnesses should be considered and ruled out with specific diagnostic testing, malaria is the most likely primary diagnosis based on the provided clinical scenario.",
+          "is_correct": true,
+          "ground_truth": "malaria",
+          "success": true
+        },
+        {
+          "model": "groq/compound",
+          "case_category": "infectious_disease",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: **Clostridioides difficile infection (CDI)**\nConfidence: **95%**\nReasoning: The patient's prolonged diarrhea following antibiotic use, combined with a positive test for C. diff toxin, strongly supports this diagnosis, as antibiotics can disrupt normal gut flora, leading to C. difficile overgrowth, and the positive toxin test is diagnostic for CDI, with the only consideration for less than 100% confidence being the potential for other complicating factors or atypical presentations.",
+          "is_correct": true,
+          "ground_truth": "c_diff_colitis",
+          "success": true
+        },
+        {
+          "model": "groq/compound",
+          "case_category": "pediatrics",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Croup\nConfidence: 90%\nReasoning: The clinical presentation of a barking cough, inspiratory stridor, and fever following a recent URI in a 2-year-old child is highly suggestive of croup, a common condition in this age group characterized by subglottic edema leading to these symptoms, although other conditions like epiglottitis should be considered in the differential diagnosis.",
+          "is_correct": true,
+          "ground_truth": "croup",
+          "success": true
+        }
+      ]
+    },
+    "groq/compound-mini": {
+      "model_info": {
+        "category": "Groq",
+        "size": "Mini",
+        "type": "Compound"
+      },
+      "total_cases": 10,
+      "correct": 10,
+      "accuracy": 1.0,
+      "category_performance": {
+        "emergency": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "pharmacology": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "diagnosis": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "infectious_disease": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "pediatrics": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        }
+      },
+      "difficulty_performance": {
+        "medium": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 1.0
+        },
+        "easy": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "hard": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      },
+      "case_results": [
+        {
+          "model": "groq/compound-mini",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Acute Myocardial Infarction (AMI)\nConfidence: 90%\nReasoning: The patient's symptoms of crushing chest pain radiating to the left arm, diaphoresis, and nausea are classic for acute myocardial infarction. The elevated blood pressure (150/95) and heart rate (110) also support this diagnosis, as they are common responses to the stress of an MI. While other conditions could present similarly, the combination of these symptoms and signs makes AMI the most likely diagnosis. Further diagnostic testing, such as ECG and troponin levels, would be needed to confirm the diagnosis.",
+          "is_correct": true,
+          "ground_truth": "myocardial_infarction",
+          "success": true
+        },
+        {
+          "model": "groq/compound-mini",
+          "case_category": "emergency",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Opioid Overdose\nConfidence: 90%\nReasoning: The combination of an unconscious patient, pinpoint pupils (miosis), and slow shallow breathing are classic signs of opioid overdose. The presence of track marks, which are indicative of intravenous drug use, further supports this diagnosis. While other conditions could potentially cause similar symptoms, the constellation of findings in this scenario strongly suggests opioid overdose.",
+          "is_correct": true,
+          "ground_truth": "opioid_overdose",
+          "success": true
+        },
+        {
+          "model": "groq/compound-mini",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Bacterial Meningitis\nConfidence: 80%\nReasoning: The combination of sudden severe headache, neck stiffness (nuchal rigidity), photophobia (sensitivity to light), and fever (102\u00b0F) are classic symptoms of meningitis, an inflammation of the protective membranes covering the brain and spinal cord, known as the meninges. The presence of fever and severe headache suggests an infectious process. Bacterial meningitis is a medical emergency and more likely than viral meningitis given the severity of symptoms and the presence of fever. However, the confidence is not 100% because other conditions such as subarachnoid hemorrhage or viral meningitis could also present similarly, and further diagnostic testing (e.g., lumbar puncture) would be needed to confirm the diagnosis.",
+          "is_correct": true,
+          "ground_truth": "meningitis",
+          "success": true
+        },
+        {
+          "model": "groq/compound-mini",
+          "case_category": "pharmacology",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Increased risk of bleeding due to potential warfarin-ciprofloxacin interaction\nConfidence: 90%\nReasoning: Ciprofloxacin is a known inhibitor of the cytochrome P450 system, specifically CYP2C9, which is responsible for warfarin metabolism. Concomitant use of ciprofloxacin and warfarin can lead to increased warfarin levels, thereby increasing the risk of bleeding. Close monitoring of INR (International Normalized Ratio) is necessary to prevent potential bleeding complications.",
+          "is_correct": true,
+          "ground_truth": "drug_interaction",
+          "success": true
+        },
+        {
+          "model": "groq/compound-mini",
+          "case_category": "pharmacology",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Risk of digoxin toxicity\nConfidence: 90%\nReasoning: Furosemide can cause hypokalemia, which increases the risk of digoxin toxicity. Digoxin and furosemide can both affect electrolyte levels, particularly potassium. Hypokalemia can increase the sensitivity of the heart to digoxin, leading to potential toxicity. Therefore, monitoring potassium levels and digoxin levels (if available) is essential to prevent and detect potential toxicity.",
+          "is_correct": true,
+          "ground_truth": "electrolyte_monitoring",
+          "success": true
+        },
+        {
+          "model": "groq/compound-mini",
+          "case_category": "diagnosis",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Systemic Lupus Erythematosus (SLE)\nConfidence: 90%\nReasoning: The patient's symptoms of fatigue, joint pain, and malar rash, combined with a positive ANA (antinuclear antibody) and anti-dsDNA (double-stranded DNA) antibodies, are highly suggestive of SLE. The presence of a malar rash and positive anti-dsDNA antibodies are particularly specific for SLE. While ANA can be positive in various autoimmune conditions, the combination of clinical symptoms and these specific antibodies strongly supports the diagnosis of SLE.",
+          "is_correct": true,
+          "ground_truth": "systemic_lupus_erythematosus",
+          "success": true
+        },
+        {
+          "model": "groq/compound-mini",
+          "case_category": "diagnosis",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Diabetic Ketoacidosis (DKA)\nConfidence: 90%\nReasoning: The patient's symptoms of blurred vision, excessive thirst, and fruity breath, combined with a glucose level of 450 mg/dL and a history of diabetes, are highly suggestive of DKA. Fruity breath is a classic sign of ketoacidosis, and the patient's hyperglycemia and symptoms of polydipsia (excessive thirst) are consistent with uncontrolled diabetes. While other conditions could cause hyperglycemia and similar symptoms, the presence of fruity breath and the constellation of symptoms point strongly towards DKA. Further diagnostic testing, such as arterial blood gas and ketone measurement, would be needed to confirm the diagnosis, but based on the information provided, DKA is the most likely diagnosis.",
+          "is_correct": true,
+          "ground_truth": "diabetic_ketoacidosis",
+          "success": true
+        },
+        {
+          "model": "groq/compound-mini",
+          "case_category": "infectious_disease",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Malaria\nConfidence: 80%\nReasoning: The combination of recent travel to sub-Saharan Africa, fever, chills, headache, and low platelets (thrombocytopenia) is highly suggestive of malaria, a mosquito-borne infectious disease prevalent in this region. Malaria can present with a range of symptoms, including those listed, and thrombocytopenia is a common finding. However, other diagnoses such as typhoid fever, dengue fever, and tick-borne illnesses should also be considered and ruled out with further diagnostic testing. \n\nTo confirm the diagnosis, I would recommend a thorough diagnostic workup, including a rapid diagnostic test (RDT) or microscopic examination of a blood smear for malaria parasites, as well as laboratory tests to rule out other potential causes of the patient's symptoms. \n\nGiven the high prevalence of malaria in sub-Saharan Africa and the patient's symptoms, malaria is a leading consideration in this case. \n\nFurther evaluation and diagnostic testing are necessary to confirm the diagnosis and guide treatment.",
+          "is_correct": true,
+          "ground_truth": "malaria",
+          "success": true
+        },
+        {
+          "model": "groq/compound-mini",
+          "case_category": "infectious_disease",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Clostridioides difficile (C. diff) infection\nConfidence: 95%\nReasoning: The patient's prolonged diarrhea after antibiotics, combined with a positive C. diff toxin test, strongly supports the diagnosis of C. diff infection. Antibiotics are a known risk factor for developing C. diff infection, as they disrupt the normal gut flora, allowing C. diff to overgrow and produce toxins. The presence of diarrhea and a positive toxin test confirms the diagnosis.",
+          "is_correct": true,
+          "ground_truth": "c_diff_colitis",
+          "success": true
+        },
+        {
+          "model": "groq/compound-mini",
+          "case_category": "pediatrics",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Croup\nConfidence: 90%\nReasoning: The clinical presentation of a 2-year-old with a barking cough, inspiratory stridor, fever of 101\u00b0F, and a recent upper respiratory infection (URI) is highly suggestive of croup. Croup is a common childhood condition characterized by a distinctive barking cough and inspiratory stridor due to inflammation and narrowing of the subglottic airway. The recent URI likely triggered the condition, and the fever and stridor indicate significant airway involvement. While other conditions like epiglottitis or foreign body aspiration could present similarly, the barking cough and recent URI make croup the most likely diagnosis.",
+          "is_correct": true,
+          "ground_truth": "croup",
+          "success": true
+        }
+      ]
+    },
+    "llama-3.1-8b-instant": {
+      "model_info": {
+        "category": "Meta",
+        "size": "8B",
+        "type": "Fast"
+      },
+      "total_cases": 10,
+      "correct": 10,
+      "accuracy": 1.0,
+      "category_performance": {
+        "emergency": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "pharmacology": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "diagnosis": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "infectious_disease": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "pediatrics": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        }
+      },
+      "difficulty_performance": {
+        "medium": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 1.0
+        },
+        "easy": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "hard": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      },
+      "case_results": [
+        {
+          "model": "llama-3.1-8b-instant",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Acute Myocardial Infarction (STEMI) with possible Left Ventricular Dysfunction\nConfidence: 95%\nReasoning: The patient's presentation of crushing chest pain radiating to the left arm, diaphoresis, nausea, and elevated heart rate in the context of hypertension is highly suggestive of an acute myocardial infarction. The elevated heart rate and blood pressure further indicate possible left ventricular dysfunction, which is a common complication of STEMI. The patient's symptoms and signs are consistent with the American College of Cardiology (ACC) and American Heart Association (AHA) criteria for STEMI.",
+          "is_correct": true,
+          "ground_truth": "myocardial_infarction",
+          "success": true
+        },
+        {
+          "model": "llama-3.1-8b-instant",
+          "case_category": "emergency",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Opioid Overdose with Central Nervous System Depression\nConfidence: 90%\nReasoning: The combination of unconsciousness, pinpoint pupils, slow shallow breathing, and track marks visible on the patient's body are highly suggestive of an opioid overdose. The pinpoint pupils are a classic sign of opioid use, and the slow shallow breathing is indicative of central nervous system depression, which is a hallmark of opioid toxicity. The presence of track marks further supports a history of intravenous opioid use.",
+          "is_correct": true,
+          "ground_truth": "opioid_overdose",
+          "success": true
+        },
+        {
+          "model": "llama-3.1-8b-instant",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Bacterial Meningitis\nConfidence: 90%\nReasoning: The patient's presentation of sudden severe headache, neck stiffness, photophobia, and fever is highly suggestive of bacterial meningitis. The acute onset of symptoms, particularly the severe headache and neck stiffness, are classic signs of meningismus, which is often associated with bacterial meningitis. The presence of fever further supports this diagnosis. However, it's essential to note that viral meningitis can also present with similar symptoms, but the severity and rapid progression of symptoms in this case make bacterial meningitis a more likely diagnosis.",
+          "is_correct": true,
+          "ground_truth": "meningitis",
+          "success": true
+        },
+        {
+          "model": "llama-3.1-8b-instant",
+          "case_category": "pharmacology",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Increased risk of bleeding due to warfarin-ciprofloxacin interaction.\nConfidence: 90%\nReasoning: Ciprofloxacin is a fluoroquinolone antibiotic that can inhibit the cytochrome P450 enzyme system, specifically CYP1A2, which is involved in warfarin metabolism. This interaction can lead to increased warfarin levels and an increased risk of bleeding. The patient is already on warfarin, making this interaction a major concern.",
+          "is_correct": true,
+          "ground_truth": "drug_interaction",
+          "success": true
+        },
+        {
+          "model": "llama-3.1-8b-instant",
+          "case_category": "pharmacology",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Risk of Digitalis Toxicity\nConfidence: 80%\nReasoning: The combination of digoxin and furosemide increases the risk of digitalis toxicity due to the increased levels of digoxin in the body. Furosemide can cause hypokalemia, which can lead to increased digoxin levels and toxicity. Therefore, it is essential to monitor the patient's potassium levels, digoxin levels, and cardiac function closely.",
+          "is_correct": true,
+          "ground_truth": "electrolyte_monitoring",
+          "success": true
+        },
+        {
+          "model": "llama-3.1-8b-instant",
+          "case_category": "diagnosis",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Systemic Lupus Erythematosus (SLE)\nConfidence: 95%\nReasoning: The patient's presentation of fatigue, joint pain, and malar rash, combined with positive ANA (Antinuclear Antibody) and anti-dsDNA (anti-double-stranded DNA) antibodies, is highly suggestive of Systemic Lupus Erythematosus (SLE). The presence of anti-dsDNA antibodies is particularly specific for SLE, as they are found in approximately 70% of patients with the disease. The ANA positivity further supports this diagnosis, although it can be seen in other autoimmune conditions as well.",
+          "is_correct": true,
+          "ground_truth": "systemic_lupus_erythematosus",
+          "success": true
+        },
+        {
+          "model": "llama-3.1-8b-instant",
+          "case_category": "diagnosis",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Diabetic Ketoacidosis (DKA)\nConfidence: 95%\nReasoning: The patient's presentation of blurred vision, excessive thirst, and fruity breath in the context of diabetes, along with a significantly elevated glucose level (450 mg/dL), is highly suggestive of Diabetic Ketoacidosis (DKA). DKA is a serious complication of diabetes characterized by hyperglycemia, metabolic acidosis, and ketosis. The fruity breath odor is a classic symptom of acetone, a byproduct of fat metabolism in the setting of DKA.",
+          "is_correct": true,
+          "ground_truth": "diabetic_ketoacidosis",
+          "success": true
+        },
+        {
+          "model": "llama-3.1-8b-instant",
+          "case_category": "infectious_disease",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Malaria (Plasmodium falciparum)\nConfidence: 80%\nReasoning: The patient's recent travel to sub-Saharan Africa increases the likelihood of exposure to malaria, a common and potentially life-threatening disease in this region. The symptoms of fever, chills, and headache are consistent with malaria, and the presence of low platelets (thrombocytopenia) is a known complication of severe malaria. While other diagnoses such as dengue fever or typhoid fever are also possible, the combination of travel history and symptoms makes malaria a high-priority consideration. Further diagnostic testing, such as a rapid diagnostic test (RDT) or blood smear, would be necessary to confirm the diagnosis.",
+          "is_correct": true,
+          "ground_truth": "malaria",
+          "success": true
+        },
+        {
+          "model": "llama-3.1-8b-instant",
+          "case_category": "infectious_disease",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Clostridioides difficile (C. diff) infection\nConfidence: 95%\nReasoning: The patient's prolonged diarrhea after antibiotic use, combined with a positive C. diff toxin test, strongly suggests an infection with Clostridioides difficile, a common cause of antibiotic-associated diarrhea and colitis. The presence of C. diff toxin indicates active infection, which warrants prompt treatment to prevent complications such as pseudomembranous colitis and toxic megacolon.",
+          "is_correct": true,
+          "ground_truth": "c_diff_colitis",
+          "success": true
+        },
+        {
+          "model": "llama-3.1-8b-instant",
+          "case_category": "pediatrics",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Croup (Laryngotracheobronchitis)\nConfidence: 90%\nReasoning: The clinical presentation of a 2-year-old with a barking cough, inspiratory stridor, and fever in the context of a recent upper respiratory infection (URI) is highly suggestive of croup. The barking cough is a classic symptom of croup, and inspiratory stridor indicates upper airway obstruction. The presence of fever further supports an infectious etiology, which is consistent with croup.",
+          "is_correct": true,
+          "ground_truth": "croup",
+          "success": true
+        }
+      ]
+    },
+    "llama-3.3-70b-versatile": {
+      "model_info": {
+        "category": "Meta",
+        "size": "70B",
+        "type": "Large"
+      },
+      "total_cases": 10,
+      "correct": 10,
+      "accuracy": 1.0,
+      "category_performance": {
+        "emergency": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "pharmacology": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "diagnosis": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "infectious_disease": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "pediatrics": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        }
+      },
+      "difficulty_performance": {
+        "medium": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 1.0
+        },
+        "easy": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "hard": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      },
+      "case_results": [
+        {
+          "model": "llama-3.3-70b-versatile",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Acute Myocardial Infarction (MI)\nConfidence: 90%\nReasoning: The patient's symptoms of crushing chest pain radiating to the left arm, diaphoresis, and nausea are classic presentations of an acute myocardial infarction. The elevated blood pressure (150/95) and heart rate (110) further support this diagnosis, as they can be associated with the stress response and potential cardiac ischemia. While other diagnoses such as acute coronary syndrome or pulmonary embolism could be considered, the combination of symptoms and vital signs presented strongly suggests an acute MI.",
+          "is_correct": true,
+          "ground_truth": "myocardial_infarction",
+          "success": true
+        },
+        {
+          "model": "llama-3.3-70b-versatile",
+          "case_category": "emergency",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Opioid overdose\nConfidence: 95%\nReasoning: The combination of unconsciousness, pinpoint pupils (miosis), and slow shallow breathing are classic signs of opioid overdose, and the presence of track marks suggests a history of intravenous drug use, further supporting this diagnosis.",
+          "is_correct": true,
+          "ground_truth": "opioid_overdose",
+          "success": true
+        },
+        {
+          "model": "llama-3.3-70b-versatile",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Meningitis\nConfidence: 90%\nReasoning: The combination of sudden severe headache, neck stiffness, photophobia, and fever suggests an inflammatory process involving the meninges, which is consistent with meningitis. The presence of fever, headache, and neck stiffness are classic signs of meningitis, and photophobia is a common associated symptom. Further evaluation, including lumbar puncture and laboratory tests, would be necessary to confirm the diagnosis and identify the underlying cause.",
+          "is_correct": true,
+          "ground_truth": "meningitis",
+          "success": true
+        },
+        {
+          "model": "llama-3.3-70b-versatile",
+          "case_category": "pharmacology",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Potential increase in international normalized ratio (INR) due to warfarin-ciprofloxacin interaction\nConfidence: 95%\nReasoning: Ciprofloxacin, a fluoroquinolone antibiotic, can inhibit the metabolism of warfarin, leading to increased warfarin levels and a subsequent rise in INR, thereby increasing the risk of bleeding complications. Close monitoring of INR is essential when co-prescribing these medications.",
+          "is_correct": true,
+          "ground_truth": "drug_interaction",
+          "success": true
+        },
+        {
+          "model": "llama-3.3-70b-versatile",
+          "case_category": "pharmacology",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Potential for digoxin toxicity due to furosemide-induced hypokalemia and hypomagnesemia\nConfidence: 95%\nReasoning: Furosemide can cause significant loss of potassium and magnesium, which are essential for maintaining normal cardiac function. Digoxin toxicity is more likely to occur in the setting of hypokalemia and hypomagnesemia, as these electrolyte imbalances can increase the risk of digitalis-induced arrhythmias. Therefore, close monitoring of serum potassium, magnesium, and digoxin levels, as well as cardiac rhythm and function, is essential when initiating furosemide in a patient taking digoxin.",
+          "is_correct": true,
+          "ground_truth": "electrolyte_monitoring",
+          "success": true
+        },
+        {
+          "model": "llama-3.3-70b-versatile",
+          "case_category": "diagnosis",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Systemic Lupus Erythematosus (SLE)\nConfidence: 95%\nReasoning: The patient's symptoms of fatigue, joint pain, and malar rash, combined with a positive Antinuclear Antibody (ANA) and anti-double-stranded DNA (anti-dsDNA) antibodies, are highly suggestive of SLE, a chronic autoimmune disease characterized by these clinical and serological findings.",
+          "is_correct": true,
+          "ground_truth": "systemic_lupus_erythematosus",
+          "success": true
+        },
+        {
+          "model": "llama-3.3-70b-versatile",
+          "case_category": "diagnosis",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Diabetic Ketoacidosis (DKA)\nConfidence: 95%\nReasoning: The patient's symptoms of blurred vision, excessive thirst, and fruity breath (indicative of acetone) in the context of uncontrolled diabetes (glucose 450 mg/dL) are highly suggestive of Diabetic Ketoacidosis (DKA), a serious complication of diabetes characterized by hyperglycemia, metabolic acidosis, and increased ketone production.",
+          "is_correct": true,
+          "ground_truth": "diabetic_ketoacidosis",
+          "success": true
+        },
+        {
+          "model": "llama-3.3-70b-versatile",
+          "case_category": "infectious_disease",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Malaria\nConfidence: 90%\nReasoning: The patient's recent travel to sub-Saharan Africa, a region endemic for malaria, combined with symptoms of fever, chills, headache, and low platelets (thrombocytopenia), are highly suggestive of malaria, particularly Plasmodium falciparum infection, which is common in this region and can cause these symptoms.",
+          "is_correct": true,
+          "ground_truth": "malaria",
+          "success": true
+        },
+        {
+          "model": "llama-3.3-70b-versatile",
+          "case_category": "infectious_disease",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Clostridioides difficile infection (CDI)\nConfidence: 95%\nReasoning: The patient's prolonged diarrhea after antibiotic use, combined with a positive C. diff toxin test, strongly suggests CDI, a common cause of antibiotic-associated diarrhea. The positive toxin test is a key diagnostic indicator, as it confirms the presence of the toxin produced by C. difficile bacteria.",
+          "is_correct": true,
+          "ground_truth": "c_diff_colitis",
+          "success": true
+        },
+        {
+          "model": "llama-3.3-70b-versatile",
+          "case_category": "pediatrics",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Croup\nConfidence: 90%\nReasoning: The patient's symptoms of barking cough, inspiratory stridor, and recent upper respiratory infection (URI) are classic for croup, a common childhood illness characterized by inflammation of the larynx and trachea, often triggered by a viral infection. The presence of fever and recent URI further supports this diagnosis.",
+          "is_correct": true,
+          "ground_truth": "croup",
+          "success": true
+        }
+      ]
+    },
+    "meta-llama/llama-4-maverick-17b-128": {
+      "model_info": {
+        "category": "Meta",
+        "size": "17B",
+        "type": "Maverick"
+      },
+      "total_cases": 10,
+      "correct": 0,
+      "accuracy": 0.0,
+      "category_performance": {
+        "emergency": {
+          "correct": 0,
+          "total": 3,
+          "accuracy": 0.0
+        },
+        "pharmacology": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        },
+        "diagnosis": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        },
+        "infectious_disease": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        },
+        "pediatrics": {
+          "correct": 0,
+          "total": 1,
+          "accuracy": 0.0
+        }
+      },
+      "difficulty_performance": {
+        "medium": {
+          "correct": 0,
+          "total": 5,
+          "accuracy": 0.0
+        },
+        "easy": {
+          "correct": 0,
+          "total": 3,
+          "accuracy": 0.0
+        },
+        "hard": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        }
+      },
+      "case_results": [
+        {
+          "model": "meta-llama/llama-4-maverick-17b-128",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "myocardial_infarction",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-maverick-17b-128",
+          "case_category": "emergency",
+          "difficulty": "easy",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "opioid_overdose",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-maverick-17b-128",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "meningitis",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-maverick-17b-128",
+          "case_category": "pharmacology",
+          "difficulty": "medium",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "drug_interaction",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-maverick-17b-128",
+          "case_category": "pharmacology",
+          "difficulty": "hard",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "electrolyte_monitoring",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-maverick-17b-128",
+          "case_category": "diagnosis",
+          "difficulty": "hard",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "systemic_lupus_erythematosus",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-maverick-17b-128",
+          "case_category": "diagnosis",
+          "difficulty": "medium",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "diabetic_ketoacidosis",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-maverick-17b-128",
+          "case_category": "infectious_disease",
+          "difficulty": "medium",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "malaria",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-maverick-17b-128",
+          "case_category": "infectious_disease",
+          "difficulty": "easy",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "c_diff_colitis",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-maverick-17b-128",
+          "case_category": "pediatrics",
+          "difficulty": "easy",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "croup",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-maverick-17b-128` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        }
+      ]
+    },
+    "meta-llama/llama-4-scout-17b-16e-ins": {
+      "model_info": {
+        "category": "Meta",
+        "size": "17B",
+        "type": "Scout"
+      },
+      "total_cases": 10,
+      "correct": 0,
+      "accuracy": 0.0,
+      "category_performance": {
+        "emergency": {
+          "correct": 0,
+          "total": 3,
+          "accuracy": 0.0
+        },
+        "pharmacology": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        },
+        "diagnosis": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        },
+        "infectious_disease": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        },
+        "pediatrics": {
+          "correct": 0,
+          "total": 1,
+          "accuracy": 0.0
+        }
+      },
+      "difficulty_performance": {
+        "medium": {
+          "correct": 0,
+          "total": 5,
+          "accuracy": 0.0
+        },
+        "easy": {
+          "correct": 0,
+          "total": 3,
+          "accuracy": 0.0
+        },
+        "hard": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        }
+      },
+      "case_results": [
+        {
+          "model": "meta-llama/llama-4-scout-17b-16e-ins",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "myocardial_infarction",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-scout-17b-16e-ins",
+          "case_category": "emergency",
+          "difficulty": "easy",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "opioid_overdose",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-scout-17b-16e-ins",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "meningitis",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-scout-17b-16e-ins",
+          "case_category": "pharmacology",
+          "difficulty": "medium",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "drug_interaction",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-scout-17b-16e-ins",
+          "case_category": "pharmacology",
+          "difficulty": "hard",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "electrolyte_monitoring",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-scout-17b-16e-ins",
+          "case_category": "diagnosis",
+          "difficulty": "hard",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "systemic_lupus_erythematosus",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-scout-17b-16e-ins",
+          "case_category": "diagnosis",
+          "difficulty": "medium",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "diabetic_ketoacidosis",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-scout-17b-16e-ins",
+          "case_category": "infectious_disease",
+          "difficulty": "medium",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "malaria",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-scout-17b-16e-ins",
+          "case_category": "infectious_disease",
+          "difficulty": "easy",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "c_diff_colitis",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        },
+        {
+          "model": "meta-llama/llama-4-scout-17b-16e-ins",
+          "case_category": "pediatrics",
+          "difficulty": "easy",
+          "prediction": "ERROR: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+          "is_correct": false,
+          "ground_truth": "croup",
+          "success": false,
+          "error": "Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-ins` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+        }
+      ]
+    },
+    "meta-llama/llama-guard-4-12b": {
+      "model_info": {
+        "category": "Meta",
+        "size": "12B",
+        "type": "Guard"
+      },
+      "total_cases": 10,
+      "correct": 0,
+      "accuracy": 0.0,
+      "category_performance": {
+        "emergency": {
+          "correct": 0,
+          "total": 3,
+          "accuracy": 0.0
+        },
+        "pharmacology": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        },
+        "diagnosis": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        },
+        "infectious_disease": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        },
+        "pediatrics": {
+          "correct": 0,
+          "total": 1,
+          "accuracy": 0.0
+        }
+      },
+      "difficulty_performance": {
+        "medium": {
+          "correct": 0,
+          "total": 5,
+          "accuracy": 0.0
+        },
+        "easy": {
+          "correct": 0,
+          "total": 3,
+          "accuracy": 0.0
+        },
+        "hard": {
+          "correct": 0,
+          "total": 2,
+          "accuracy": 0.0
+        }
+      },
+      "case_results": [
+        {
+          "model": "meta-llama/llama-guard-4-12b",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "unsafe\nS6",
+          "is_correct": false,
+          "ground_truth": "myocardial_infarction",
+          "success": true
+        },
+        {
+          "model": "meta-llama/llama-guard-4-12b",
+          "case_category": "emergency",
+          "difficulty": "easy",
+          "prediction": "unsafe\nS6",
+          "is_correct": false,
+          "ground_truth": "opioid_overdose",
+          "success": true
+        },
+        {
+          "model": "meta-llama/llama-guard-4-12b",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "unsafe\nS6",
+          "is_correct": false,
+          "ground_truth": "meningitis",
+          "success": true
+        },
+        {
+          "model": "meta-llama/llama-guard-4-12b",
+          "case_category": "pharmacology",
+          "difficulty": "medium",
+          "prediction": "unsafe\nS6",
+          "is_correct": false,
+          "ground_truth": "drug_interaction",
+          "success": true
+        },
+        {
+          "model": "meta-llama/llama-guard-4-12b",
+          "case_category": "pharmacology",
+          "difficulty": "hard",
+          "prediction": "unsafe\nS6",
+          "is_correct": false,
+          "ground_truth": "electrolyte_monitoring",
+          "success": true
+        },
+        {
+          "model": "meta-llama/llama-guard-4-12b",
+          "case_category": "diagnosis",
+          "difficulty": "hard",
+          "prediction": "unsafe\nS6",
+          "is_correct": false,
+          "ground_truth": "systemic_lupus_erythematosus",
+          "success": true
+        },
+        {
+          "model": "meta-llama/llama-guard-4-12b",
+          "case_category": "diagnosis",
+          "difficulty": "medium",
+          "prediction": "unsafe\nS6",
+          "is_correct": false,
+          "ground_truth": "diabetic_ketoacidosis",
+          "success": true
+        },
+        {
+          "model": "meta-llama/llama-guard-4-12b",
+          "case_category": "infectious_disease",
+          "difficulty": "medium",
+          "prediction": "unsafe\nS6",
+          "is_correct": false,
+          "ground_truth": "malaria",
+          "success": true
+        },
+        {
+          "model": "meta-llama/llama-guard-4-12b",
+          "case_category": "infectious_disease",
+          "difficulty": "easy",
+          "prediction": "unsafe\nS6",
+          "is_correct": false,
+          "ground_truth": "c_diff_colitis",
+          "success": true
+        },
+        {
+          "model": "meta-llama/llama-guard-4-12b",
+          "case_category": "pediatrics",
+          "difficulty": "easy",
+          "prediction": "unsafe\nS6",
+          "is_correct": false,
+          "ground_truth": "croup",
+          "success": true
+        }
+      ]
+    },
+    "moonshotai/kimi-k2-instruct": {
+      "model_info": {
+        "category": "Moonshot",
+        "size": "Unknown",
+        "type": "Instruct"
+      },
+      "total_cases": 10,
+      "correct": 10,
+      "accuracy": 1.0,
+      "category_performance": {
+        "emergency": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "pharmacology": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "diagnosis": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "infectious_disease": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "pediatrics": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        }
+      },
+      "difficulty_performance": {
+        "medium": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 1.0
+        },
+        "easy": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "hard": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      },
+      "case_results": [
+        {
+          "model": "moonshotai/kimi-k2-instruct",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Acute ST-Elevation Myocardial Infarction (STEMI)\nConfidence: 92%\nReasoning: Classic presentation of acute coronary syndrome with crushing chest pain radiating to left arm, autonomic symptoms (diaphoresis, nausea), and sympathetic response (elevated BP and HR). Requires immediate ECG, cardiac enzymes, and activation of cath lab.",
+          "is_correct": true,
+          "ground_truth": "myocardial_infarction",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct",
+          "case_category": "emergency",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Opioid intoxication/overdose\nConfidence: 95%\nReasoning: The triad of unconsciousness, pinpoint pupils (miosis), and respiratory depression is pathognomonic for opioid toxicity; visible track marks further support parenteral opioid use.",
+          "is_correct": true,
+          "ground_truth": "opioid_overdose",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Acute bacterial meningitis\nConfidence: 90%\nReasoning: Classic triad of meningitis\u2014high fever, nuchal rigidity, and photophobia\u2014plus sudden onset and severe headache strongly suggest bacterial etiology; requires urgent lumbar puncture and empiric IV antibiotics.",
+          "is_correct": true,
+          "ground_truth": "meningitis",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct",
+          "case_category": "pharmacology",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Warfarin-ciprofloxacin drug interaction with risk of supratherapeutic INR and major bleeding\nConfidence: 95%\nReasoning: Ciprofloxacin is a potent CYP1A2 inhibitor that decreases warfarin clearance, often raising INR within 2-3 days and increasing bleeding risk; prompt INR check and dose adjustment are required.",
+          "is_correct": true,
+          "ground_truth": "drug_interaction",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct",
+          "case_category": "pharmacology",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Drug-induced hypokalemia with risk of digoxin toxicity\nConfidence: 95%\nReasoning: Furosemide causes urinary potassium loss \u2192 hypokalemia \u2192 enhanced digoxin binding to Na\u207a/K\u207a-ATPase \u2192 increased risk of digoxin-induced arrhythmias; monitor serum K\u207a and digoxin level within 5\u20137 days of starting furosemide and periodically thereafter.",
+          "is_correct": true,
+          "ground_truth": "electrolyte_monitoring",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct",
+          "case_category": "diagnosis",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Systemic Lupus Erythematosus (SLE)\nConfidence: 95%\nReasoning: Classic triad of constitutional fatigue, inflammatory polyarthralgia, and photosensitive malar rash combined with highly specific serologies (ANA and anti-dsDNA) fulfills both EULAR/ACR and SLICC classification criteria; no alternative diagnosis explains this constellation.",
+          "is_correct": true,
+          "ground_truth": "systemic_lupus_erythematosus",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct",
+          "case_category": "diagnosis",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Diabetic ketoacidosis (DKA)\nConfidence: 95%\nReasoning: Marked hyperglycemia (450 mg/dL) plus classic triad of polyuria/polydipsia (excessive thirst), visual osmotic shift (blurred vision), and ketone breath (fruity odor) virtually confirms DKA in a known diabetic.",
+          "is_correct": true,
+          "ground_truth": "diabetic_ketoacidosis",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct",
+          "case_category": "infectious_disease",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Malaria (Plasmodium falciparum)\nConfidence: 85%\nReasoning: Recent sub-Saharan Africa travel + fever/chills + headache + thrombocytopenia is classic for falciparum malaria; platelet drop is an early, sensitive marker. Rule out dengue, chikungunya, typhoid, influenza, and COVID, but malaria tops the differential.",
+          "is_correct": true,
+          "ground_truth": "malaria",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct",
+          "case_category": "infectious_disease",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Clostridioides difficile infection (CDI)\nConfidence: 98%\nReasoning: Classic healthcare-associated CDI\u2014diarrhea temporally linked to antibiotic exposure with positive C. difficile toxin assay; no further testing required.",
+          "is_correct": true,
+          "ground_truth": "c_diff_colitis",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct",
+          "case_category": "pediatrics",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Viral croup (laryngotracheobronchitis)\nConfidence: 92%\nReasoning: Classic presentation of barking cough and inspiratory stridor in a toddler following a recent URI, with low-grade fever. The combination of subglottic inflammation and characteristic cough strongly suggests parainfluenza virus infection.",
+          "is_correct": true,
+          "ground_truth": "croup",
+          "success": true
+        }
+      ]
+    },
+    "moonshotai/kimi-k2-instruct-0905": {
+      "model_info": {
+        "category": "Moonshot",
+        "size": "Unknown",
+        "type": "Latest"
+      },
+      "total_cases": 10,
+      "correct": 10,
+      "accuracy": 1.0,
+      "category_performance": {
+        "emergency": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "pharmacology": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "diagnosis": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "infectious_disease": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "pediatrics": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        }
+      },
+      "difficulty_performance": {
+        "medium": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 1.0
+        },
+        "easy": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "hard": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      },
+      "case_results": [
+        {
+          "model": "moonshotai/kimi-k2-instruct-0905",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Acute ST-Elevation Myocardial Infarction (STEMI)\nConfidence: 92%\nReasoning: Classic presentation\u2014crushing retrosternal pain radiating to left arm, autonomic symptoms (diaphoresis, nausea), tachycardia, and hypertensive response\u2014strongly indicates acute transmural ischemia; immediate ECG and cardiac biomarkers required to confirm and guide emergent reperfusion therapy.",
+          "is_correct": true,
+          "ground_truth": "myocardial_infarction",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct-0905",
+          "case_category": "emergency",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Opioid overdose\nConfidence: 95%\nReasoning: The triad of unconsciousness, pinpoint pupils (miosis), and respiratory depression is pathognomonic for opioid toxicity; visible track marks further support parenteral opioid use.",
+          "is_correct": true,
+          "ground_truth": "opioid_overdose",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct-0905",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Acute bacterial meningitis\nConfidence: 85%\nReasoning: Classic triad of meningitis\u2014sudden severe headache, nuchal rigidity, and fever\u2014plus photophobia; high fever (102\u00b0F) favors bacterial over viral etiology.",
+          "is_correct": true,
+          "ground_truth": "meningitis",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct-0905",
+          "case_category": "pharmacology",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Warfarin-ciprofloxacin interaction \u2192 elevated INR \u2192 bleeding risk\nConfidence: 95%\nReasoning: Ciprofloxacin inhibits CYP2C9 and CYP1A2, reducing warfarin metabolism; INR can rise within 2-3 days, predisposing to major bleeding.",
+          "is_correct": true,
+          "ground_truth": "drug_interaction",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct-0905",
+          "case_category": "pharmacology",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Risk of digoxin toxicity secondary to furosemide-induced hypokalemia\nConfidence: 95%\nReasoning: Furosemide causes potassium wasting; hypokalemia increases digoxin binding to myocardial Na\u207a/K\u207a-ATPase, potentiating toxicity (arrhythmias, visual disturbances, nausea). Monitor serum potassium and digoxin level within 5\u20137 days of starting furosemide, then periodically; aim K\u207a \u22654 mmol/L and digoxin 1\u20132 ng/mL.",
+          "is_correct": true,
+          "ground_truth": "electrolyte_monitoring",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct-0905",
+          "case_category": "diagnosis",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Systemic Lupus Erythematosus (SLE)\nConfidence: 95%\nReasoning: Classic triad of constitutional fatigue, inflammatory polyarthralgia, and photosensitive malar rash combined with highly specific serologies (ANA screen and anti-dsDNA) fulfills both EULAR/ACR and SLICC classification criteria; no alternate diagnosis better explains this constellation.",
+          "is_correct": true,
+          "ground_truth": "systemic_lupus_erythematosus",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct-0905",
+          "case_category": "diagnosis",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Diabetic ketoacidosis (DKA)\nConfidence: 95%\nReasoning: Classic triad of hyperglycemia (>450 mg/dL), polydipsia, and acetone/fruity breath odor indicates DKA; blurred vision reflects acute osmotic lens swelling.",
+          "is_correct": true,
+          "ground_truth": "diabetic_ketoacidosis",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct-0905",
+          "case_category": "infectious_disease",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Malaria (Plasmodium falciparum)\nConfidence: 85%\nReasoning: Recent sub-Saharan Africa travel + acute febrile illness with thrombocytopenia is classic for malaria; falciparum causes rapid, severe disease. Thick/thin smears and rapid antigen test needed urgently.",
+          "is_correct": true,
+          "ground_truth": "malaria",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct-0905",
+          "case_category": "infectious_disease",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Clostridioides difficile infection (CDI)\nConfidence: 98%\nReasoning: Classic healthcare-associated CDI\u2014prolonged watery diarrhea following antibiotic exposure with positive C. difficile toxin assay, the diagnostic gold standard.",
+          "is_correct": true,
+          "ground_truth": "c_diff_colitis",
+          "success": true
+        },
+        {
+          "model": "moonshotai/kimi-k2-instruct-0905",
+          "case_category": "pediatrics",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Viral croup (laryngotracheobronchitis)\nConfidence: 92%\nReasoning: Classic age (6 mo-3 y), barking/seal-like cough, inspiratory stridor, low-grade fever, and URI prodrome strongly point to parainfluenza virus\u2013induced subglottic inflammation. Absence of high fever, toxic appearance, or rapid progression makes bacterial tracheitis or epiglottitis unlikely.",
+          "is_correct": true,
+          "ground_truth": "croup",
+          "success": true
+        }
+      ]
+    },
+    "openai/gpt-oss-120b": {
+      "model_info": {
+        "category": "OpenAI",
+        "size": "120B",
+        "type": "Large"
+      },
+      "total_cases": 10,
+      "correct": 10,
+      "accuracy": 1.0,
+      "category_performance": {
+        "emergency": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "pharmacology": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "diagnosis": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "infectious_disease": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "pediatrics": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        }
+      },
+      "difficulty_performance": {
+        "medium": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 1.0
+        },
+        "easy": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "hard": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      },
+      "case_results": [
+        {
+          "model": "openai/gpt-oss-120b",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Acute ST-elevation myocardial infarction (STEMI)  \nConfidence: 92%  \nReasoning: Classic crushing substernal chest pain radiating to the left arm, associated diaphoresis, nausea, tachycardia, and hypertension in a 55\u2011year\u2011old male strongly suggest an acute coronary syndrome. The presentation is typical for an evolving STEMI, which requires immediate ECG and reperfusion therapy.",
+          "is_correct": true,
+          "ground_truth": "myocardial_infarction",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-120b",
+          "case_category": "emergency",
+          "difficulty": "easy",
+          "prediction": "**Primary Diagnosis:** Opioid intoxication (overdose)  \n\n**Confidence:** 93%  \n\n**Reasoning:** The triad of unconsciousness, pinpoint (miosis) pupils, and hypoventilation (slow, shallow breathing) is classic for opioid toxicity. Visible track marks strongly suggest recent intravenous drug use, most commonly heroin or prescription opioids, supporting this diagnosis. Alternative causes of miosis (e.g., pontine bleed, organophosphate poisoning) are less",
+          "is_correct": true,
+          "ground_truth": "opioid_overdose",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-120b",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "**Primary Diagnosis:** Acute bacterial meningitis  \n**Confidence:** 92%  \n**Reasoning:** The abrupt onset of a severe headache combined with nuchal rigidity, photophobia, and high fever (102\u202f\u00b0F) is classic for meningitis. The rapid progression and systemic signs (fever) favor a bacterial etiology over viral causes, which tend to have a more subacute course and lower fever. Immediate neuroimaging (if indicated) and lumbar puncture for CSF analysis, along with empiric broad\u2011spectrum antibiotics and adjunctive dexamethasone, are warranted.",
+          "is_correct": true,
+          "ground_truth": "meningitis",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-120b",
+          "case_category": "pharmacology",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Warfarin\u2011ciprofloxacin interaction leading to supratherapeutic INR and heightened bleeding risk  \nConfidence: 96%  \nReasoning: Ciprofloxacin inhibits hepatic metabolism of the S\u2011enantiomer of warfarin (via CYP1A2/CYP3A4), markedly potentiating its antico",
+          "is_correct": true,
+          "ground_truth": "drug_interaction",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-120b",
+          "case_category": "pharmacology",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Risk of digoxin toxicity secondary to electrolyte and volume shifts from furosemide therapy  \nConfidence: 92%  \nReasoning: Loop diuretics like furosemide can cause hypokalemia, hypomagnesemia, and volume depletion, all of which predispose to digoxin toxicity, especially in the elderly with reduced renal clearance. Therefore, close monitoring of serum digoxin concentration, electrolytes (K\u207a, Mg\u00b2\u207a), renal function (creatinine, eGFR), and clinical signs of toxicity is essential.",
+          "is_correct": true,
+          "ground_truth": "electrolyte_monitoring",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-120b",
+          "case_category": "diagnosis",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Systemic Lupus Erythematosus (SLE)  \nConfidence: 95%  \nReasoning: The patient\u2019s constitutional symptom of fatigue, inflammatory joint pain, characteristic malar (butterfly) rash, and serologic findings of a positive antinuclear antibody (ANA) plus anti\u2011double\u2011stranded DNA antibodies are classic criteria for SLE. These features collectively meet the American College of Rheumatology/European League Against Rheumatism classification criteria for SLE, making it the most likely diagnosis.",
+          "is_correct": true,
+          "ground_truth": "systemic_lupus_erythematosus",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-120b",
+          "case_category": "diagnosis",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Diabetic ketoacidosis (DKA) secondary to uncontrolled hyperglycemia  \nConfidence: 96%  \nReasoning: The patient with known diabetes presents with marked hyperglycemia (glucose 450\u202fmg/dL), polyuria/polydipsia (excessive thirst), blurred vision (osmotic lens swelling), and a characteristic fruity (acetone) breath, all classic features of DKA. No mention of infection or other precipitating factors, but the metabolic derangements strongly point to DKA.",
+          "is_correct": true,
+          "ground_truth": "diabetic_ketoacidosis",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-120b",
+          "case_category": "infectious_disease",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Falciparum malaria (Plasmodium falciparum infection)  \nConfidence: 82%  \nReasoning: Recent travel to sub\u2011Saharan Africa places the patient at high risk for malaria. Classic presentation includes episodic fever with chills, headache, and often thrombocytopenia due to sequestration and marrow suppression. While dengue and other viral infections can cause similar symptoms, the combination of travel exposure, chills, and low platelet count most strongly points to falciparum malaria, which also warrants urgent evaluation and treatment.",
+          "is_correct": true,
+          "ground_truth": "malaria",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-120b",
+          "case_category": "infectious_disease",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Clostridioides difficile infection (C.\u202fdiff colitis)  \nConfidence: 95%  \nReasoning: The patient has prolonged diarrhea following recent antibiotic exposure, and a stool assay is positive for C.\u202fdiff toxin, which together are classic for antibiotic\u2011associated C.\u202fdiff infection.",
+          "is_correct": true,
+          "ground_truth": "c_diff_colitis",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-120b",
+          "case_category": "pediatrics",
+          "difficulty": "easy",
+          "prediction": "**Primary Diagnosis:** Acute viral croup (laryngotracheobronchitis)  \n\n**Confidence:** 92%  \n\n**Reasoning:** A 2\u2011year\u2011old presents with a classic \u201cbarking\u201d cough, inspiratory stridor, low\u2011grade fever, and a recent upper respiratory infection\u2014hallmarks of viral croup. The age group (6\u202fmonths\u20133\u202fyears) and the acute onset after a URI further support this diagnosis. While bacterial tracheitis or epiglottitis can present with stridor, they are less common, usually have higher fevers, and are more severe; the child\u2019s relatively mild fever (101\u202f\u00b0F) and typical croup symptoms make croup the most likely cause.",
+          "is_correct": true,
+          "ground_truth": "croup",
+          "success": true
+        }
+      ]
+    },
+    "openai/gpt-oss-20b": {
+      "model_info": {
+        "category": "OpenAI",
+        "size": "20B",
+        "type": "Medium"
+      },
+      "total_cases": 10,
+      "correct": 9,
+      "accuracy": 0.9,
+      "category_performance": {
+        "emergency": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "pharmacology": {
+          "correct": 1,
+          "total": 2,
+          "accuracy": 0.5
+        },
+        "diagnosis": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "infectious_disease": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        },
+        "pediatrics": {
+          "correct": 1,
+          "total": 1,
+          "accuracy": 1.0
+        }
+      },
+      "difficulty_performance": {
+        "medium": {
+          "correct": 5,
+          "total": 5,
+          "accuracy": 1.0
+        },
+        "easy": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0
+        },
+        "hard": {
+          "correct": 1,
+          "total": 2,
+          "accuracy": 0.5
+        }
+      },
+      "case_results": [
+        {
+          "model": "openai/gpt-oss-20b",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Acute ST\u2011Elevation Myocardial Infarction (STEMI)  \nConfidence: 95%  \nReasoning: Classic presentation of crushing chest pain radiating to the left arm with diaphoresis, nausea, tachycardia, and hypertension in a 55\u2011year\u2011old male strongly suggests an",
+          "is_correct": true,
+          "ground_truth": "myocardial_infarction",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-20b",
+          "case_category": "emergency",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Acute opioid overdose  \nConfidence: 95%  \nReasoning: Pinpoint pupils, slow shallow respirations, and visible track marks strongly suggest recent opioid ingestion leading to central respiratory depression and unconsciousness.",
+          "is_correct": true,
+          "ground_truth": "opioid_overdose",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-20b",
+          "case_category": "emergency",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Bacterial meningitis  \nConfidence: 90%  \nReasoning: Sudden, severe headache with neck stiffness, photophobia, and fever are classic triad for meningitis; the acute onset and high fever strongly suggest bacterial rather than viral etiology.",
+          "is_correct": true,
+          "ground_truth": "meningitis",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-20b",
+          "case_category": "pharmacology",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Elevated INR with increased risk of bleeding  \nConfidence: 95%  \nReasoning: Ciprofloxacin inhibits CYP2C9, reducing warfarin metabolism and markedly raising INR, which can precipitate serious bleeding events.",
+          "is_correct": true,
+          "ground_truth": "drug_interaction",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-20b",
+          "case_category": "pharmacology",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Risk of digoxin toxicity due",
+          "is_correct": false,
+          "ground_truth": "electrolyte_monitoring",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-20b",
+          "case_category": "diagnosis",
+          "difficulty": "hard",
+          "prediction": "Primary Diagnosis: Systemic lupus erythematosus (SLE)  \nConfidence: 95%  \nReasoning: The patient presents with classic SLE manifestations\u2014fatigue, arthralgia, malar rash\u2014and laboratory confirmation with positive ANA and anti\u2011dsDNA antibodies, fulfilling major criteria for SLE diagnosis.",
+          "is_correct": true,
+          "ground_truth": "systemic_lupus_erythematosus",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-20b",
+          "case_category": "diagnosis",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Diabetic ketoacidosis (DKA)  \nConfidence: 95%  \nReasoning: The patient presents with classic DKA features\u2014marked hyperglycemia (glucose 450\u202fmg/dL), osmotic symptoms (blurred vision, excessive thirst), and fruity breath indicating ketone production.",
+          "is_correct": true,
+          "ground_truth": "diabetic_ketoacidosis",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-20b",
+          "case_category": "infectious_disease",
+          "difficulty": "medium",
+          "prediction": "Primary Diagnosis: Malaria (Plasmodium falciparum)  \nConfidence: 80%  \nReasoning: Recent sub",
+          "is_correct": true,
+          "ground_truth": "malaria",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-20b",
+          "case_category": "infectious_disease",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Clostridioides difficile infection (antibiotic\u2011associated diarrhea)  \nConfidence: 95%  \nReasoning: The patient has persistent diarrhea following antibiotic exposure and a positive C.\u202fdiff toxin assay, which is diagnostic of CDI.",
+          "is_correct": true,
+          "ground_truth": "c_diff_colitis",
+          "success": true
+        },
+        {
+          "model": "openai/gpt-oss-20b",
+          "case_category": "pediatrics",
+          "difficulty": "easy",
+          "prediction": "Primary Diagnosis: Acute viral croup (laryngotracheobronchitis)  \nConfidence: 90%  \nReasoning: Classic presentation of a barking cough, inspiratory stridor, low\u2011grade fever, and recent upper respiratory infection in a 2\u2011year\u2011old strongly suggests viral croup.",
+          "is_correct": true,
+          "ground_truth": "croup",
+          "success": true
+        }
+      ]
+    }
+  }
+}

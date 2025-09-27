@@ -29,8 +29,9 @@ class VisionAgent(BaseAgent):
 
     def __init__(self, agent_id: Optional[str] = None):
         super().__init__(agent_id, specialized_task="vision")
-        self.supported_formats = config.vision.supported_formats
-        self.max_image_size = config.vision.max_image_size
+        # Use default values instead of config attributes that don't exist
+        self.supported_formats = ["jpg", "jpeg", "png", "bmp", "tiff", "dicom"]
+        self.max_image_size = 10 * 1024 * 1024  # 10MB
         self.medical_image_types = self._initialize_medical_image_types()
 
         logger.info(f"VisionAgent {self.agent_id} initialized for medical image analysis")

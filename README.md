@@ -1,3 +1,46 @@
+## Screenshots
+
+Below are screenshots demonstrating various features and interfaces of the system:
+
+![Figure 1](screenshots/Figure_1.png)
+*Figure 1*
+
+![Figure 2](screenshots/Figure_2.png)
+*Figure 2*
+
+![Figure 3](screenshots/Figure_3.png)
+*Figure 3*
+
+![Figure 4](screenshots/Figure_4.png)
+*Figure 4*
+
+![Figure 5](screenshots/Figure_5.png)
+*Figure 5*
+
+![Figure 6](screenshots/Figure_6.png)
+*Figure 6*
+
+![Figure 7](screenshots/Figure_7.png)
+*Figure 7*
+
+![Figure 8](screenshots/Figure_8.png)
+*Figure 8*
+
+![Figure 9](screenshots/Figure_9.png)
+*Figure 9*
+
+![Figure 10](screenshots/Figure_10.png)
+*Figure 10*
+
+![Figure 11](screenshots/Figure_11.png)
+*Figure 11*
+
+![Figure 12](screenshots/Figure_12.png)
+*Figure 12*
+
+![Figure 13](screenshots/Figure_13.png)
+*Figure 13*
+
 # Multi-Agent Healthcare System with Groq Integration
 
 ## Architecture Overview

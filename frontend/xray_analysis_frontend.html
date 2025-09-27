@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏥 Medical X-ray Analysis System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(45deg, #2c3e50, #3498db);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .upload-section {
+            padding: 40px;
+            text-align: center;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .upload-area {
+            border: 3px dashed #3498db;
+            border-radius: 10px;
+            padding: 40px;
+            background: #f8f9fa;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .upload-area:hover {
+            border-color: #2980b9;
+            background: #e8f4fd;
+        }
+
+        .upload-area.dragover {
+            border-color: #27ae60;
+            background: #d5edda;
+        }
+
+        .upload-icon {
+            font-size: 4em;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        .upload-text {
+            font-size: 1.3em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .upload-subtext {
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .analyze-btn {
+            background: linear-gradient(45deg, #27ae60, #2ecc71);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .analyze-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+        }
+
+        .analyze-btn:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .results-section {
+            display: none;
+            padding: 40px;
+        }
+
+        .diagnosis-card {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .diagnosis-card.normal {
+            background: linear-gradient(45deg, #27ae60, #2ecc71);
+        }
+
+        .diagnosis-card.medium {
+            background: linear-gradient(45deg, #f39c12, #e67e22);
+        }
+
+        .diagnosis-title {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .diagnosis-confidence {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+
+        .urgency-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .urgency-high {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .urgency-medium {
+            background: #f39c12;
+            color: white;
+        }
+
+        .urgency-low {
+            background: #27ae60;
+            color: white;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid #3498db;
+        }
+
+        .info-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-card .icon {
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+
+        .findings-list {
+            list-style: none;
+        }
+
+        .findings-list li {
+            background: #f8f9fa;
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border-left: 3px solid #3498db;
+        }
+
+        .finding-confidence {
+            float: right;
+            background: #3498db;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.8em;
+        }
+
+        .measurements-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .measurement-item {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        .measurement-label {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .recommendations-text {
+            background: #e8f4fd;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #3498db;
+            line-height: 1.6;
+        }
+
+        .specialist-info {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .specialist-icon {
+            font-size: 3em;
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        .new-analysis-btn {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .new-analysis-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #dc3545;
+            margin: 20px 0;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .measurements-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .diagnosis-title {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 Medical X-ray Analysis System</h1>
+            <p>Advanced AI-powered disease detection and diagnosis</p>
+        </div>
+
+        <div class="upload-section" id="uploadSection">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📋</div>
+                <div class="upload-text">Drop your X-ray image here or click to browse</div>
+                <div class="upload-subtext">Supports JPG, PNG, DICOM formats</div>
+            </div>
+            <input type="file" id="fileInput" class="file-input" accept="image/*">
+            <button class="analyze-btn" id="analyzeBtn">🔬 Analyze X-ray</button>
+        </div>
+
+        <div class="loading" id="loadingSection">
+            <div class="loading-spinner"></div>
+            <h3>🤖 AI is analyzing your X-ray...</h3>
+            <p>This may take a few moments. Please wait.</p>
+        </div>
+
+        <div class="error-message" id="errorMessage"></div>
+
+        <div class="results-section" id="resultsSection">
+            <div class="diagnosis-card" id="diagnosisCard">
+                <div class="diagnosis-title" id="diagnosisTitle">Analysis Complete</div>
+                <div class="diagnosis-confidence" id="diagnosisConfidence">Confidence: 95%</div>
+                <div class="urgency-badge" id="urgencyBadge">MEDIUM PRIORITY</div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3><span class="icon">🔍</span>Key Findings</h3>
+                    <ul class="findings-list" id="findingsList">
+                        <!-- Findings will be populated here -->
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3><span class="icon">📏</span>Measurements</h3>
+                    <div class="measurements-grid" id="measurementsGrid">
+                        <!-- Measurements will be populated here -->
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3><span class="icon">💡</span>Recommendations</h3>
+                    <div class="recommendations-text" id="recommendationsText">
+                        <!-- Recommendations will be populated here -->
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3><span class="icon">👨‍⚕️</span>Specialist Referral</h3>
+                    <div class="specialist-info">
+                        <div class="specialist-icon">👨‍⚕️</div>
+                        <div id="specialistName">Pulmonologist</div>
+                        <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
+                            Recommended for further evaluation
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <button class="new-analysis-btn" onclick="resetForm()">🔄 Analyze Another X-ray</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000';
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const analyzeBtn = document.getElementById('analyzeBtn');
+        const uploadSection = document.getElementById('uploadSection');
+        const loadingSection = document.getElementById('loadingSection');
+        const resultsSection = document.getElementById('resultsSection');
+        const errorMessage = document.getElementById('errorMessage');
+
+        let selectedFile = null;
+
+        // Drag and drop functionality
+        uploadArea.addEventListener('click', () => fileInput.click());
+        uploadArea.addEventListener('dragover', handleDragOver);
+        uploadArea.addEventListener('dragleave', handleDragLeave);
+        uploadArea.addEventListener('drop', handleDrop);
+        fileInput.addEventListener('change', handleFileSelect);
+        analyzeBtn.addEventListener('click', analyzeXray);
+
+        function handleDragOver(e) {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        }
+
+        function handleDragLeave(e) {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+        }
+
+        function handleDrop(e) {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                selectedFile = files[0];
+                updateUploadArea();
+            }
+        }
+
+        function handleFileSelect(e) {
+            if (e.target.files.length > 0) {
+                selectedFile = e.target.files[0];
+                updateUploadArea();
+            }
+        }
+
+        function updateUploadArea() {
+            if (selectedFile) {
+                uploadArea.innerHTML = `
+                    <div style="color: #27ae60; font-size: 2em; margin-bottom: 10px;">✅</div>
+                    <div style="font-size: 1.2em; color: #27ae60;">${selectedFile.name}</div>
+                    <div style="color: #666; margin-top: 5px;">File size: ${(selectedFile.size / 1024 / 1024).toFixed(2)} MB</div>
+                `;
+                analyzeBtn.style.display = 'inline-block';
+            }
+        }
+
+        async function analyzeXray() {
+            if (!selectedFile) {
+                showError('Please select an X-ray image first.');
+                return;
+            }
+
+            // Show loading
+            uploadSection.style.display = 'none';
+            loadingSection.style.display = 'block';
+            resultsSection.style.display = 'none';
+            errorMessage.style.display = 'none';
+
+            try {
+                const formData = new FormData();
+                formData.append('image', selectedFile);
+                formData.append('patient_id', 'FRONTEND_USER_' + Date.now());
+
+                const response = await fetch(`${API_BASE}/vision/analyze`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Analysis failed: ${response.statusText}`);
+                }
+
+                const result = await response.json();
+                displayResults(result);
+
+            } catch (error) {
+                console.error('Analysis error:', error);
+                showError(`Analysis failed: ${error.message}. Please ensure the server is running.`);
+                loadingSection.style.display = 'none';
+                uploadSection.style.display = 'block';
+            }
+        }
+
+        function displayResults(result) {
+            loadingSection.style.display = 'none';
+            resultsSection.style.display = 'block';
+
+            // Update diagnosis card
+            const diagnosisCard = document.getElementById('diagnosisCard');
+            const urgencyLevel = result.urgency_level || 'MEDIUM';
+
+            diagnosisCard.className = 'diagnosis-card';
+            if (urgencyLevel === 'LOW' || result.diagnosis?.includes('Normal')) {
+                diagnosisCard.classList.add('normal');
+            } else if (urgencyLevel === 'MEDIUM') {
+                diagnosisCard.classList.add('medium');
+            }
+
+            document.getElementById('diagnosisTitle').textContent = result.diagnosis || 'Analysis Complete';
+            document.getElementById('diagnosisConfidence').textContent =
+                `Confidence: ${(result.confidence * 100).toFixed(1)}%`;
+
+            const urgencyBadge = document.getElementById('urgencyBadge');
+            urgencyBadge.textContent = `${urgencyLevel} PRIORITY`;
+            urgencyBadge.className = `urgency-badge urgency-${urgencyLevel.toLowerCase()}`;
+
+            // Update findings
+            const findingsList = document.getElementById('findingsList');
+            findingsList.innerHTML = '';
+            if (result.findings && result.findings.length > 0) {
+                result.findings.forEach(finding => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+                        ${finding.description || finding.type || 'Finding'}
+                        <span class="finding-confidence">${(finding.confidence * 100).toFixed(0)}%</span>
+                        <div style="font-size: 0.8em; color: #666; margin-top: 5px;">
+                            Location: ${finding.location || 'N/A'} | Severity: ${finding.severity || 'N/A'}
+                        </div>
+                    `;
+                    findingsList.appendChild(li);
+                });
+            } else {
+                findingsList.innerHTML = '<li>No significant findings detected</li>';
+            }
+
+            // Update measurements
+            const measurementsGrid = document.getElementById('measurementsGrid');
+            measurementsGrid.innerHTML = '';
+            if (result.measurements) {
+                Object.entries(result.measurements).forEach(([key, value]) => {
+                    const div = document.createElement('div');
+                    div.className = 'measurement-item';
+                    div.innerHTML = `
+                        <div class="measurement-label">${key.replace(/_/g, ' ').toUpperCase()}</div>
+                        <div>${value}</div>
+                    `;
+                    measurementsGrid.appendChild(div);
+                });
+            } else {
+                measurementsGrid.innerHTML = '<div class="measurement-item">No measurements available</div>';
+            }
+
+            // Update recommendations
+            document.getElementById('recommendationsText').textContent =
+                result.recommendations || 'No specific recommendations at this time.';
+
+            // Update specialist
+            document.getElementById('specialistName').textContent =
+                result.specialist_referral || 'General Practitioner';
+
+            // Additional info display
+            if (result.model_used) {
+                const modelInfo = document.createElement('div');
+                modelInfo.style.textAlign = 'center';
+                modelInfo.style.marginTop = '20px';
+                modelInfo.style.color = '#666';
+                modelInfo.style.fontSize = '0.9em';
+                modelInfo.innerHTML = `
+                    <strong>Analysis Model:</strong> ${result.model_used}<br>
+                    <strong>Processing Time:</strong> ${result.processing_time || 'N/A'}
+                `;
+                resultsSection.appendChild(modelInfo);
+            }
+        }
+
+        function showError(message) {
+            errorMessage.textContent = message;
+            errorMessage.style.display = 'block';
+            setTimeout(() => {
+                errorMessage.style.display = 'none';
+            }, 5000);
+        }
+
+        function resetForm() {
+            selectedFile = null;
+            fileInput.value = '';
+            uploadArea.innerHTML = `
+                <div class="upload-icon">📋</div>
+                <div class="upload-text">Drop your X-ray image here or click to browse</div>
+                <div class="upload-subtext">Supports JPG, PNG, DICOM formats</div>
+            `;
+            analyzeBtn.style.display = 'none';
+            uploadSection.style.display = 'block';
+            loadingSection.style.display = 'none';
+            resultsSection.style.display = 'none';
+            errorMessage.style.display = 'none';
+        }
+
+        // Check server status on load
+        window.onload = async function() {
+            try {
+                const response = await fetch(`${API_BASE}/health`);
+                if (!response.ok) {
+                    throw new Error('Server not responding');
+                }
+                console.log('✅ Server is running and ready');
+            } catch (error) {
+                showError('⚠️ Backend server is not running. Please start the server first.');
+            }
+        };
+    </script>
+</body>
+</html>
