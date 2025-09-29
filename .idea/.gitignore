@@ -9,3 +9,5 @@
 
 /frontend/node_modules/
 /.idea_modules/
+
+.env
