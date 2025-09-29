@@ -1,6 +1,6 @@
 ## Screenshots
 
-Below are screenshots demonstrating various features and interfaces of the system:
+Below are screenshots demonstrating various features and interfaces of the system
 
 ![Figure 1](screenshots/Figure_1.png)
 *Figure 1*
